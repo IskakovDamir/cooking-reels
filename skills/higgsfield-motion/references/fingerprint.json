@@ -1,0 +1,154 @@
+{
+ "about": "Style fingerprint of the four reference promos, measured with scripts/fingerprint.py (frames at 320x180).",
+ "videos": {
+  "v1": {
+   "title": "Higgsfield MCP x Claude Opus 5.5 (agent workflow demo)",
+   "fps": 24.0,
+   "duration_s": 41.33,
+   "frames": 990,
+   "cuts_per_10s": 2.91,
+   "focus_pulls_per_10s": 4.36,
+   "events_per_10s": 5.58,
+   "median_event_gap_s": 1.54,
+   "blurred_share": 0.299,
+   "light_share": 0.609,
+   "dark_share": 0.093,
+   "saturation_mean": 0.112,
+   "motion_mean": 4.96,
+   "lufs": -14.2,
+   "true_peak_db": -3.2,
+   "bpm": 84.75
+  },
+  "v2": {
+   "title": "Production Skills Bundle for Claude Opus 5.5 (feature list)",
+   "fps": 30.0,
+   "duration_s": 46.72,
+   "frames": 1399,
+   "cuts_per_10s": 2.14,
+   "focus_pulls_per_10s": 2.57,
+   "events_per_10s": 4.29,
+   "median_event_gap_s": 1.7,
+   "blurred_share": 0.2,
+   "light_share": 0.214,
+   "dark_share": 0.0,
+   "saturation_mean": 0.215,
+   "motion_mean": 5.07,
+   "lufs": -14.1,
+   "true_peak_db": -3.1,
+   "bpm": 82.5
+  },
+  "v3": {
+   "title": "OpenAI dots x Higgsfield Always-On-Agents (agent story)",
+   "fps": 30.0,
+   "duration_s": 59.65,
+   "frames": 1787,
+   "cuts_per_10s": 1.34,
+   "focus_pulls_per_10s": 5.54,
+   "events_per_10s": 5.88,
+   "median_event_gap_s": 1.23,
+   "blurred_share": 0.341,
+   "light_share": 0.509,
+   "dark_share": 0.009,
+   "saturation_mean": 0.131,
+   "motion_mean": 8.55,
+   "lufs": -14.1,
+   "true_peak_db": -2.3,
+   "bpm": 87.5
+  },
+  "v4": {
+   "title": "Higgsfield API 100% cashback (offer / numbers)",
+   "fps": 30.0,
+   "duration_s": 26.14,
+   "frames": 782,
+   "cuts_per_10s": 5.37,
+   "focus_pulls_per_10s": 4.6,
+   "events_per_10s": 8.06,
+   "median_event_gap_s": 0.47,
+   "blurred_share": 0.364,
+   "light_share": 0.439,
+   "dark_share": 0.153,
+   "saturation_mean": 0.273,
+   "motion_mean": 7.19,
+   "lufs": -14.1,
+   "true_peak_db": -4.7,
+   "bpm": 132.5
+  }
+ },
+ "ranges": {
+  "fps": {
+   "min": 24.0,
+   "median": 30.0,
+   "max": 30.0
+  },
+  "duration_s": {
+   "min": 26.14,
+   "median": 44.025,
+   "max": 59.65
+  },
+  "frames": {
+   "min": 782,
+   "median": 1194.5,
+   "max": 1787
+  },
+  "cuts_per_10s": {
+   "min": 1.34,
+   "median": 2.525,
+   "max": 5.37
+  },
+  "focus_pulls_per_10s": {
+   "min": 2.57,
+   "median": 4.48,
+   "max": 5.54
+  },
+  "events_per_10s": {
+   "min": 4.29,
+   "median": 5.73,
+   "max": 8.06
+  },
+  "median_event_gap_s": {
+   "min": 0.47,
+   "median": 1.385,
+   "max": 1.7
+  },
+  "blurred_share": {
+   "min": 0.2,
+   "median": 0.32,
+   "max": 0.364
+  },
+  "light_share": {
+   "min": 0.214,
+   "median": 0.474,
+   "max": 0.609
+  },
+  "dark_share": {
+   "min": 0.0,
+   "median": 0.051,
+   "max": 0.153
+  },
+  "saturation_mean": {
+   "min": 0.112,
+   "median": 0.173,
+   "max": 0.273
+  },
+  "motion_mean": {
+   "min": 4.96,
+   "median": 6.13,
+   "max": 8.55
+  },
+  "lufs": {
+   "min": -14.2,
+   "median": -14.1,
+   "max": -14.1
+  },
+  "true_peak_db": {
+   "min": -4.7,
+   "median": -3.15,
+   "max": -2.3
+  },
+  "bpm": {
+   "min": 82.5,
+   "median": 86.125,
+   "max": 132.5
+  }
+ }
+}

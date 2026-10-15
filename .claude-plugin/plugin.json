@@ -1,0 +1,12 @@
+{
+  "name": "cooking-reels",
+  "version": "1.0.0",
+  "description": "higgsfield-motion: Remotion videos in the style of Higgsfield's launch promos, and fast 9:16 product Reels built from a real website (on a laptop, Screen Studio-style) and app screenshots, with UI and charts rebuilt in code, synthesized music and a brand theme.",
+  "author": {
+    "name": "IskakovDamir",
+    "url": "https://github.com/IskakovDamir"
+  },
+  "homepage": "https://github.com/IskakovDamir/cooking-reels",
+  "repository": "https://github.com/IskakovDamir/cooking-reels",
+  "keywords": ["remotion", "motion-design", "reels", "video", "screen-studio", "promo"]
+}

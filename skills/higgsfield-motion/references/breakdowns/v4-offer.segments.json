@@ -1,0 +1,1332 @@
+{
+ "video": "v4",
+ "fps": 30,
+ "frames": 782,
+ "source_res": [
+  1276,
+  718
+ ],
+ "target_res": [
+  1920,
+  1080
+ ],
+ "bpm": 132.5,
+ "segments": [
+  {
+   "start_f": 0,
+   "end_f": 55,
+   "kind": "title-card",
+   "bg": "#FAF7FB + radial glows: lime-yellow left (#F4FA4B peak), pink right (#F982AC) with white 16px@1080 dot halftone, small pink bottom-left, yellow top-right",
+   "summary": "'100%' over '{CASHBACK}' (3D lime braces) over pink pill 'ON HIGGSFIELD API'; 3D lime coins with DOF tumble around; whole group scales in with blur.",
+   "text": [
+    {
+     "str": "100%",
+     "cap_pct": 21.2,
+     "weight": "heavy/black",
+     "color": "#000000",
+     "align": "center",
+     "case": "upper"
+    },
+    {
+     "str": "CASHBACK",
+     "cap_pct": 16.0,
+     "weight": "heavy/black",
+     "color": "#000000 (types in lime #CFF00D)",
+     "align": "center",
+     "case": "upper"
+    },
+    {
+     "str": "ON HIGGSFIELD API",
+     "cap_pct": 7.2,
+     "weight": "bold",
+     "color": "#FFFFFF on #E71664 pill 1008x135@1080 r~10",
+     "align": "center",
+     "case": "upper"
+    }
+   ],
+   "entry": {
+    "type": "scale-in + blur-in + scramble typing (bg already present at f0)",
+    "frames": 16,
+    "notes": "text appears f1-3 blurred, sharp f15, CASHBACK complete f16"
+   },
+   "exit": {
+    "type": "3D camera dolly-through toward API chip with vertical motion blur",
+    "frames": 12
+   },
+   "transition_out": {
+    "type": "zoom-through (dolly) + vertical motion blur",
+    "frames": 12,
+    "notes": "f52-64; text scale 1.00->1.13 by f59 then flies out; vertical edge width 3->33px@1276 (peak ~50px@1080 smear) at f63; ease-in"
+   },
+   "animations": [
+    {
+     "target": "text group",
+     "props": [
+      "scale"
+     ],
+     "start_f": 0,
+     "dur_f": 46,
+     "easing": "quad-out / bezier(0.40,1,1,1)",
+     "measured": "scale 0.66@f3 0.80@f12 0.90@f22 0.95@f30 0.99@f39 1.00@f44; 46/75/92% at 25/50/75%",
+     "notes": "no overshoot"
+    },
+    {
+     "target": "text group",
+     "props": [
+      "gaussian blur"
+     ],
+     "start_f": 3,
+     "dur_f": 12,
+     "easing": "~linear/ease-out",
+     "measured": "edge width 11px@f3 -> 3px@f15 (sigma ~6px@1080 -> 0)",
+     "notes": ""
+    },
+    {
+     "target": "CASHBACK",
+     "props": [
+      "scramble typing"
+     ],
+     "start_f": 3,
+     "dur_f": 13,
+     "easing": "linear ~18 chars/s",
+     "measured": "{A} f3, {CAS} f7, CASH[ f8, CASHB} f10, CASHBA/ f12, CASHBAC/ f14, CASHBACK f16",
+     "notes": "braces slide outward as word grows"
+    },
+    {
+     "target": "CASHBACK",
+     "props": [
+      "color"
+     ],
+     "start_f": 6,
+     "dur_f": 14,
+     "easing": "linear",
+     "measured": "#CFF00D f6 -> #738A05 f12 -> #1F2602 f18 -> #000 f20",
+     "notes": ""
+    },
+    {
+     "target": "pill",
+     "props": [
+      "scaleX from center",
+      "blur"
+     ],
+     "start_f": 16,
+     "dur_f": 4,
+     "easing": "expo-out",
+     "measured": "width 63@f17, 233@f18, 483@f19, 571@f20, 598@f21 (then follows group scale)",
+     "notes": ""
+    },
+    {
+     "target": "pill text",
+     "props": [
+      "typing L->R",
+      "opacity"
+     ],
+     "start_f": 18,
+     "dur_f": 8,
+     "easing": "linear",
+     "measured": "IGGSFIEL f18 -> ON HIGGSFIELD AP f19 -> full white f25",
+     "notes": ""
+    },
+    {
+     "target": "coins",
+     "props": [
+      "3D tumble",
+      "drift"
+     ],
+     "start_f": 8,
+     "dur_f": 48,
+     "easing": "n/a (pre-rendered)",
+     "measured": "first coin f8 top-right, ~8 by f20, ~14 by f40",
+     "notes": "DOF-blurred foreground coins"
+    }
+   ]
+  },
+  {
+   "start_f": 56,
+   "end_f": 79,
+   "kind": "3d-render",
+   "bg": "white with pink gradient on right (#F76F9D / #F6A0BD)",
+   "summary": "Lime 3D 'HIGGSFIELD {API}' chip centred at (50.2%,49.4%); lime circuit traces draw on outward; slow orbit.",
+   "text": [
+    {
+     "str": "HIGGSFIELD {API}",
+     "cap_pct": 3.0,
+     "weight": "medium (3D emboss)",
+     "color": "#3C4A00 on lime chip",
+     "align": "center",
+     "case": "upper"
+    }
+   ],
+   "entry": {
+    "type": "dolly-through from S1",
+    "frames": 8,
+    "notes": "clean from f65"
+   },
+   "exit": {
+    "type": "hard cut",
+    "frames": 0
+   },
+   "transition_out": {
+    "type": "hard cut",
+    "frames": 0,
+    "notes": "f80, on audio onset f78/kick f80"
+   },
+   "animations": [
+    {
+     "target": "circuit traces",
+     "props": [
+      "draw-on length"
+     ],
+     "start_f": 65,
+     "dur_f": 15,
+     "easing": "linear-ish",
+     "measured": "left trace f65-67, top-left by f69, right/bottom f71-79",
+     "notes": ""
+    },
+    {
+     "target": "chip",
+     "props": [
+      "3D rotation"
+     ],
+     "start_f": 64,
+     "dur_f": 16,
+     "easing": "linear",
+     "measured": "slow orbit; template centre fixed (641,355)@1276",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 80,
+   "end_f": 94,
+   "kind": "3d-render",
+   "bg": "white, lime rods, yellow-pink haze left",
+   "summary": "Close-up of 3D lime coin stack, coins land (f86, f88); black tag '+$25,000' pops in under the stack.",
+   "text": [
+    {
+     "str": "+$25,000",
+     "cap_pct": 7.8,
+     "weight": "bold",
+     "color": "#D9F906 on #1C1F19 tag 518x135@1080 r~14",
+     "align": "center",
+     "case": "upper"
+    }
+   ],
+   "entry": {
+    "type": "hard cut",
+    "frames": 0,
+    "notes": ""
+   },
+   "exit": {
+    "type": "hard cut",
+    "frames": 0
+   },
+   "transition_out": {
+    "type": "hard cut",
+    "frames": 0,
+    "notes": "f95 (kick f95)"
+   },
+   "animations": [
+    {
+     "target": "tag",
+     "props": [
+      "scaleX",
+      "scaleY",
+      "horizontal blur"
+     ],
+     "start_f": 83,
+     "dur_f": 3,
+     "easing": "expo-out",
+     "measured": "f83 88x16 bar -> f86 335x84 -> f89 344x90 (@1276)",
+     "notes": "text h-blurred f84-85"
+    },
+    {
+     "target": "tag",
+     "props": [
+      "translateY"
+     ],
+     "start_f": 89,
+     "dur_f": 6,
+     "easing": "linear",
+     "measured": "y 534->524 (~2px/f up, tracks camera)",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 95,
+   "end_f": 114,
+   "kind": "3d-render",
+   "bg": "white, lime rods, defocused API chip top-left",
+   "summary": "Coins drop onto a stack (1->~5 coins f103-112); black tag '+$30,000'.",
+   "text": [
+    {
+     "str": "+$30,000",
+     "cap_pct": 7.8,
+     "weight": "bold",
+     "color": "#D9F906 on #1C1F19 tag",
+     "align": "center",
+     "case": "upper"
+    }
+   ],
+   "entry": {
+    "type": "hard cut",
+    "frames": 0,
+    "notes": ""
+   },
+   "exit": {
+    "type": "hard cut",
+    "frames": 0
+   },
+   "transition_out": {
+    "type": "hard cut",
+    "frames": 0,
+    "notes": "f115"
+   },
+   "animations": [
+    {
+     "target": "tag",
+     "props": [
+      "scaleX",
+      "scaleY",
+      "horizontal blur"
+     ],
+     "start_f": 99,
+     "dur_f": 6,
+     "easing": "expo-out",
+     "measured": "f99 98x18 bar, f101 blurred, f102 273x85, f103 310, f104 340, f105 346x90",
+     "notes": ""
+    },
+    {
+     "target": "coin stack",
+     "props": [
+      "drop"
+     ],
+     "start_f": 103,
+     "dur_f": 10,
+     "easing": "n/a",
+     "measured": "~1 coin / 2 f",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 115,
+   "end_f": 173,
+   "kind": "counter",
+   "bg": "#FAF7FB with large 3D lime coins in front/behind, pink haze right (#FCC3DA)",
+   "summary": "'WE'RE ALLOCATING' / '$20,000,000' / pink pill 'CASHBACK POOL'; per-glyph L->R fade-in; camera settles then accelerates in to white.",
+   "text": [
+    {
+     "str": "WE\u2019RE ALLOCATING",
+     "cap_pct": 6.7,
+     "weight": "heavy",
+     "color": "#000000",
+     "align": "center",
+     "case": "upper"
+    },
+    {
+     "str": "$20,000,000",
+     "cap_pct": 14.8,
+     "weight": "heavy",
+     "color": "#000000",
+     "align": "center",
+     "case": "upper"
+    },
+    {
+     "str": "CASHBACK POOL",
+     "cap_pct": 6.7,
+     "weight": "bold",
+     "color": "#FFFFFF on #E1135D pill 885x126@1080",
+     "align": "center",
+     "case": "upper"
+    }
+   ],
+   "entry": {
+    "type": "hard cut + per-glyph fade-in",
+    "frames": 24,
+    "notes": "reveal done ~f139"
+   },
+   "exit": {
+    "type": "accelerating zoom-in then cut to white",
+    "frames": 16
+   },
+   "transition_out": {
+    "type": "zoom-in (quart-in) + cut to 2 frames of #FAF7FB",
+    "frames": 18,
+    "notes": "f158-173 scale 1->1.46, HUD lines f171-173, white f174-175"
+   },
+   "animations": [
+    {
+     "target": "$20,000,000 glyphs",
+     "props": [
+      "opacity (grey->black)"
+     ],
+     "start_f": 111,
+     "dur_f": 25,
+     "easing": "linear per glyph, stagger 1.7 f",
+     "measured": "glyph i done at 119+1.7i; each fade 8-10 f",
+     "notes": ""
+    },
+    {
+     "target": "WE'RE ALLOCATING glyphs",
+     "props": [
+      "opacity"
+     ],
+     "start_f": 113,
+     "dur_f": 26,
+     "easing": "linear, stagger 1.3 f",
+     "measured": "last glyph ~f139",
+     "notes": ""
+    },
+    {
+     "target": "pill",
+     "props": [
+      "clip from centre",
+      "typing"
+     ],
+     "start_f": 117,
+     "dur_f": 10,
+     "easing": "expo-out",
+     "measured": "w115@f117 -> 629@f119 -> full f121; text 'CASHB'..'CASHBACK POOL' f117-127",
+     "notes": ""
+    },
+    {
+     "target": "group",
+     "props": [
+      "scale"
+     ],
+     "start_f": 115,
+     "dur_f": 42,
+     "easing": "cubic-out / bezier(0.20,0.80,0.70,1)",
+     "measured": "1.17->1.00; 59/82/95% at 25/50/75%",
+     "notes": ""
+    },
+    {
+     "target": "group",
+     "props": [
+      "scale"
+     ],
+     "start_f": 158,
+     "dur_f": 15,
+     "easing": "quart-in / bezier(0.40,0,0.90,0.20)",
+     "measured": "1.00->1.46; 3/13/36%",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 174,
+   "end_f": 228,
+   "kind": "title-card",
+   "bg": "#FAF7FB technical grid: 1px #E9E7EB frame rect + black '+' crosshairs, binary digits cell (#D4D2CF), JS code cell (#D3D8D4), pale blue cell (#E9F4F9), peach grid cell (#F6EEE1), pixel loader glyph",
+   "summary": "'FIRST COME, / FIRST SERVED' scramble-typed (both lines parallel) with lime/pink random head glyphs, punch-in at f199, hold, de-type + glitch zoom to black.",
+   "text": [
+    {
+     "str": "FIRST COME,",
+     "cap_pct": 14.3,
+     "weight": "heavy",
+     "color": "#000000",
+     "align": "center",
+     "case": "upper"
+    },
+    {
+     "str": "FIRST SERVED",
+     "cap_pct": 14.3,
+     "weight": "heavy",
+     "color": "#000000",
+     "align": "center",
+     "case": "upper"
+    }
+   ],
+   "entry": {
+    "type": "white hold (f174-175) + scramble typing + scale grow",
+    "frames": 20,
+    "notes": "0.85 char/f per line; final f194"
+   },
+   "exit": {
+    "type": "de-type scramble + glitch zoom to black",
+    "frames": 9
+   },
+   "transition_out": {
+    "type": "glitch zoom-to-black (dot-matrix dither, HUD, bg luma steps 237/207/152/84/0)",
+    "frames": 5,
+    "notes": "f229-233"
+   },
+   "animations": [
+    {
+     "target": "text",
+     "props": [
+      "scramble typing"
+     ],
+     "start_f": 176,
+     "dur_f": 18,
+     "easing": "linear ~25 cps/line",
+     "measured": "FIRSj Ye f180, FIRST COc[ f184, FIRST COMEB f188, FIRST SERVE_ f190, final f194",
+     "notes": "head glyphs lime #D2F719 / pink #F91489, pink '_' cursor"
+    },
+    {
+     "target": "text",
+     "props": [
+      "scale"
+     ],
+     "start_f": 180,
+     "dur_f": 18,
+     "easing": "ease-out",
+     "measured": "cap 65px f180 -> 77 f184 -> 85 f188 -> 89 f198 (@1276)",
+     "notes": ""
+    },
+    {
+     "target": "frame rect",
+     "props": [
+      "size"
+     ],
+     "start_f": 179,
+     "dur_f": 9,
+     "easing": "ease-out",
+     "measured": "full-frame f179 -> 694x233 f188 (@1276)",
+     "notes": ""
+    },
+    {
+     "target": "text+rect",
+     "props": [
+      "scale punch-in"
+     ],
+     "start_f": 199,
+     "dur_f": 4,
+     "easing": "expo-out",
+     "measured": "text cap 89->103 (x1.16); rect 694x233 -> 1062x433",
+     "notes": "on audio onset f200"
+    },
+    {
+     "target": "text",
+     "props": [
+      "de-type scramble",
+      "scale"
+     ],
+     "start_f": 224,
+     "dur_f": 5,
+     "easing": "ease-in",
+     "measured": "x1.25 by f228",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 233,
+   "end_f": 378,
+   "kind": "chat-ui",
+   "bg": "#000000 with faint square grid (~73px@1080, +10 luma)",
+   "summary": "Lime-glow balance card 'Your Higgsfield {API} Balance' $10,000; counts down to $2,629 with pink 'Spend -$7,371', counts back to $10,000 with lime 'Cashback +$7,371'; card flies up.",
+   "text": [
+    {
+     "str": "Your / Higgsfield {API} / Balance",
+     "cap_pct": 4.6,
+     "weight": "semibold (mono for {API})",
+     "color": "#050400",
+     "align": "left (Balance right-aligned)",
+     "case": "sentence"
+    },
+    {
+     "str": "$10,000 / $2,629",
+     "cap_pct": 13.9,
+     "weight": "bold",
+     "color": "#181803->#504D4D gradient; tints pink/lime",
+     "align": "right",
+     "case": "upper"
+    },
+    {
+     "str": "Spend",
+     "cap_pct": 6.4,
+     "weight": "semibold",
+     "color": "#F613A0",
+     "align": "right",
+     "case": "sentence"
+    },
+    {
+     "str": "-$7,371",
+     "cap_pct": 13.2,
+     "weight": "bold",
+     "color": "#F616A1->#FBA7F9 gradient",
+     "align": "right",
+     "case": "upper"
+    },
+    {
+     "str": "Cashback",
+     "cap_pct": 6.5,
+     "weight": "semibold",
+     "color": "#D2F61F",
+     "align": "right",
+     "case": "sentence"
+    },
+    {
+     "str": "+$7,371",
+     "cap_pct": 13.2,
+     "weight": "bold",
+     "color": "#D2F61F (highlight #E8F945)",
+     "align": "right",
+     "case": "upper"
+    }
+   ],
+   "entry": {
+    "type": "card rises+scales from bottom-centre with HUD wireframe",
+    "frames": 30,
+    "notes": "f233-262 quart-out"
+   },
+   "exit": {
+    "type": "card slides up off frame, quad-in, vertical motion blur",
+    "frames": 27
+   },
+   "transition_out": {
+    "type": "black hold then type-on lockup",
+    "frames": 2,
+    "notes": "f377-378 black"
+   },
+   "animations": [
+    {
+     "target": "card",
+     "props": [
+      "scale",
+      "translateY"
+     ],
+     "start_f": 233,
+     "dur_f": 29,
+     "easing": "quart-out / bezier(0.10,0.60,0.40,1)",
+     "measured": "width 78->691px@1276; 65/87/96%",
+     "notes": ""
+    },
+    {
+     "target": "card",
+     "props": [
+      "scale (push-in)",
+      "translateY"
+     ],
+     "start_f": 262,
+     "dur_f": 20,
+     "easing": "bezier(0.70,0,0.20,1)",
+     "measured": "width 694->1143 (x1.65); 9/65/96%; blur f270-273",
+     "notes": ""
+    },
+    {
+     "target": "Spend block",
+     "props": [
+      "translateY",
+      "blur"
+     ],
+     "start_f": 282,
+     "dur_f": 14,
+     "easing": "cubic-out",
+     "measured": "top y 288->185@1276 (~173px@1080 travel); 61/87/96%",
+     "notes": ""
+    },
+    {
+     "target": "balance",
+     "props": [
+      "counter"
+     ],
+     "start_f": 283,
+     "dur_f": 10,
+     "easing": "linear",
+     "measured": "10000->2629, -737.1/f",
+     "notes": ""
+    },
+    {
+     "target": "balance",
+     "props": [
+      "tint pulse pink"
+     ],
+     "start_f": 283,
+     "dur_f": 20,
+     "easing": "linear triangle 10 up/10 down",
+     "measured": "peak #F62F98 at f293, back to neutral f303",
+     "notes": ""
+    },
+    {
+     "target": "underline",
+     "props": [
+      "width (right-anchored)"
+     ],
+     "start_f": 282,
+     "dur_f": 10,
+     "easing": "ease-out",
+     "measured": "494 -> 97 px@1276",
+     "notes": ""
+    },
+    {
+     "target": "-$7,371",
+     "props": [
+      "gloss sweep"
+     ],
+     "start_f": 292,
+     "dur_f": 6,
+     "easing": "linear",
+     "measured": "lavender #F7A7F5 band L->R",
+     "notes": ""
+    },
+    {
+     "target": "Spend block",
+     "props": [
+      "translateX",
+      "blur"
+     ],
+     "start_f": 298,
+     "dur_f": 14,
+     "easing": "cubic-in / bezier(0.60,0,1,0.60)",
+     "measured": "x 768->1164; 5/16/38%",
+     "notes": ""
+    },
+    {
+     "target": "Cashback block",
+     "props": [
+      "translateX",
+      "blur"
+     ],
+     "start_f": 316,
+     "dur_f": 14,
+     "easing": "quad-out / bezier(0.20,0.20,0.30,1)",
+     "measured": "x 309->754 (~670px@1080 travel); 48/80/96%",
+     "notes": ""
+    },
+    {
+     "target": "Cashback block",
+     "props": [
+      "translateY",
+      "opacity",
+      "blur"
+     ],
+     "start_f": 335,
+     "dur_f": 10,
+     "easing": "quad-in",
+     "measured": "top 196->285+ fades into card",
+     "notes": ""
+    },
+    {
+     "target": "balance",
+     "props": [
+      "counter"
+     ],
+     "start_f": 342,
+     "dur_f": 10,
+     "easing": "linear",
+     "measured": "2629->10000, +737.1/f",
+     "notes": ""
+    },
+    {
+     "target": "balance",
+     "props": [
+      "tint pulse lime"
+     ],
+     "start_f": 342,
+     "dur_f": 20,
+     "easing": "linear triangle",
+     "measured": "peak #E1F912/#F7FA50 at f352, neutral f362",
+     "notes": ""
+    },
+    {
+     "target": "card",
+     "props": [
+      "translateY"
+     ],
+     "start_f": 350,
+     "dur_f": 27,
+     "easing": "quad-in / bezier(0.30,0,0.70,0.20)",
+     "measured": "top 394->0 by f376; 5/20/49%",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 379,
+   "end_f": 419,
+   "kind": "brand-intro",
+   "bg": "black -> #FAF7FB linear ramp f380-388",
+   "summary": "'Higgsfield {API}' lockup typed (pink->lime->black glyphs) while bg brightens; lockup shrinks up with glitch; 'MOST AFFORDABLE / ON THE MARKET' scrambles in.",
+   "text": [
+    {
+     "str": "Higgsfield {API}",
+     "cap_pct": 7.8,
+     "weight": "bold (mono {API})",
+     "color": "#000000",
+     "align": "center",
+     "case": "sentence"
+    },
+    {
+     "str": "MOST AFFORDABLE",
+     "cap_pct": 9.5,
+     "weight": "heavy",
+     "color": "#000000",
+     "align": "center",
+     "case": "upper"
+    },
+    {
+     "str": "ON THE MARKET",
+     "cap_pct": 9.5,
+     "weight": "heavy",
+     "color": "#000000",
+     "align": "center",
+     "case": "upper"
+    }
+   ],
+   "entry": {
+    "type": "type-on from black",
+    "frames": 12,
+    "notes": "~1 char/f, final f391"
+   },
+   "exit": {
+    "type": "split + glitch into corners",
+    "frames": 12
+   },
+   "transition_out": {
+    "type": "glitch split (lines drift to corners, RGB split, dot-matrix, re-typed small)",
+    "frames": 12,
+    "notes": "f420-431"
+   },
+   "animations": [
+    {
+     "target": "bg",
+     "props": [
+      "color"
+     ],
+     "start_f": 380,
+     "dur_f": 8,
+     "easing": "linear",
+     "measured": "#000 -> #1E1B1F f381 -> #9E9B9F f385 -> #FAF7FB f388 (+31.5 luma/f)",
+     "notes": ""
+    },
+    {
+     "target": "lockup",
+     "props": [
+      "typing",
+      "glyph color"
+     ],
+     "start_f": 379,
+     "dur_f": 12,
+     "easing": "linear ~30 cps",
+     "measured": "pink f379-384, lime f385-386, black f387+",
+     "notes": ""
+    },
+    {
+     "target": "lockup",
+     "props": [
+      "scale",
+      "translateY",
+      "RGB split"
+     ],
+     "start_f": 392,
+     "dur_f": 9,
+     "easing": "bezier(0.60,0.20,0.10,0.80)",
+     "measured": "scale 1->0.67, centre y 382->275@1276",
+     "notes": ""
+    },
+    {
+     "target": "headline",
+     "props": [
+      "scramble typing"
+     ],
+     "start_f": 397,
+     "dur_f": 17,
+     "easing": "~1 char/f/line, glyphs on 2s",
+     "measured": "MOST A\\\\ehZ f399 ... MOST AFFORDABLE / ON THE MARKET f414",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 420,
+   "end_f": 511,
+   "kind": "other",
+   "bg": "#FAF7FB with faint code block lower-left and thin divider lines #E9E7EB",
+   "summary": "Headline in corners ('MOST /' 'AFFORDABLE' top-left, '_ON THE' 'MARKET' bottom-right); black pointer triangle; drum/wheel of model names rotating past the pointer.",
+   "text": [
+    {
+     "str": "MOST / AFFORDABLE",
+     "cap_pct": 7.5,
+     "weight": "heavy",
+     "color": "#000000",
+     "align": "left",
+     "case": "upper"
+    },
+    {
+     "str": "_ON THE / MARKET",
+     "cap_pct": 7.5,
+     "weight": "heavy",
+     "color": "#000000",
+     "align": "right",
+     "case": "upper"
+    },
+    {
+     "str": "SEEDANCE 2.5 (active item; others: WAN 3.0, SOUL CINEMA, SEEDANCE 2.0 4K, MARKETING STUDIO IMAGE, MINIMAX H3, KLING OMNI 3, SOUL 2.0, KLING 3.0, HIGGSFIELD GENJUTSU, CINEMA STUDIO 4, WAN 2.7)",
+     "cap_pct": 8.6,
+     "weight": "heavy",
+     "color": "#000000 (far items fade to light grey)",
+     "align": "left (radial on arc)",
+     "case": "upper"
+    }
+   ],
+   "entry": {
+    "type": "split/glitch + wheel spin-in",
+    "frames": 12,
+    "notes": "spin -24.8 deg/f at f429 decaying"
+   },
+   "exit": {
+    "type": "glitch HUD + mosaic + horizontal smear",
+    "frames": 11
+   },
+   "transition_out": {
+    "type": "glitch/datamosh smear cross-dissolve into footage",
+    "frames": 11,
+    "notes": "f508-518"
+   },
+   "animations": [
+    {
+     "target": "wheel",
+     "props": [
+      "rotation about pivot (-6,575)@1080, r=578"
+     ],
+     "start_f": 428,
+     "dur_f": 22,
+     "easing": "ease-out (decel)",
+     "measured": "-24.8,-20,-4.5,-4,-3.5 ... -0.5 deg/f; ~-85 deg total",
+     "notes": "items every 17.2 deg"
+    },
+    {
+     "target": "wheel",
+     "props": [
+      "rotation"
+     ],
+     "start_f": 450,
+     "dur_f": 9,
+     "easing": "linear crawl",
+     "measured": "-0.5 deg/f",
+     "notes": ""
+    },
+    {
+     "target": "wheel",
+     "props": [
+      "rotation"
+     ],
+     "start_f": 459,
+     "dur_f": 13,
+     "easing": "ease-in",
+     "measured": "-0.75 -> -5.5 deg/f",
+     "notes": ""
+    },
+    {
+     "target": "wheel",
+     "props": [
+      "whip skip"
+     ],
+     "start_f": 473,
+     "dur_f": 3,
+     "easing": "blur frame",
+     "measured": "~-52 deg (3 items) in 3 f",
+     "notes": ""
+    },
+    {
+     "target": "wheel",
+     "props": [
+      "rotation"
+     ],
+     "start_f": 476,
+     "dur_f": 14,
+     "easing": "ease-out",
+     "measured": "-3.75 -> -0.5 deg/f",
+     "notes": ""
+    },
+    {
+     "target": "wheel",
+     "props": [
+      "rotation"
+     ],
+     "start_f": 499,
+     "dur_f": 12,
+     "easing": "ease-in",
+     "measured": "-0.75 -> -2.25 deg/f",
+     "notes": ""
+    },
+    {
+     "target": "'_' cursor",
+     "props": [
+      "opacity blink"
+     ],
+     "start_f": 431,
+     "dur_f": 77,
+     "easing": "step",
+     "measured": "7 f on / 7 f off",
+     "notes": ""
+    },
+    {
+     "target": "slashes after MOST",
+     "props": [
+      "text"
+     ],
+     "start_f": 439,
+     "dur_f": 55,
+     "easing": "step",
+     "measured": "'/' f439, '//' f456, '/' f475, '' f494",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 516,
+   "end_f": 617,
+   "kind": "ai-video",
+   "bg": "false-colour thermal/depth footage: magenta #E73562 near, orange #DD8841, lime #D0E81B, cream #F9F9E8 far",
+   "summary": "Person at desk in thermal palette; 'CLAIM UP TO / $100.000 / PER ORGANIZATION' types in pink then darkens to black; pink asterisks blink in corners; text scrambles out; grade shifts dim; pixel dissolve to black.",
+   "text": [
+    {
+     "str": "CLAIM UP TO",
+     "cap_pct": 8.9,
+     "weight": "heavy",
+     "color": "#000000 (types in #E63565)",
+     "align": "center (x starts 304@1276)",
+     "case": "upper"
+    },
+    {
+     "str": "$100.000",
+     "cap_pct": 18.1,
+     "weight": "heavy",
+     "color": "#000000",
+     "align": "center",
+     "case": "upper"
+    },
+    {
+     "str": "PER ORGANIZATION",
+     "cap_pct": 8.6,
+     "weight": "heavy",
+     "color": "#000000",
+     "align": "center",
+     "case": "upper"
+    }
+   ],
+   "entry": {
+    "type": "glitch smear cross-dissolve",
+    "frames": 4,
+    "notes": "f516-519"
+   },
+   "exit": {
+    "type": "scramble-out, grade shift to dim olive, pixel dissolve to black",
+    "frames": 37
+   },
+   "transition_out": {
+    "type": "color-grade fade + dot-matrix pixel dissolve to black",
+    "frames": 17,
+    "notes": "f600-617"
+   },
+   "animations": [
+    {
+     "target": "CLAIM UP TO",
+     "props": [
+      "typing"
+     ],
+     "start_f": 520,
+     "dur_f": 4,
+     "easing": "linear ~3 chars/f",
+     "measured": "",
+     "notes": ""
+    },
+    {
+     "target": "$100.000",
+     "props": [
+      "typing"
+     ],
+     "start_f": 524,
+     "dur_f": 5,
+     "easing": "linear ~2 chars/f",
+     "measured": "",
+     "notes": ""
+    },
+    {
+     "target": "PER ORGANIZATION",
+     "props": [
+      "typing"
+     ],
+     "start_f": 528,
+     "dur_f": 11,
+     "easing": "linear ~1.6 chars/f",
+     "measured": "",
+     "notes": ""
+    },
+    {
+     "target": "all text",
+     "props": [
+      "color"
+     ],
+     "start_f": 526,
+     "dur_f": 12,
+     "easing": "linear",
+     "measured": "#E63565 -> #CA187F f528 -> #710B48 f532 -> #000 f538",
+     "notes": ""
+    },
+    {
+     "target": "all text",
+     "props": [
+      "scramble delete",
+      "color"
+     ],
+     "start_f": 580,
+     "dur_f": 15,
+     "easing": "linear",
+     "measured": "'PER ORGANIZAT***' f580 ... 'CLAIM x' f594; colour black->pink->orange->bg",
+     "notes": ""
+    },
+    {
+     "target": "asterisks",
+     "props": [
+      "visibility blink"
+     ],
+     "start_f": 520,
+     "dur_f": 80,
+     "easing": "random step 2-4 f",
+     "measured": "4 corner anchors (5.2%,7.2%) (94.7%,92.2%)",
+     "notes": ""
+    },
+    {
+     "target": "footage",
+     "props": [
+      "grade"
+     ],
+     "start_f": 600,
+     "dur_f": 13,
+     "easing": "ease-in",
+     "measured": "luma 231->97, to olive/grey #90927C",
+     "notes": ""
+    },
+    {
+     "target": "footage",
+     "props": [
+      "pixel dissolve"
+     ],
+     "start_f": 614,
+     "dur_f": 4,
+     "easing": "step",
+     "measured": "lime/pink dot clusters then black",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 617,
+   "end_f": 663,
+   "kind": "counter",
+   "bg": "near-black inverted vignette #080509 centre -> #1B191A, red tint left #2E1018, faint calendar grid",
+   "summary": "'[SEPTEMBER ONLY]' (lime brackets) glitch-types in; small blurred counter counts down from $20,000,000.",
+   "text": [
+    {
+     "str": "[SEPTEMBER ONLY]",
+     "cap_pct": 9.2,
+     "weight": "heavy",
+     "color": "#F9F6FA text, #D0F913 brackets",
+     "align": "center",
+     "case": "upper"
+    },
+    {
+     "str": "$20,000,000 -> $16,828,947",
+     "cap_pct": 3.9,
+     "weight": "bold",
+     "color": "#F6F4F7 (h-blurred, reads #A2A0A4)",
+     "align": "center",
+     "case": "upper"
+    }
+   ],
+   "entry": {
+    "type": "dot-matrix converge + glitch scramble",
+    "frames": 14,
+    "notes": "f618-631"
+   },
+   "exit": {
+    "type": "glitch",
+    "frames": 8
+   },
+   "transition_out": {
+    "type": "glitch (RGB split, HUD boxes, scramble, pink smear bands, counter blow-up)",
+    "frames": 8,
+    "notes": "f657-664; 'UNCLAIMED CASHBACK' flashes f663-664"
+   },
+   "animations": [
+    {
+     "target": "counter",
+     "props": [
+      "value"
+     ],
+     "start_f": 621,
+     "dur_f": 42,
+     "easing": "linear",
+     "measured": "-90,601.5 per frame from 20,000,000",
+     "notes": ""
+    },
+    {
+     "target": "wrapper",
+     "props": [
+      "scale"
+     ],
+     "start_f": 628,
+     "dur_f": 27,
+     "easing": "linear",
+     "measured": "1.006 -> 0.992 (-0.05%/f)",
+     "notes": ""
+    },
+    {
+     "target": "headline",
+     "props": [
+      "scramble typing"
+     ],
+     "start_f": 621,
+     "dur_f": 11,
+     "easing": "step",
+     "measured": "[S[fj[cX[h e f622 -> [SEPTEMBER ONLY] f631",
+     "notes": ""
+    },
+    {
+     "target": "']' and 'LY'",
+     "props": [
+      "color flicker"
+     ],
+     "start_f": 654,
+     "dur_f": 3,
+     "easing": "step",
+     "measured": "pink/lime pre-glitch",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 664,
+   "end_f": 731,
+   "kind": "counter",
+   "bg": "same dark bg as S11",
+   "summary": "'UNUSED CASHBACK / EXPIRES SEPTEMBER 30th' with counter running to $0; fade to white.",
+   "text": [
+    {
+     "str": "UNUSED CASHBACK",
+     "cap_pct": 8.9,
+     "weight": "heavy",
+     "color": "#F9F6FA",
+     "align": "center",
+     "case": "upper"
+    },
+    {
+     "str": "EXPIRES SEPTEMBER 30th",
+     "cap_pct": 8.9,
+     "weight": "heavy",
+     "color": "#F9F6FA",
+     "align": "center",
+     "case": "upper"
+    },
+    {
+     "str": "$9,173,155 -> $0",
+     "cap_pct": 3.9,
+     "weight": "bold",
+     "color": "#F6F4F7 h-blurred",
+     "align": "center",
+     "case": "upper"
+    }
+   ],
+   "entry": {
+    "type": "glitch + scramble typing",
+    "frames": 12,
+    "notes": "final text f676"
+   },
+   "exit": {
+    "type": "fade to white",
+    "frames": 14
+   },
+   "transition_out": {
+    "type": "fade to white (overlay opacity), quad-in",
+    "frames": 14,
+    "notes": "f718-731; mean luma 33->246; music fades out simultaneously"
+   },
+   "animations": [
+    {
+     "target": "counter",
+     "props": [
+      "value"
+     ],
+     "start_f": 664,
+     "dur_f": 70,
+     "easing": "linear",
+     "measured": "9,173,155 -> 0 at f734 (-131,045/f)",
+     "notes": ""
+    },
+    {
+     "target": "wrapper",
+     "props": [
+      "scale"
+     ],
+     "start_f": 667,
+     "dur_f": 60,
+     "easing": "linear",
+     "measured": "1.022 -> 0.982 (-0.067%/f)",
+     "notes": ""
+    },
+    {
+     "target": "line 2",
+     "props": [
+      "scramble typing"
+     ],
+     "start_f": 665,
+     "dur_f": 11,
+     "easing": "step",
+     "measured": "EXPIRES S{f{x{ -> SEPTEMBE IF -> SEPTEMBER 3F -> 30th",
+     "notes": ""
+    },
+    {
+     "target": "white overlay",
+     "props": [
+      "opacity"
+     ],
+     "start_f": 717,
+     "dur_f": 14,
+     "easing": "quad-in / bezier(0.80,0,0.80,1)",
+     "measured": "5/19/58% at 25/50/75%",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 732,
+   "end_f": 781,
+   "kind": "end-card",
+   "bg": "#FAF7FB",
+   "summary": "Single small line 'STARTS NOW AT OPEN.HIGGSFIELD.AI' fades in and holds.",
+   "text": [
+    {
+     "str": "STARTS NOW AT OPEN.HIGGSFIELD.AI",
+     "cap_pct": 3.6,
+     "weight": "regular (400)",
+     "color": "#000000",
+     "align": "center",
+     "case": "upper"
+    }
+   ],
+   "entry": {
+    "type": "opacity fade-in, no blur, no motion",
+    "frames": 6,
+    "notes": "f733-738 linear (0.21,0.38,0.56,0.75,0.94,1)"
+   },
+   "exit": {
+    "type": "none (video ends)",
+    "frames": 0
+   },
+   "transition_out": {
+    "type": "none",
+    "frames": 0,
+    "notes": "hold f738-781 (44 f)"
+   },
+   "animations": [
+    {
+     "target": "text",
+     "props": [
+      "opacity"
+     ],
+     "start_f": 733,
+     "dur_f": 6,
+     "easing": "linear",
+     "measured": "darkest pixel 247->196->155->110->63->16->0",
+     "notes": ""
+    }
+   ]
+  }
+ ]
+}

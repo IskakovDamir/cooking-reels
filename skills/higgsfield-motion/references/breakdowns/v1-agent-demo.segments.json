@@ -1,0 +1,1933 @@
+{
+ "video": "v1",
+ "fps": 24,
+ "frames": 990,
+ "notes": {
+  "resolution_measured": "1276x718; px values in this file are @718 unless marked @1080 (x1.504)",
+  "cap_pct": "cap height as % of frame height",
+  "audio": "hat 16th grid every 4.27 f (~84.3 BPM); cuts snap within +-1 f; riser f281-295; biggest hit f360",
+  "ui_bg": "#FAF7FB"
+ },
+ "segments": [
+  {
+   "start_f": 0,
+   "end_f": 88,
+   "kind": "brand-intro",
+   "bg": "#E1D0BB beige base; radial blobs #EE9D83/#EB9279 (bottom-left, ~70%H dia), #EFBDA5/#E9A787 (top-right), light center #E7D6C4; thin coral arc outlines ~30% alpha",
+   "summary": "Higgsfield MCP x Claude lockup builds (mark stroke draw-on, glowing Claude spark flies in, per-glyph letters, MCP blur-in), then moves up and shrinks 1.11->1.0 while 'OPUS 5.5' blurs in as a mosaic and hard-swaps materials (pebbles, shells, red leaves, green leaves, eggs), then light-burn morphs L->R into smooth coral 3D serif; holds 17 f.",
+   "text": [
+    {
+     "str": "Higgsfield MCP",
+     "cap_pct": 6.13,
+     "weight": "700 bold grotesk",
+     "color": "#030000",
+     "align": "center (lockup)",
+     "case": "sentence"
+    },
+    {
+     "str": "\u00d7",
+     "cap_pct": 3.48,
+     "weight": "300 thin",
+     "color": "#342518",
+     "align": "center",
+     "case": "lower"
+    },
+    {
+     "str": "Claude",
+     "cap_pct": 6.55,
+     "weight": "serif regular (Copernicus/Tiempos-like)",
+     "color": "#160C04",
+     "align": "center",
+     "case": "sentence"
+    },
+    {
+     "str": "OPUS 5.5",
+     "cap_pct": 23.96,
+     "weight": "serif ~500, tight tracking",
+     "color": "#DB7C5F (bevel #D4775D->#E68A6E)",
+     "align": "center",
+     "case": "upper"
+    }
+   ],
+   "entry": {
+    "type": "bg blobs fade-in + element-by-element lockup build",
+    "frames": 21,
+    "notes": "blobs opacity 0->1 f0-14; first element at f5"
+   },
+   "exit": {
+    "type": "thermal false-colour crossfade",
+    "frames": 15
+   },
+   "transition_out": {
+    "type": "thermal/false-colour heat-map crossfade into photo",
+    "frames": 15,
+    "notes": "f89-103: lockup dims/desaturates (luma 168->65 over f89-92), heat-map of truck (bg #1B191C, truck #C42901->#E06400->#E8A558, warming each frame f93-99, blur ~6px@718), crossfade to real photo f100-104; audio hits at f88 and f101"
+   },
+   "animations": [
+    {
+     "target": "bg blobs",
+     "props": [
+      "opacity"
+     ],
+     "start_f": 0,
+     "dur_f": 14,
+     "easing": "linear",
+     "measured": "bottom-left luma 211.6->180.0 over f0-14",
+     "notes": ""
+    },
+    {
+     "target": "Higgsfield squiggle mark",
+     "props": [
+      "stroke draw-on"
+     ],
+     "start_f": 5,
+     "dur_f": 7,
+     "easing": "linear-ish",
+     "measured": "ink px 9,65,80,108,130,133 at f5-11; drawn at offset x337-401 (718p)",
+     "notes": ""
+    },
+    {
+     "target": "Higgsfield mark",
+     "props": [
+      "x",
+      "motion blur"
+     ],
+     "start_f": 11,
+     "dur_f": 5,
+     "easing": "ease-in-out",
+     "measured": "slides left ~160px@718 to x179-249",
+     "notes": ""
+    },
+    {
+     "target": "Claude spark",
+     "props": [
+      "opacity",
+      "x",
+      "scale",
+      "glow",
+      "color"
+     ],
+     "start_f": 5,
+     "dur_f": 28,
+     "easing": "ease-out travel f11-18; color ramp to f33",
+     "measured": "appears cream #FCE4C3 with coral halo r~75px at (85%,49%), 90px; travels to slot, ~60px; glow fades and colour -> #D9876C by f33",
+     "notes": ""
+    },
+    {
+     "target": "\u00d7",
+     "props": [
+      "scale",
+      "opacity"
+     ],
+     "start_f": 11,
+     "dur_f": 5,
+     "easing": "expo-out",
+     "measured": "ink 0.05,0.29,0.62,0.79,1.0",
+     "notes": ""
+    },
+    {
+     "target": "'Higgsfield' glyphs",
+     "props": [
+      "opacity",
+      "y",
+      "blur"
+     ],
+     "start_f": 13,
+     "dur_f": 9,
+     "easing": "per-glyph pops in non-linear order",
+     "measured": "coverage 0.28,0.41,0.53,0.64,0.70,0.75,0.84,0.97,1.0; i-dots fall in separately f15-20 from ~20px above",
+     "notes": ""
+    },
+    {
+     "target": "'Claude' word",
+     "props": [
+      "y",
+      "opacity"
+     ],
+     "start_f": 15,
+     "dur_f": 6,
+     "easing": "expo-out",
+     "measured": "dy +22,13,6,3,2,0 px@718; opacity 0.14,0.39,0.75,0.93,1.0",
+     "notes": ""
+    },
+    {
+     "target": "'MCP'",
+     "props": [
+      "gaussian blur",
+      "opacity"
+     ],
+     "start_f": 17,
+     "dur_f": 8,
+     "easing": "expo-out",
+     "measured": "sigma@718 8,5,4,2.5,1.5,1,0.5,0 (=12->0 px@1080); opacity 0.3->1",
+     "notes": ""
+    },
+    {
+     "target": "whole lockup",
+     "props": [
+      "y",
+      "scale",
+      "motion blur"
+     ],
+     "start_f": 24,
+     "dur_f": 13,
+     "easing": "cubic-bezier(0.70,0.05,0.15,1.00)",
+     "measured": "cy 355->242.5 px@718 (-169px@1080), scale 1.11->1.00; progress f27 7%, f29 28%, f30 59%, f31 80%, f33 95%; blur peak f30-31",
+     "notes": ""
+    },
+    {
+     "target": "OPUS 5.5 (mosaic)",
+     "props": [
+      "gaussian blur (stepped)",
+      "opacity"
+     ],
+     "start_f": 32,
+     "dur_f": 5,
+     "easing": "stepped on twos",
+     "measured": "sharpness 25 (f32), 84 (f34), 212 (f36); approx blur 15px, 6px, 0 @1080",
+     "notes": ""
+    },
+    {
+     "target": "OPUS 5.5 material fill",
+     "props": [
+      "texture swap (hard)"
+     ],
+     "start_f": 37,
+     "dur_f": 21,
+     "easing": "hold frames",
+     "measured": "37 pebbles(6f), 43 shells(5f), 48 red leaves(3f), 51 green leaves(5f), 56 eggs(2f)",
+     "notes": ""
+    },
+    {
+     "target": "OPUS 5.5 letters",
+     "props": [
+      "blur",
+      "color",
+      "light bloom"
+     ],
+     "start_f": 58,
+     "dur_f": 15,
+     "easing": "L->R stagger ~0.8 f/letter; each 10 f",
+     "measured": "O starts 58 peak cream #FBEDCB f61-62 -> coral #D97A5D f72; 5b starts 62-63; blur peak sharpness<=10 (sigma ~8-10px@718) f61-65",
+     "notes": ""
+    },
+    {
+     "target": "composition",
+     "props": [
+      "hold"
+     ],
+     "start_f": 72,
+     "dur_f": 17,
+     "easing": "static",
+     "measured": "region diff <1/frame",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 89,
+   "end_f": 127,
+   "kind": "footage",
+   "bg": "real photo (yard, house, blue sky)",
+   "summary": "Photo of a rusty red compact pickup (bumper hanging) revealed through a warming false-colour heat map; holds 24 f with a tiny drift.",
+   "text": [],
+   "entry": {
+    "type": "thermal false-colour crossfade",
+    "frames": 15,
+    "notes": "see S1 transition_out"
+   },
+   "exit": {
+    "type": "overexposure luma-burn + 1.3x zoom punch",
+    "frames": 3
+   },
+   "transition_out": {
+    "type": "overexposure flash / luma-key to white + zoom punch, then shrink into thumbnail",
+    "frames": 4,
+    "notes": "f128 highlights clip to white, scale ~1.3; f129 nearly all white; f130 truck cut-out on white; f131 photo returns zoom-blurred inside rounded rect"
+   },
+   "animations": [
+    {
+     "target": "heat map colours",
+     "props": [
+      "LUT hue warm-up"
+     ],
+     "start_f": 93,
+     "dur_f": 7,
+     "easing": "linear",
+     "measured": "truck red #C42901 (f94) -> #E06400 (f96) -> #E8A558 (f99)",
+     "notes": ""
+    },
+    {
+     "target": "heat->photo",
+     "props": [
+      "crossfade",
+      "sharpness"
+     ],
+     "start_f": 100,
+     "dur_f": 5,
+     "easing": "linear",
+     "measured": "sharpness 46,131,267,700,1275 f100-104",
+     "notes": ""
+    },
+    {
+     "target": "photo",
+     "props": [
+      "x",
+      "y"
+     ],
+     "start_f": 104,
+     "dur_f": 24,
+     "easing": "linear",
+     "measured": "+0.7 px/f right, -0.55 px/f up @718; scale constant",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 128,
+   "end_f": 182,
+   "kind": "chat-ui",
+   "bg": "#FAF7FB",
+   "summary": "Claude input card: photo shrinks into attachment chip, 'Diagnostic Report PDF' chip flies in/re-pops, prompt typed with global yellow->magenta->gray colour ramp, card pans left with acceleration.",
+   "text": [
+    {
+     "str": "Turn this rust bucket into a monster truck",
+     "cap_pct": 4.87,
+     "weight": "400 regular",
+     "color": "#5C505A (final; ramp from #DBDF2C)",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Diagnostic Report",
+     "cap_pct": 1.67,
+     "weight": "400",
+     "color": "#656266",
+     "align": "right",
+     "case": "sentence"
+    },
+    {
+     "str": "PDF",
+     "cap_pct": 1.81,
+     "weight": "400 in outline pill",
+     "color": "#666367",
+     "align": "center",
+     "case": "upper"
+    },
+    {
+     "str": "+",
+     "cap_pct": 3.9,
+     "weight": "icon 2px stroke",
+     "color": "#000000",
+     "align": "left",
+     "case": "lower"
+    }
+   ],
+   "entry": {
+    "type": "overexposure punch then thumbnail shrink",
+    "frames": 18,
+    "notes": "f128-145; thumbnail width 1023,713,514,409,336,292,260,237,222,212,203,197,193,192,191 px@718 (x0.65/f expo-out)"
+   },
+   "exit": {
+    "type": "accelerating pan left -> whip cut",
+    "frames": 32
+   },
+   "transition_out": {
+    "type": "whip pan cut to 2.1x close-up continuing motion",
+    "frames": 1,
+    "notes": "f150-182 ease-in pan (plus icon x 393->249@718, up to 20 px/f); f183 hard cut to close-up of bottom-right corner, motion continues leftward decelerating"
+   },
+   "animations": [
+    {
+     "target": "photo thumbnail",
+     "props": [
+      "scale",
+      "zoom blur",
+      "corner radius"
+     ],
+     "start_f": 130,
+     "dur_f": 15,
+     "easing": "expo-out r=0.65/f",
+     "measured": "final 191x192 px@718 at (374,133), radius 32px@718 (48@1080)",
+     "notes": ""
+    },
+    {
+     "target": "input card",
+     "props": [
+      "opacity"
+     ],
+     "start_f": 131,
+     "dur_f": 4,
+     "easing": "linear",
+     "measured": "radius 50px@718 (75@1080); shadow ~0 10px 40px rgba(0,0,0,.22)",
+     "notes": ""
+    },
+    {
+     "target": "PDF chip",
+     "props": [
+      "x",
+      "y",
+      "scale",
+      "blur"
+     ],
+     "start_f": 152,
+     "dur_f": 18,
+     "easing": "arc fly-in (152-156), shrink to 0 (157-160), re-pop expo-out x0.7/f (161-170)",
+     "measured": "final 190x190 px@718, fill #ECE9ED, radius 32px",
+     "notes": ""
+    },
+    {
+     "target": "prompt text",
+     "props": [
+      "typing"
+     ],
+     "start_f": 145,
+     "dur_f": 20,
+     "easing": "linear 2.1 chars/f (~50 cps)",
+     "measured": "f146 'Tu' ... f165 complete (42 chars); no cursor",
+     "notes": ""
+    },
+    {
+     "target": "prompt text",
+     "props": [
+      "color"
+     ],
+     "start_f": 146,
+     "dur_f": 22,
+     "easing": "keyframes",
+     "measured": "#DBDF2C(146) #D1B52E(148) #CA874C(150) #C65C57(152) #AF3759(154) #A12C56(156) #8E355A(160) #6C4B5F(164) #5C505A(168)",
+     "notes": ""
+    },
+    {
+     "target": "card group",
+     "props": [
+      "x"
+     ],
+     "start_f": 150,
+     "dur_f": 33,
+     "easing": "ease-in (exponential)",
+     "measured": "plus cx 393,390,383,372,356,329,306,284,269,249 @f150,155,160,165,170,175,178,180,181,182; motion blur from ~f178",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 183,
+   "end_f": 217,
+   "kind": "chat-ui",
+   "bg": "#FAF7FB",
+   "summary": "2.1x close-up of card bottom-right: 'Opus 5.5  Adaptive \u2304' model picker and coral send button; pan decelerates, button pressed (shrink, cream + orange glow), card whips up.",
+   "text": [
+    {
+     "str": "Opus 5.5",
+     "cap_pct": 6.27,
+     "weight": "400",
+     "color": "#4A4A4E",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Adaptive",
+     "cap_pct": 5.57,
+     "weight": "400",
+     "color": "#8E8C90",
+     "align": "left",
+     "case": "sentence"
+    }
+   ],
+   "entry": {
+    "type": "whip cut (continuing pan)",
+    "frames": 16,
+    "notes": "send button x 784->574 px@718 over f183-198, expo-out"
+   },
+   "exit": {
+    "type": "upward whip with blur",
+    "frames": 4
+   },
+   "transition_out": {
+    "type": "whip up to blank #FAF7FB",
+    "frames": 4,
+    "notes": "button y 284,186,164,134 (f214-217); f218 blank"
+   },
+   "animations": [
+    {
+     "target": "send button",
+     "props": [
+      "x (camera)"
+     ],
+     "start_f": 183,
+     "dur_f": 16,
+     "easing": "expo-out",
+     "measured": "x 784,734,702,680,662,646,634,622,614,604,598,592,586,580,576,574",
+     "notes": ""
+    },
+    {
+     "target": "send button",
+     "props": [
+      "scale",
+      "fill color",
+      "glow",
+      "specular rim"
+     ],
+     "start_f": 199,
+     "dur_f": 15,
+     "easing": "step in 2 f, hold, release 3 f",
+     "measured": "151->125 px (0.83x); fill #D97C60 -> #FAEDD2 cream; halo #FBAF94 ~100px@718 beyond edge; rim highlight travels f204-210; back to #DF8C70 by f214",
+     "notes": "button 151x151 @718 close-up, radius 50 (33%)"
+    },
+    {
+     "target": "card",
+     "props": [
+      "y",
+      "blur"
+     ],
+     "start_f": 214,
+     "dur_f": 4,
+     "easing": "expo-in",
+     "measured": "-22,-30 px/f",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 218,
+   "end_f": 255,
+   "kind": "status-line",
+   "bg": "#FAF7FB",
+   "summary": "Claude spark + two status lines 'Analyzing photo input' / 'Analyzing Diagnostic Report about vehicle' rise in with L->R feathered wipe and warm colour ramp, drift, exit up with blur.",
+   "text": [
+    {
+     "str": "Analyzing photo input",
+     "cap_pct": 4.46,
+     "weight": "400",
+     "color": "#595459",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Analyzing Diagnostic Report about vehicle",
+     "cap_pct": 4.46,
+     "weight": "400",
+     "color": "#5C4F58 (magenta #734257 at f240)",
+     "align": "left",
+     "case": "sentence"
+    }
+   ],
+   "entry": {
+    "type": "rise + L->R feathered wipe + colour ramp",
+    "frames": 16,
+    "notes": "line1 f220, line2 f225 (5 f stagger); wipe 5-6 f per line, feather ~120px@718; dy +94,77,64,53,44,36,30,24,19,15,12,6,3,1 (x0.82/f)"
+   },
+   "exit": {
+    "type": "accelerating up + blur + fade",
+    "frames": 11
+   },
+   "transition_out": {
+    "type": "direct swap (next block enters from below)",
+    "frames": 0,
+    "notes": "f255 old exiting, f256 new entering"
+   },
+   "animations": [
+    {
+     "target": "text block",
+     "props": [
+      "y"
+     ],
+     "start_f": 220,
+     "dur_f": 16,
+     "easing": "expo-out r=0.82/f",
+     "measured": "start offset ~115px@718 (172@1080)",
+     "notes": ""
+    },
+    {
+     "target": "lines",
+     "props": [
+      "mask wipe L->R"
+     ],
+     "start_f": 220,
+     "dur_f": 11,
+     "easing": "linear, 5 f stagger",
+     "measured": "line1 x_max 285,313,440,473,536,596; line2 414,562,749,868,950",
+     "notes": ""
+    },
+    {
+     "target": "line colour",
+     "props": [
+      "color"
+     ],
+     "start_f": 220,
+     "dur_f": 22,
+     "easing": "keyframes",
+     "measured": "#EDEECB -> #DCAF8C -> #D4706E -> #B82863 (+7f) -> #8E375F (+13) -> #5E4D5D (+19) -> #595459",
+     "notes": ""
+    },
+    {
+     "target": "Claude spark",
+     "props": [
+      "ray length wobble",
+      "rotation"
+     ],
+     "start_f": 220,
+     "dur_f": 36,
+     "easing": "continuous",
+     "measured": "55x65 px@718, #D1795F, 12 rays lengths vary +-20-30%",
+     "notes": ""
+    },
+    {
+     "target": "text block",
+     "props": [
+      "y",
+      "blur",
+      "opacity"
+     ],
+     "start_f": 245,
+     "dur_f": 11,
+     "easing": "expo-in x1.23/f",
+     "measured": "dy -4,-7,-10,-15,-23,-27,-34,-42; sigma 0->3 px@718; opacity 1->0.47",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 256,
+   "end_f": 297,
+   "kind": "title-card",
+   "bg": "#FAF7FB",
+   "summary": "Large spark + bold black 2-line headline 'Checking if this car can handle / a monster truck build' blurs/rises in, gets a L->R shimmer sweep, then flies up.",
+   "text": [
+    {
+     "str": "Checking if this car can handle a monster truck build",
+     "cap_pct": 7.8,
+     "weight": "700 bold",
+     "color": "#09070A",
+     "align": "left",
+     "case": "sentence"
+    }
+   ],
+   "entry": {
+    "type": "rise + gaussian blur-in + fade",
+    "frames": 11,
+    "notes": "dy +151,113,90,73,60,49,40,32,25,20,15 (x0.80/f); sigma 5,4,3,2.5,2,2,1.5,1.5,1,0.5,0 @718; opacity 0.24->1 by f264"
+   },
+   "exit": {
+    "type": "accelerating up + blur",
+    "frames": 14
+   },
+   "transition_out": {
+    "type": "hard cut (riser f281-295 into hit)",
+    "frames": 0,
+    "notes": "cut at 298 on hat tick"
+   },
+   "animations": [
+    {
+     "target": "headline",
+     "props": [
+      "y"
+     ],
+     "start_f": 255,
+     "dur_f": 44,
+     "easing": "cubic-bezier(0.10,0.70,0.90,0.00)",
+     "measured": "y +200 -> -340 px@718 over f255-298.5, RMSE 2.5px",
+     "notes": ""
+    },
+    {
+     "target": "headline",
+     "props": [
+      "shimmer band"
+     ],
+     "start_f": 271,
+     "dur_f": 9,
+     "easing": "linear",
+     "measured": "band ~120px@718 wide, peak luma ~110 (#6E6E6E) on #09070A, speed ~140 px/f@718 (210@1080)",
+     "notes": ""
+    },
+    {
+     "target": "headline",
+     "props": [
+      "blur",
+      "opacity"
+     ],
+     "start_f": 284,
+     "dur_f": 14,
+     "easing": "expo-in",
+     "measured": "sigma 0.5 (284) -> 3 (297); opacity 0.69 at f297",
+     "notes": ""
+    },
+    {
+     "target": "spark",
+     "props": [
+      "ray wobble",
+      "rotation"
+     ],
+     "start_f": 256,
+     "dur_f": 42,
+     "easing": "continuous",
+     "measured": "105x113 px@718 at x74-179",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 298,
+   "end_f": 341,
+   "kind": "3d-render",
+   "bg": "#D7D4D8",
+   "summary": "3D red pickup model on gray studio bg slides up/blur-in, explodes into body/chassis/wheels; lime 'ANALYZE' pill grows at bottom-center and is typed with hot-pink newest letters.",
+   "text": [
+    {
+     "str": "ANALYZE",
+     "cap_pct": 4.46,
+     "weight": "800 bold wide grotesk",
+     "color": "#131407",
+     "align": "center",
+     "case": "upper"
+    }
+   ],
+   "entry": {
+    "type": "hard cut + slide up + blur-in",
+    "frames": 6,
+    "notes": "body top y 198,180,170,164,160,158,156 (expo-out); sharpness 120->333->417"
+   },
+   "exit": {
+    "type": "hard cut",
+    "frames": 0
+   },
+   "transition_out": {
+    "type": "hard cut to 2.87x close-up of the pill",
+    "frames": 0,
+    "notes": "f342, on audio onset"
+   },
+   "animations": [
+    {
+     "target": "3D model",
+     "props": [
+      "explode (pre-rendered)",
+      "camera orbit/pull-back"
+     ],
+     "start_f": 304,
+     "dur_f": 27,
+     "easing": "video asset",
+     "measured": "SIFT scale ~0.97 per 3 f with small rotation",
+     "notes": ""
+    },
+    {
+     "target": "ANALYZE pill",
+     "props": [
+      "scale",
+      "blur",
+      "glow"
+     ],
+     "start_f": 330,
+     "dur_f": 10,
+     "easing": "expo-out x0.68/f",
+     "measured": "widths 133,181,207,227,241,251,259,265,269,271,273 px@718; final 273x75 (411x113@1080), center (50%,83%), fill #DAF725, glow ~60px",
+     "notes": ""
+    },
+    {
+     "target": "ANALYZE text",
+     "props": [
+      "typing",
+      "color"
+     ],
+     "start_f": 332,
+     "dur_f": 5,
+     "easing": "1.4 chars/f",
+     "measured": "A(332) ANA(333) ANAL(334) ANALYZ(335) ANALYZE(336); newest 1-2 letters #E8286A then black",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 342,
+   "end_f": 360,
+   "kind": "other",
+   "bg": "#D6D3D7 with lime glow",
+   "summary": "Close-up of the ANALYZE pill (2.87x): holds, squashes to 0.8, then grows past 1.3 with intensifying glow into a white flash.",
+   "text": [
+    {
+     "str": "ANALYZE",
+     "cap_pct": 12.95,
+     "weight": "800 bold wide grotesk",
+     "color": "#131407",
+     "align": "center",
+     "case": "upper"
+    }
+   ],
+   "entry": {
+    "type": "hard cut",
+    "frames": 0,
+    "notes": ""
+   },
+   "exit": {
+    "type": "scale-up explode into white",
+    "frames": 8
+   },
+   "transition_out": {
+    "type": "white flash frame #FAF7FB",
+    "frames": 1,
+    "notes": "f361, on loudest hit (f360)"
+   },
+   "animations": [
+    {
+     "target": "pill",
+     "props": [
+      "scale"
+     ],
+     "start_f": 349,
+     "dur_f": 4,
+     "easing": "ease-in",
+     "measured": "w 785 -> 769,691,629 (0.80)",
+     "notes": ""
+    },
+    {
+     "target": "pill",
+     "props": [
+      "scale",
+      "glow",
+      "fill lighten"
+     ],
+     "start_f": 353,
+     "dur_f": 8,
+     "easing": "accelerating",
+     "measured": "w 651,689,737,773,809,859,939,1033 (1.32x); fill #D9F921 -> #EAF548; glow area x3",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 361,
+   "end_f": 384,
+   "kind": "grid",
+   "bg": "#F0EEF2 with faint blueprint grid lines",
+   "summary": "Parts knolling flat-lay scales in; parts appear as hot-pink silhouettes and resolve to textures row by row with lime outline flashes.",
+   "text": [],
+   "entry": {
+    "type": "white frame then scale-in",
+    "frames": 9,
+    "notes": "scale ~0.6->1.0 anchored at (240,145)px@718; 0.77(365),0.85,0.91,0.95,0.98,1.0(370)"
+   },
+   "exit": {
+    "type": "hard cut",
+    "frames": 0
+   },
+   "transition_out": {
+    "type": "hard cut to close-up",
+    "frames": 0,
+    "notes": "f385"
+   },
+   "animations": [
+    {
+     "target": "layout",
+     "props": [
+      "scale"
+     ],
+     "start_f": 362,
+     "dur_f": 8,
+     "easing": "expo-out x0.6/f",
+     "measured": "see entry",
+     "notes": ""
+    },
+    {
+     "target": "parts",
+     "props": [
+      "pink silhouette -> texture"
+     ],
+     "start_f": 363,
+     "dur_f": 22,
+     "easing": "row cascade top->bottom, ~2-3 f/row, L->R within row",
+     "measured": "pink #FD2283 (pale #FCBAD9 first 2 f)",
+     "notes": ""
+    },
+    {
+     "target": "parts outlines",
+     "props": [
+      "lime outline flash"
+     ],
+     "start_f": 367,
+     "dur_f": 9,
+     "easing": "pulse",
+     "measured": "#DBEE45 ~4px@718; peaks f368-370, f374-375",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 385,
+   "end_f": 404,
+   "kind": "grid",
+   "bg": "#F0EEF2 blueprint",
+   "summary": "Close-up of parts rows; scanning outline glow cycles orange->amber->lime->off; pink silhouettes resolve; slow pan left.",
+   "text": [],
+   "entry": {
+    "type": "hard cut + scale settle",
+    "frames": 5,
+    "notes": "scale 1.22 -> 1.0 over f386-390"
+   },
+   "exit": {
+    "type": "hard cut",
+    "frames": 0
+   },
+   "transition_out": {
+    "type": "hard cut",
+    "frames": 0,
+    "notes": "f405"
+   },
+   "animations": [
+    {
+     "target": "camera",
+     "props": [
+      "x"
+     ],
+     "start_f": 390,
+     "dur_f": 15,
+     "easing": "linear",
+     "measured": "-3.5 px/f@718 (-5.3@1080)",
+     "notes": ""
+    },
+    {
+     "target": "part outlines",
+     "props": [
+      "outline color"
+     ],
+     "start_f": 385,
+     "dur_f": 20,
+     "easing": "per row wave ~6 f",
+     "measured": "#F08A3A -> amber -> #DBEE45 -> off; stroke ~6-8 px@718",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 405,
+   "end_f": 424,
+   "kind": "other",
+   "bg": "#F0EEF2 blueprint (parts close-up)",
+   "summary": "Detection: yellow rounded box around engine head draws on, 'Condition' typed, counter to 67%.",
+   "text": [
+    {
+     "str": "Condition",
+     "cap_pct": 5.15,
+     "weight": "700 bold",
+     "color": "#000000",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "67%",
+     "cap_pct": 5.15,
+     "weight": "700 bold",
+     "color": "#F7DA38",
+     "align": "right",
+     "case": "lower"
+    }
+   ],
+   "entry": {
+    "type": "hard cut",
+    "frames": 0,
+    "notes": ""
+   },
+   "exit": {
+    "type": "hard cut",
+    "frames": 0
+   },
+   "transition_out": {
+    "type": "hard cut",
+    "frames": 0,
+    "notes": "f425"
+   },
+   "animations": [
+    {
+     "target": "camera",
+     "props": [
+      "y"
+     ],
+     "start_f": 405,
+     "dur_f": 20,
+     "easing": "linear",
+     "measured": "+1.06 px/f",
+     "notes": ""
+    },
+    {
+     "target": "box",
+     "props": [
+      "stroke draw"
+     ],
+     "start_f": 408,
+     "dur_f": 7,
+     "easing": "edge first then full",
+     "measured": "x494-783 y222-511 px@718, stroke ~4px #F7DA38, radius ~12",
+     "notes": ""
+    },
+    {
+     "target": "label",
+     "props": [
+      "typing"
+     ],
+     "start_f": 409,
+     "dur_f": 9,
+     "easing": "1 char/f",
+     "measured": "",
+     "notes": ""
+    },
+    {
+     "target": "counter",
+     "props": [
+      "number"
+     ],
+     "start_f": 410,
+     "dur_f": 9,
+     "easing": "linear ~+8.3/f",
+     "measured": "visible 2(413),34,42,50,59,67(418); digits blurred while changing",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 425,
+   "end_f": 442,
+   "kind": "other",
+   "bg": "#F0EEF2 blueprint",
+   "summary": "Detection: red box around two tyres 'Condition 16%'.",
+   "text": [
+    {
+     "str": "Condition",
+     "cap_pct": 8.77,
+     "weight": "700 bold",
+     "color": "#000000",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "16%",
+     "cap_pct": 8.36,
+     "weight": "700 bold",
+     "color": "#F52F4A",
+     "align": "right",
+     "case": "lower"
+    }
+   ],
+   "entry": {
+    "type": "hard cut",
+    "frames": 0,
+    "notes": ""
+   },
+   "exit": {
+    "type": "hard cut",
+    "frames": 0
+   },
+   "transition_out": {
+    "type": "hard cut",
+    "frames": 0,
+    "notes": "f443"
+   },
+   "animations": [
+    {
+     "target": "camera",
+     "props": [
+      "y"
+     ],
+     "start_f": 425,
+     "dur_f": 18,
+     "easing": "linear",
+     "measured": "-1.4 px/f",
+     "notes": ""
+    },
+    {
+     "target": "box",
+     "props": [
+      "stroke draw",
+      "label typing",
+      "counter"
+     ],
+     "start_f": 425,
+     "dur_f": 10,
+     "easing": "same scheme as engine",
+     "measured": "stroke ~5px #F52F4A radius ~16",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 443,
+   "end_f": 481,
+   "kind": "other",
+   "bg": "#F0EEF2 blueprint",
+   "summary": "Detection: green box around chassis frame, counter 84%->96%, success blink (green fill + olive tint) x3, then exit up.",
+   "text": [
+    {
+     "str": "Condition",
+     "cap_pct": 5.29,
+     "weight": "700 bold",
+     "color": "#000000",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "96%",
+     "cap_pct": 6.27,
+     "weight": "700 bold",
+     "color": "#ADD05C",
+     "align": "right",
+     "case": "lower"
+    }
+   ],
+   "entry": {
+    "type": "hard cut",
+    "frames": 0,
+    "notes": ""
+   },
+   "exit": {
+    "type": "accelerating up",
+    "frames": 9
+   },
+   "transition_out": {
+    "type": "hard cut",
+    "frames": 0,
+    "notes": "f482 to status line"
+   },
+   "animations": [
+    {
+     "target": "camera",
+     "props": [
+      "scale",
+      "x",
+      "y"
+     ],
+     "start_f": 443,
+     "dur_f": 30,
+     "easing": "linear",
+     "measured": "+0.18 %/f push-in, drift (-1.2,-0.7) px/f",
+     "notes": ""
+    },
+    {
+     "target": "box",
+     "props": [
+      "stroke draw"
+     ],
+     "start_f": 449,
+     "dur_f": 6,
+     "easing": "accelerating",
+     "measured": "stroke px 253,1607,7568,9484,10980,11620; #ADD05C ~3px; x126-1104 y74-624@718",
+     "notes": ""
+    },
+    {
+     "target": "counter",
+     "props": [
+      "number"
+     ],
+     "start_f": 456,
+     "dur_f": 7,
+     "easing": "linear",
+     "measured": "84% -> 96% by f463",
+     "notes": ""
+    },
+    {
+     "target": "box fill + subject",
+     "props": [
+      "fill opacity",
+      "tint"
+     ],
+     "start_f": 458,
+     "dur_f": 23,
+     "easing": "8 f period sine-ish, 3 pulses",
+     "measured": "fill #EAF1DC, chassis #2C301B; peaks 462-463, 470-471, 478-479",
+     "notes": ""
+    },
+    {
+     "target": "scene",
+     "props": [
+      "y"
+     ],
+     "start_f": 473,
+     "dur_f": 9,
+     "easing": "expo-in",
+     "measured": "box top 56->0 px",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 482,
+   "end_f": 517,
+   "kind": "status-line",
+   "bg": "#FAF7FB",
+   "summary": "Spark + 'Frame is in perfect condition.' (bold) + ' This rig is a prime candidate for mods.' (regular gray), rise in, hold, exit up.",
+   "text": [
+    {
+     "str": "Frame is in perfect condition.",
+     "cap_pct": 4.32,
+     "weight": "700 bold",
+     "color": "#19171B",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "This rig is a prime candidate for mods.",
+     "cap_pct": 4.32,
+     "weight": "400",
+     "color": "#5E5C5F",
+     "align": "left",
+     "case": "sentence"
+    }
+   ],
+   "entry": {
+    "type": "rise + blur-in + fade",
+    "frames": 12,
+    "notes": "dy 63,52,43,36,29,24,19,15,12,7,3 (x0.82/f); sigma 1.5->0; opacity 0.21->1 by f489; gray part 3 f later"
+   },
+   "exit": {
+    "type": "accelerating up + blur",
+    "frames": 12
+   },
+   "transition_out": {
+    "type": "blank white beat",
+    "frames": 3,
+    "notes": "f516-518"
+   },
+   "animations": [
+    {
+     "target": "block",
+     "props": [
+      "y",
+      "blur",
+      "opacity"
+     ],
+     "start_f": 482,
+     "dur_f": 12,
+     "easing": "expo-out r=0.82",
+     "measured": "",
+     "notes": ""
+    },
+    {
+     "target": "block",
+     "props": [
+      "y",
+      "blur"
+     ],
+     "start_f": 504,
+     "dur_f": 12,
+     "easing": "expo-in x1.22/f",
+     "measured": "dy -9,-15,-23,-34,-50,-61,-75,-95; sigma->2",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 518,
+   "end_f": 552,
+   "kind": "status-line",
+   "bg": "#FAF7FB",
+   "summary": "Higgsfield lime icon + 'Using Higgsfield to calculate 3D geometry and testing suspension.' with wipe + warm colour ramp.",
+   "text": [
+    {
+     "str": "Using Higgsfield to calculate 3D geometry and testing suspension.",
+     "cap_pct": 4.87,
+     "weight": "400",
+     "color": "#5B4F5B",
+     "align": "left",
+     "case": "sentence"
+    }
+   ],
+   "entry": {
+    "type": "icon pop + L->R wipe + colour ramp + rise",
+    "frames": 8,
+    "notes": "line1 f519-523, line2 f523-525"
+   },
+   "exit": {
+    "type": "accelerating up",
+    "frames": 11
+   },
+   "transition_out": {
+    "type": "hard cut",
+    "frames": 0,
+    "notes": "f553"
+   },
+   "animations": [
+    {
+     "target": "lime icon",
+     "props": [
+      "scale",
+      "opacity"
+     ],
+     "start_f": 518,
+     "dur_f": 3,
+     "easing": "expo-out",
+     "measured": "61x61 px@718, #C0F64A gradient #C6F959->#BCF927, radius 13%",
+     "notes": ""
+    },
+    {
+     "target": "text colour",
+     "props": [
+      "color"
+     ],
+     "start_f": 519,
+     "dur_f": 18,
+     "easing": "keyframes",
+     "measured": "#E6E8B7 -> #C49C6F -> #BC255F (f526) -> #7C3654 (f531) -> #564B55 (f537)",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 553,
+   "end_f": 648,
+   "kind": "3d-render",
+   "bg": "cyclorama #D8D6DA top -> #FAF7FB floor",
+   "summary": "Pre-rendered build: chassis -> orange roll cage -> giant tyres -> monster truck, slow orbit; bottom-center lime icon with 4 sequential light-gray captions that wipe in L->R and erase R->L.",
+   "text": [
+    {
+     "str": "Building the suspension...",
+     "cap_pct": 2.58,
+     "weight": "500",
+     "color": "#A8A6A9",
+     "align": "center",
+     "case": "sentence"
+    },
+    {
+     "str": "Mapping body and wheel mounts...",
+     "cap_pct": 2.58,
+     "weight": "500",
+     "color": "#A8A6A9",
+     "align": "center",
+     "case": "sentence"
+    },
+    {
+     "str": "Adding oversized ...",
+     "cap_pct": 2.58,
+     "weight": "500",
+     "color": "#A8A6A9",
+     "align": "center",
+     "case": "sentence"
+    },
+    {
+     "str": "Reassembling the final build..",
+     "cap_pct": 2.58,
+     "weight": "500",
+     "color": "#A8A6A9",
+     "align": "center",
+     "case": "sentence"
+    }
+   ],
+   "entry": {
+    "type": "hard cut + blur-in + slide up",
+    "frames": 4,
+    "notes": "sharpness 148,460,567; ty -25px"
+   },
+   "exit": {
+    "type": "accelerating up",
+    "frames": 8
+   },
+   "transition_out": {
+    "type": "hard cut to white",
+    "frames": 0,
+    "notes": "f649"
+   },
+   "animations": [
+    {
+     "target": "icon",
+     "props": [
+      "y",
+      "opacity"
+     ],
+     "start_f": 553,
+     "dur_f": 6,
+     "easing": "expo-out",
+     "measured": "y 627->600 px@718; 33x33 px@718 (50@1080) at (50%,83.6%)",
+     "notes": ""
+    },
+    {
+     "target": "caption 1",
+     "props": [
+      "wipe in L->R",
+      "erase R->L"
+     ],
+     "start_f": 555,
+     "dur_f": 20,
+     "easing": "3 f in / 3 f out",
+     "measured": "in 555-557, out 572-575",
+     "notes": ""
+    },
+    {
+     "target": "caption 2",
+     "props": [
+      "wipe in",
+      "erase"
+     ],
+     "start_f": 576,
+     "dur_f": 22,
+     "easing": "",
+     "measured": "in 576-580, out 594-597",
+     "notes": ""
+    },
+    {
+     "target": "caption 3",
+     "props": [
+      "wipe in",
+      "erase"
+     ],
+     "start_f": 599,
+     "dur_f": 22,
+     "easing": "",
+     "measured": "in 599-602, out 617-620",
+     "notes": ""
+    },
+    {
+     "target": "caption 4",
+     "props": [
+      "wipe in",
+      "fade"
+     ],
+     "start_f": 621,
+     "dur_f": 27,
+     "easing": "",
+     "measured": "in 621-624, out 647",
+     "notes": ""
+    },
+    {
+     "target": "render",
+     "props": [
+      "camera orbit",
+      "pull-back"
+     ],
+     "start_f": 553,
+     "dur_f": 95,
+     "easing": "video asset",
+     "measured": "scale ~0.993 / 6 f",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 649,
+   "end_f": 684,
+   "kind": "status-line",
+   "bg": "#FAF7FB",
+   "summary": "Spark + semibold 'The truck is ready for any challenge.' then lime icon + 'Generating Monster Truck design visuals.' (magenta settling); whole block zooms out to a small top-left header.",
+   "text": [
+    {
+     "str": "The truck is ready for any challenge.",
+     "cap_pct": 5.57,
+     "weight": "600 semibold",
+     "color": "#5F5D60",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Generating Monster Truck design visuals.",
+     "cap_pct": 4.32,
+     "weight": "400",
+     "color": "#8A314B -> #514D4A",
+     "align": "left",
+     "case": "sentence"
+    }
+   ],
+   "entry": {
+    "type": "wipe + rise + colour ramp",
+    "frames": 8,
+    "notes": "line1 f649-656; line2 f662-670 (13 f later), icon pops first"
+   },
+   "exit": {
+    "type": "scale-down 1.0->0.53 + move to top-left",
+    "frames": 10
+   },
+   "transition_out": {
+    "type": "zoom-out into header of next layout (blurred double image at 683-684)",
+    "frames": 2,
+    "notes": "center (613,316)->(390,30) px@718"
+   },
+   "animations": [
+    {
+     "target": "line2",
+     "props": [
+      "mask wipe",
+      "color"
+     ],
+     "start_f": 662,
+     "dur_f": 19,
+     "easing": "linear wipe 7 f, colour ramp",
+     "measured": "x_max 432,542,647,759,847,925,1014,1023; colour ... #924254 (669) -> #514D4A (681)",
+     "notes": ""
+    },
+    {
+     "target": "block",
+     "props": [
+      "scale",
+      "x",
+      "y"
+     ],
+     "start_f": 675,
+     "dur_f": 10,
+     "easing": "accelerating then snap",
+     "measured": "scale 1.0 -> 0.53",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 685,
+   "end_f": 736,
+   "kind": "grid",
+   "bg": "#FAF7FB",
+   "summary": "2x2 grid of generated monster truck variants (red, green slime, silver skull, purple grin) pops in with 4 f stagger, camera pushes in 1.155x, green tile gets selected (bg darkens, lime border), grid blurs out.",
+   "text": [
+    {
+     "str": "The truck is ready for any challenge.",
+     "cap_pct": 2.92,
+     "weight": "600",
+     "color": "#5F5D60",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Generating Monster Truck design visuals.",
+     "cap_pct": 2.23,
+     "weight": "400",
+     "color": "#5F5D60",
+     "align": "left",
+     "case": "sentence"
+    }
+   ],
+   "entry": {
+    "type": "tile scale pops 0->1 with blur, 4 f stagger",
+    "frames": 16,
+    "notes": "TL 685, TR 689, BL 693, BR 697; TR width progress 0.29,0.59,0.74,0.83,0.89,0.93,0.96,0.98 (x0.62/f)"
+   },
+   "exit": {
+    "type": "gaussian blur-out",
+    "frames": 9
+   },
+   "transition_out": {
+    "type": "blank white beat",
+    "frames": 2,
+    "notes": "f737-738"
+   },
+   "animations": [
+    {
+     "target": "tiles",
+     "props": [
+      "scale",
+      "blur",
+      "y"
+     ],
+     "start_f": 685,
+     "dur_f": 16,
+     "easing": "expo-out r=0.62/f",
+     "measured": "tile 473x267 px@718 at f700 (16:9), gap 12, radius ~12, very soft shadow",
+     "notes": ""
+    },
+    {
+     "target": "grid camera",
+     "props": [
+      "scale"
+     ],
+     "start_f": 701,
+     "dur_f": 10,
+     "easing": "expo-out",
+     "measured": "1.155x (TL-TR distance 482->557)",
+     "notes": ""
+    },
+    {
+     "target": "header text",
+     "props": [
+      "y",
+      "opacity"
+     ],
+     "start_f": 700,
+     "dur_f": 6,
+     "easing": "expo-in",
+     "measured": "slides up out of frame",
+     "notes": ""
+    },
+    {
+     "target": "TR tile",
+     "props": [
+      "bg color"
+     ],
+     "start_f": 711,
+     "dur_f": 12,
+     "easing": "ease-out",
+     "measured": "#FAF7FB -> #737074 (#E1DFDE 713, #B5B4AD 715, #949291 717, #83817D 720)",
+     "notes": ""
+    },
+    {
+     "target": "TR tile",
+     "props": [
+      "border glow"
+     ],
+     "start_f": 722,
+     "dur_f": 15,
+     "easing": "hold",
+     "measured": "lime #D0D778 ~2px",
+     "notes": ""
+    },
+    {
+     "target": "grid",
+     "props": [
+      "blur"
+     ],
+     "start_f": 728,
+     "dur_f": 9,
+     "easing": "ease-in",
+     "measured": "sharpness 805 -> 134",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 737,
+   "end_f": 773,
+   "kind": "status-line",
+   "bg": "#FAF7FB",
+   "summary": "Lime Higgsfield icon + semibold 'Building the final 3D model' wipes in L->R with warm->magenta->gray ramp, rises, then shrinks into the video-card caption.",
+   "text": [
+    {
+     "str": "Building the final 3D model",
+     "cap_pct": 6.27,
+     "weight": "600 semibold",
+     "color": "#575158",
+     "align": "center (icon+text group)",
+     "case": "sentence"
+    }
+   ],
+   "entry": {
+    "type": "icon pop + feathered L->R wipe + colour ramp + rise",
+    "frames": 10,
+    "notes": "icon f739-741; text wipe ~7 f, feather ~150px@718; rise from ~+70px x0.8/f"
+   },
+   "exit": {
+    "type": "shrink to 0.43x and jump to top-left",
+    "frames": 4
+   },
+   "transition_out": {
+    "type": "text block becomes caption of video card",
+    "frames": 4,
+    "notes": "f773-776, blurred"
+   },
+   "animations": [
+    {
+     "target": "text",
+     "props": [
+      "color"
+     ],
+     "start_f": 742,
+     "dur_f": 15,
+     "easing": "keyframes",
+     "measured": "#E17B7C -> #C31F64 (748) -> #852A4E (750) -> #593C49 (755) -> #4A4247 (757)",
+     "notes": ""
+    },
+    {
+     "target": "block",
+     "props": [
+      "y"
+     ],
+     "start_f": 757,
+     "dur_f": 16,
+     "easing": "accelerating drift",
+     "measured": "-2 to -8 px/f",
+     "notes": ""
+    },
+    {
+     "target": "icon",
+     "props": [
+      "scale"
+     ],
+     "start_f": 739,
+     "dur_f": 3,
+     "easing": "expo-out",
+     "measured": "77x79 px@718 (116@1080)",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 774,
+   "end_f": 826,
+   "kind": "3d-render",
+   "bg": "#FAF7FB page; card content dark studio #1E2024-#3B4145",
+   "summary": "Rounded video card grows from top-left under small caption 'Building the final 3D model'; monster truck render recolours red->orange->yellow->green and turntables; group drifts up and blurs out.",
+   "text": [
+    {
+     "str": "Building the final 3D model",
+     "cap_pct": 1.95,
+     "weight": "600",
+     "color": "#575158",
+     "align": "left",
+     "case": "sentence"
+    }
+   ],
+   "entry": {
+    "type": "card scale from top-left anchor",
+    "frames": 14,
+    "notes": "width 0,379,580,707,793,856,902,938,964,985,1000,1010,1017,1020,1021 px@718 (x0.70/f)"
+   },
+   "exit": {
+    "type": "accelerating up + blur-out",
+    "frames": 21
+   },
+   "transition_out": {
+    "type": "blank white beat",
+    "frames": 2,
+    "notes": "f827-828"
+   },
+   "animations": [
+    {
+     "target": "card",
+     "props": [
+      "width",
+      "height (scale)"
+     ],
+     "start_f": 776,
+     "dur_f": 14,
+     "easing": "expo-out r=0.70/f",
+     "measured": "final 1021x574 px@718 (80%x80%), radius 42px@718 (63@1080), x127 y87",
+     "notes": ""
+    },
+    {
+     "target": "truck colour",
+     "props": [
+      "hue cycle (video)"
+     ],
+     "start_f": 777,
+     "dur_f": 15,
+     "easing": "~3 f per hue",
+     "measured": "red -> orange -> yellow -> lime green",
+     "notes": ""
+    },
+    {
+     "target": "turntable",
+     "props": [
+      "rotation (video)"
+     ],
+     "start_f": 792,
+     "dur_f": 34,
+     "easing": "linear",
+     "measured": "front -> 3/4 view",
+     "notes": ""
+    },
+    {
+     "target": "group",
+     "props": [
+      "y",
+      "blur"
+     ],
+     "start_f": 806,
+     "dur_f": 21,
+     "easing": "expo-in",
+     "measured": "card bottom 661 -> 576 px; blur f823-826",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 827,
+   "end_f": 873,
+   "kind": "chat-ui",
+   "bg": "#FAF7FB",
+   "summary": "Spark + question 'Compile a universal build guide?' wipes in; Yes (gray) and No (dark) pills pop with 4-5 f stagger; Yes is tapped (shrinks 0.78, turns coral), then block exits up.",
+   "text": [
+    {
+     "str": "Compile a universal build guide?",
+     "cap_pct": 4.87,
+     "weight": "400",
+     "color": "#574E57",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Yes",
+     "cap_pct": 5.99,
+     "weight": "400",
+     "color": "#5D5B5F",
+     "align": "center",
+     "case": "sentence"
+    },
+    {
+     "str": "No",
+     "cap_pct": 5.99,
+     "weight": "400",
+     "color": "#8D8B8E",
+     "align": "center",
+     "case": "sentence"
+    }
+   ],
+   "entry": {
+    "type": "wipe + colour ramp + pill pops",
+    "frames": 18,
+    "notes": "question 829-835; Yes from 829-830; No 834-847 width 27,83,140,177,201,218,232,241,249,254,258,261,263,264 (x0.70/f)"
+   },
+   "exit": {
+    "type": "accelerating up",
+    "frames": 10
+   },
+   "transition_out": {
+    "type": "hard cut (next card enters from below blurred)",
+    "frames": 0,
+    "notes": "f874"
+   },
+   "animations": [
+    {
+     "target": "question",
+     "props": [
+      "color"
+     ],
+     "start_f": 831,
+     "dur_f": 15,
+     "easing": "keyframes",
+     "measured": "#D7A895 -> #D16D64 -> #B9265C (837) -> #5F4B59 (846)",
+     "notes": ""
+    },
+    {
+     "target": "Yes pill",
+     "props": [
+      "scale",
+      "fill"
+     ],
+     "start_f": 856,
+     "dur_f": 8,
+     "easing": "1 f down, 5 f hold, 1-2 f up",
+     "measured": "scale 0.78; fill #CAC8CB -> #D67255 -> #CAC8CB",
+     "notes": ""
+    },
+    {
+     "target": "pills",
+     "props": [
+      "size"
+     ],
+     "start_f": 830,
+     "dur_f": 17,
+     "easing": "expo-out",
+     "measured": "Yes/No 264x126 px@718 (397x190@1080), fully rounded; Yes fill #CAC8CB, No fill #262327; gap 30px",
+     "notes": ""
+    },
+    {
+     "target": "block",
+     "props": [
+      "y"
+     ],
+     "start_f": 864,
+     "dur_f": 10,
+     "easing": "expo-in",
+     "measured": "pill bottom 483 -> 433",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 874,
+   "end_f": 897,
+   "kind": "chat-ui",
+   "bg": "#FAF7FB",
+   "summary": "File card 'Full Build Guide / Document ZIP' with 'Download \u2304' split button rises in blurred, settles, then scales toward camera with horizontal smear.",
+   "text": [
+    {
+     "str": "Full Build Guide",
+     "cap_pct": 3.9,
+     "weight": "600 semibold",
+     "color": "#727073",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Document  ZIP",
+     "cap_pct": 2.79,
+     "weight": "400",
+     "color": "#B3B1B4",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Download",
+     "cap_pct": 3.62,
+     "weight": "400",
+     "color": "#565357",
+     "align": "center",
+     "case": "sentence"
+    }
+   ],
+   "entry": {
+    "type": "rise from below + blur fade",
+    "frames": 17,
+    "notes": "center y 498,465,444,428,416,406,398,391,385,380,375,372,368,366,364,362,361 (x0.82/f); sharpness 5->24"
+   },
+   "exit": {
+    "type": "scale toward camera + horizontal motion blur",
+    "frames": 7
+   },
+   "transition_out": {
+    "type": "hard cut on hat tick",
+    "frames": 0,
+    "notes": "f898"
+   },
+   "animations": [
+    {
+     "target": "card",
+     "props": [
+      "y",
+      "blur"
+     ],
+     "start_f": 874,
+     "dur_f": 17,
+     "easing": "expo-out r=0.82/f",
+     "measured": "card 924x148 px@718 (1390x223@1080), fill #DFDDE0, radius ~20; button #C6C4C8 radius ~12",
+     "notes": ""
+    },
+    {
+     "target": "card",
+     "props": [
+      "scale",
+      "horizontal blur"
+     ],
+     "start_f": 891,
+     "dur_f": 7,
+     "easing": "expo-in x1.25/f",
+     "measured": "width 929,941,964,998,1048,1126,1254; gx/gy 1.0 -> 0.5",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 898,
+   "end_f": 989,
+   "kind": "end-card",
+   "bg": "AI footage: dark stadium, green monster truck (frame mean ~#2C2219)",
+   "summary": "Cinematic AI video of the green slime monster truck doing a stoppie/flip in an arena; static centered uppercase CTA.",
+   "text": [
+    {
+     "str": "TRY OPUS 5.5 ON CLAUDE WITH HIGGSFIELD MCP",
+     "cap_pct": 3.48,
+     "weight": "500 medium grotesk",
+     "color": "#FCFAF7",
+     "align": "center",
+     "case": "upper"
+    }
+   ],
+   "entry": {
+    "type": "hard cut",
+    "frames": 0,
+    "notes": "on hat tick, CTA present from first frame"
+   },
+   "exit": {
+    "type": "none (video ends)",
+    "frames": 0
+   },
+   "transition_out": {
+    "type": "end",
+    "frames": 0,
+    "notes": "no fade-out"
+   },
+   "animations": [
+    {
+     "target": "CTA",
+     "props": [
+      "none (static)"
+     ],
+     "start_f": 898,
+     "dur_f": 92,
+     "easing": "static",
+     "measured": "x228-1047 (64%W), y346-371 @718; cap 25px@718 (38@1080)",
+     "notes": ""
+    }
+   ]
+  }
+ ]
+}

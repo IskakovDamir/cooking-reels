@@ -1,0 +1,1523 @@
+{
+ "video": "v2",
+ "fps": 30,
+ "frames": 1399,
+ "resolution_measured": [
+  1276,
+  718
+ ],
+ "timebase_note": "footage clips are 25fps sources frame-duplicated into the 30fps timeline (dup every 5th frame); graphics native 30fps",
+ "palette": {
+  "bg": "#FBF9FC",
+  "pink": "#EE1174",
+  "lime": "#D4FF1F",
+  "lime_glow": "#ECFB66",
+  "ink": "#0C0309",
+  "claude_coral": "#D97757 (measured #D2745C)",
+  "bg_glow_lime": "#DEF760",
+  "bg_glow_pink": "#F38FBA"
+ },
+ "segments": [
+  {
+   "start_f": 0,
+   "end_f": 31,
+   "kind": "brand-intro",
+   "bg": "#FDF9FC + lime radial glow (0%W,75%H r25%W #DEF760) + pink radial glow (100%W,38%H r25%W #F38FBA) + peach corners #E1B48F/#E7C291 + white 3px dot grid 15.5px pitch masked to glows",
+   "summary": "Lockup build: PRODUCTION (pink), SKILLS, BUNDLE (black) stickers flip open from edge-on lines, Higgsfield logo draws on and wordmark scrambles in, serif tagline blurs in word by word; stickers re-pose to final mirrored perspective.",
+   "text": [
+    {
+     "str": "PRODUCTION",
+     "cap_pct": 17.0,
+     "weight": "900 extended grotesk, condensed by perspective",
+     "color": "#FFFFFF on #EE1174",
+     "align": "corner-pinned sticker (26.5,25.1)(72.3,14.8)(74.4,45.1)(24.3,38.0)",
+     "case": "upper"
+    },
+    {
+     "str": "SKILLS",
+     "cap_pct": 22.0,
+     "weight": "900 extended, letter-size jitter S K 1.0 / ILL 0.62 / S 0.8",
+     "color": "#FFFFFF on #000000",
+     "align": "sticker (12.5,36.5)(54.6,42.9)(55.6,59.2)(15.1,69.2)",
+     "case": "upper"
+    },
+    {
+     "str": "BUNDLE",
+     "cap_pct": 17.0,
+     "weight": "900 extended",
+     "color": "#FFFFFF on #000000",
+     "align": "sticker (30.4,63.0)(83.3,50.6)(83.5,79.5)(33.0,79.1)",
+     "case": "upper"
+    },
+    {
+     "str": "Higgsfield",
+     "cap_pct": 6.1,
+     "weight": "600 geometric grotesk wordmark + squiggle icon",
+     "color": "#000000",
+     "align": "center x~48%W, y 6.8-14.6%H",
+     "case": "sentence"
+    },
+    {
+     "str": "for \u2733 Claude Opus 5.5",
+     "cap_pct": 4.6,
+     "weight": "400 transitional serif (Tiempos/Copernicus)",
+     "color": "#111111 / icon #EC9F8C / 'Opus 5.5' #D87659",
+     "align": "center, x 30.6-69.7%W, y 82.2-90.1%H",
+     "case": "sentence"
+    }
+   ],
+   "entry": {
+    "type": "build from empty bg (PRODUCTION edge-on line visible at f1)",
+    "frames": 8,
+    "notes": "no fade; bg static"
+   },
+   "exit": {
+    "type": "seamless handoff to AI image-to-video clip (frame 31 is the seed still)",
+    "frames": 0
+   },
+   "transition_out": {
+    "type": "none (continuity)",
+    "frames": 0,
+    "notes": "5-frame hold 27-31"
+   },
+   "animations": [
+    {
+     "target": "PRODUCTION sticker",
+     "props": [
+      "rotateX 90->0 about bottom edge"
+     ],
+     "start_f": 1,
+     "dur_f": 7,
+     "easing": "cubic-bezier(0.97,0.02,0,0.95)",
+     "measured": "visible area 1.3,4.8,16,85,94,98,100% f2-8",
+     "notes": "full width from first frame (thin pink line)"
+    },
+    {
+     "target": "Higgsfield icon",
+     "props": [
+      "stroke draw-on"
+     ],
+     "start_f": 2,
+     "dur_f": 6,
+     "easing": "linear-ish",
+     "measured": "ink px 22,86,196,426,834,1161 f2-7",
+     "notes": "centred at x 47.7%W before sliding"
+    },
+    {
+     "target": "Higgsfield icon",
+     "props": [
+      "translateX -11.1%W"
+     ],
+     "start_f": 8,
+     "dur_f": 5,
+     "easing": "bezier(0.7,0,0.2,1)",
+     "measured": "progress 4,16,65,93,99,100% f8-13",
+     "notes": "2 f horizontal motion blur"
+    },
+    {
+     "target": "Higgsfield wordmark",
+     "props": [
+      "per-letter opacity+blur, random order"
+     ],
+     "start_f": 10,
+     "dur_f": 8,
+     "easing": "stepped",
+     "measured": "f10 'Hg', f11 'Hi g s', f13 'Higgs i', f16 'Higgsfiel', f17 full",
+     "notes": ""
+    },
+    {
+     "target": "SKILLS sticker",
+     "props": [
+      "rotateX 90->0 about bottom edge"
+     ],
+     "start_f": 11,
+     "dur_f": 7,
+     "easing": "cubic-bezier(0.97,0.02,0,0.95)",
+     "measured": "area 0.9,3.8,11.6,82,94,98,99% f11-17",
+     "notes": "stagger +10 f"
+    },
+    {
+     "target": "sticker group",
+     "props": [
+      "translateY -11.4%H",
+      "scale 1.13"
+     ],
+     "start_f": 12,
+     "dur_f": 4,
+     "easing": "snap expo-out",
+     "measured": "PRODUCTION centre y 330,318,261,254,252 (f12-16)",
+     "notes": "re-centre on each arrival"
+    },
+    {
+     "target": "BUNDLE sticker",
+     "props": [
+      "rotateX unfold",
+      "scaleX stretch",
+      "directional blur"
+     ],
+     "start_f": 18,
+     "dur_f": 5,
+     "easing": "snap",
+     "measured": "black bbox right edge 924,966,985,1011,1052,1059 px f18-23",
+     "notes": "heavy horizontal motion blur f21"
+    },
+    {
+     "target": "all stickers",
+     "props": [
+      "corner-pin pose A->B (perspective mirror)",
+      "type width change"
+     ],
+     "start_f": 21,
+     "dur_f": 6,
+     "easing": "snap with 2-3 f directional blur, stagger 1 f bottom-up",
+     "measured": "BUNDLE 21-22, SKILLS 22-23, PRODUCTION 23-27 (top edge 168,180,147,117,114)",
+     "notes": "pose A: left-near (left edge 195px, right 102px); pose B: right-near (93 vs 218 px)"
+    },
+    {
+     "target": "tagline words",
+     "props": [
+      "opacity",
+      "blur 8px->0 @1080"
+     ],
+     "start_f": 18,
+     "dur_f": 12,
+     "easing": "opacity 2f per word; blur ends f30 for all",
+     "measured": "icon 18, for 19-20, Claude 21, Opus 22, 5.5 23; sharpness ratio .12,.29,.44,.64,.75,.96 at f24,26,27,28,29,30",
+     "notes": "1-frame word stagger"
+    }
+   ]
+  },
+  {
+   "start_f": 32,
+   "end_f": 122,
+   "kind": "ai-video",
+   "bg": "same as previous (locked)",
+   "summary": "AI image-to-video continuation: two photoreal hands enter from the bottom (33-35), press/pinch the stickers and hold their corners; the sticker group snaps between poses on beats while logo/tagline stay locked.",
+   "text": [],
+   "entry": {
+    "type": "seamless continuation",
+    "frames": 0,
+    "notes": "no duplicate frames -> 30 fps native"
+   },
+   "exit": {
+    "type": "zoom-whip",
+    "frames": 7
+   },
+   "transition_out": {
+    "type": "zoom-whip (see next segment)",
+    "frames": 7,
+    "notes": ""
+   },
+   "animations": [
+    {
+     "target": "sticker group",
+     "props": [
+      "corner-pin pose snaps",
+      "scale \u00b116%",
+      "directional blur"
+     ],
+     "start_f": 76,
+     "dur_f": 46,
+     "easing": "2-4 f snaps",
+     "measured": "pink width 611->707 (76-80), 707->581 (85-88), 593->611 (99-102), 597->540 (107-110), 546->556 (114-115), 566->642 (119-121)",
+     "notes": "on beats 80, 102, 124 and off-beats ~86, ~108, ~120"
+    }
+   ]
+  },
+  {
+   "start_f": 123,
+   "end_f": 129,
+   "kind": "other",
+   "bg": "same",
+   "summary": "Zoom-whip exit: stickers then the whole frame push toward camera (expo-in) with CCW roll and directional motion blur.",
+   "text": [],
+   "entry": {
+    "type": "continuation",
+    "frames": 0,
+    "notes": ""
+   },
+   "exit": {
+    "type": "hard cut",
+    "frames": 0
+   },
+   "transition_out": {
+    "type": "zoom-whip + hard cut",
+    "frames": 7,
+    "notes": "cut at 130 on low-end hit"
+   },
+   "animations": [
+    {
+     "target": "frame (sticker group leads)",
+     "props": [
+      "scale",
+      "rotate",
+      "directional blur"
+     ],
+     "start_f": 122,
+     "dur_f": 8,
+     "easing": "expo-in",
+     "measured": "scale 1.00,1.02,1.08,1.17,1.34,1.56,~2.0,~2.9 (f122-129); rotate 0->-5deg; blur @1080 ~30,48,68,77 px (126-129) along -10deg axis",
+     "notes": "anchor (50%W,59%H); logo/tagline much less blurred"
+    }
+   ]
+  },
+  {
+   "start_f": 130,
+   "end_f": 164,
+   "kind": "other",
+   "bg": "#FBF9FC + lime glow (0%,63%) r38%W #D9F950, coral corner BL #ED818F, pink glow (100%,49%) r27%W #F28AB9, ochre corner TR #E2DB81, dot grid",
+   "summary": "Slash stamp at centre, slash sweeps left writing '/vectorize'; 10 slash commands stack as a list (newest pink, older black) and scroll up with accelerating motion blur.",
+   "text": [
+    {
+     "str": "/vectorize /project-sorter /cartoon-shaders /scene-builder /color-grading /use-touchdesigner /image-fixer /shot-cleanup /shot-composer /exploded-view",
+     "cap_pct": 4.7,
+     "weight": "900 extended grotesk (x-height 4.7%H)",
+     "color": "#0C0309 (newest #C02659 -> black over 8 f)",
+     "align": "left @12.1%W, line pitch 15.2%H",
+     "case": "lower"
+    }
+   ],
+   "entry": {
+    "type": "hard cut + slash stamp (1.9x -> 1x)",
+    "frames": 5,
+    "notes": "slash 56 px tall (7.8%H)"
+   },
+   "exit": {
+    "type": "accelerating scroll up + vertical motion blur",
+    "frames": 6
+   },
+   "transition_out": {
+    "type": "panel rise / header dock",
+    "frames": 20,
+    "notes": "footage panel slides up from bottom while list rolls into the header"
+   },
+   "animations": [
+    {
+     "target": "centre slash",
+     "props": [
+      "scale 1.9->1"
+     ],
+     "start_f": 130,
+     "dur_f": 5,
+     "easing": "quintOut",
+     "measured": "heights 107,81,69,61,56 px",
+     "notes": ""
+    },
+    {
+     "target": "slash",
+     "props": [
+      "translateX 50%W -> 13%W",
+      "horizontal smear"
+     ],
+     "start_f": 135,
+     "dur_f": 6,
+     "easing": "ease-in-out",
+     "measured": "x 638 (134) -> 285 (139) -> ~170 (141)",
+     "notes": "'vectorize' revealed to the right of the moving slash"
+    },
+    {
+     "target": "list lines",
+     "props": [
+      "slash stamp 2.3x->1x",
+      "color ramp",
+      "blur"
+     ],
+     "start_f": 138,
+     "dur_f": 30,
+     "easing": "per line 8 f ramp",
+     "measured": "onsets 138,140,144,148,152,157,161,165,167,168",
+     "notes": "ramp #C02659,#B50A53,#9E074B,#860642,#6C0333,#530228,#380119,#21010F,#020002 (t0..t8)"
+    },
+    {
+     "target": "list container",
+     "props": [
+      "translateY"
+     ],
+     "start_f": 146,
+     "dur_f": 20,
+     "easing": "ease-in (accelerating)",
+     "measured": "top y 328,316,281,206,140,94,34 at f146,150,154,158,160,161,162",
+     "notes": "then vertical blur 40-60 px"
+    }
+   ]
+  },
+  {
+   "start_f": 165,
+   "end_f": 184,
+   "kind": "other",
+   "bg": "header #FBF9FC + right lime glow; footage panel below",
+   "summary": "Footage panel (neon false-colour) rises from the bottom and docks under a 17.4%H header; list items '/shot-composer', '/exploded-view' roll into the header, then the title rolls to '/destruction-studio' written right-to-left behind a pink block cursor.",
+   "text": [
+    {
+     "str": "/exploded-view -> /destruction-studio",
+     "cap_pct": 4.6,
+     "weight": "900 extended grotesk (x-height 4.6%H; ascender 6.3%H)",
+     "color": "#0C0309",
+     "align": "left @7.6%W, baseline 12.1%H",
+     "case": "lower"
+    }
+   ],
+   "entry": {
+    "type": "panel slide-up",
+    "frames": 20,
+    "notes": "expo-out"
+   },
+   "exit": {
+    "type": "settles",
+    "frames": 0
+   },
+   "transition_out": {
+    "type": "none",
+    "frames": 0,
+    "notes": "false colour fades to real grade 170-181"
+   },
+   "animations": [
+    {
+     "target": "footage panel",
+     "props": [
+      "translateY 100%->17.4%H"
+     ],
+     "start_f": 165,
+     "dur_f": 20,
+     "easing": "cubic-bezier(0.08,0.42,0.14,1.0) (~expo-out)",
+     "measured": "top y 562,456,384,331,291,259,233,211,193,178,166,155,147,141,135,131,128,126,125 (166-184)",
+     "notes": "25 px leading-edge blur"
+    },
+    {
+     "target": "header title",
+     "props": [
+      "slot roll up",
+      "right-to-left reveal"
+     ],
+     "start_f": 174,
+     "dur_f": 8,
+     "easing": "stepped",
+     "measured": "175 'dio',176 'on-studio',177 'truction-studio',178 'struction-studio',179 'destruction-studio',180 '/destruction-studio'",
+     "notes": "pink 180-185, black by 188"
+    },
+    {
+     "target": "panel colour",
+     "props": [
+      "false-colour gradient map -> normal"
+     ],
+     "start_f": 170,
+     "dur_f": 12,
+     "easing": "linear",
+     "measured": "saturation 0.50 -> 0.06",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 185,
+   "end_f": 341,
+   "kind": "before-after",
+   "bg": "header bar + full-bleed footage",
+   "summary": "/destruction-studio: Blender car crash BEFORE -> lime energy-glow reveal -> real crash AFTER; hard cut 271 to Blender building BEFORE -> white-line diagonal wipe 297-322 -> real demolition AFTER.",
+   "text": [
+    {
+     "str": "/destruction-studio",
+     "cap_pct": 4.6,
+     "weight": "900 extended grotesk (x-height 4.6%H; ascender 6.3%H)",
+     "color": "#0C0309",
+     "align": "left @7.6%W, baseline 12.1%H",
+     "case": "lower"
+    },
+    {
+     "str": "Generates destruction scenes in Blender: car crashes, building and bridge collapses, and more. Configures fracturing, debris physics, breakable constraints, dust, and camera movement - driving the workflow from base model to final animation.",
+     "cap_pct": 1.5,
+     "weight": "500 neo-grotesk (Inter Medium)",
+     "color": "#100A0A",
+     "align": "left, block right edge 97.8%W, pitch 3.2%H",
+     "case": "sentence"
+    },
+    {
+     "str": "BEFORE",
+     "cap_pct": 3.2,
+     "weight": "900 extended",
+     "color": "#FFFFFF on #EE1174 skewX(-25deg) box 79.0-94.9%W x 86.6-91.9%H",
+     "align": "center",
+     "case": "upper"
+    },
+    {
+     "str": "AFTER",
+     "cap_pct": 3.2,
+     "weight": "900 extended",
+     "color": "#000000 on #D4FF1F skewX(-25deg) box",
+     "align": "center",
+     "case": "upper"
+    }
+   ],
+   "entry": {
+    "type": "(after panel dock)",
+    "frames": 0,
+    "notes": "header icon pops in 185-194"
+   },
+   "exit": {
+    "type": "thermal",
+    "frames": 26
+   },
+   "transition_out": {
+    "type": "thermal false-colour heat-map + blur crossfade",
+    "frames": 26,
+    "notes": "T1 342-367"
+   },
+   "animations": [
+    {
+     "target": "Claude spark icon",
+     "props": [
+      "scale 0->1",
+      "hue cycle",
+      "loop morph"
+     ],
+     "start_f": 185,
+     "dur_f": 25,
+     "easing": "quintOut ~16 f",
+     "measured": "width 8,25,35,43,48,52,56,58,58,60 px; colours #E9FF86 -> #D3D660 -> #D0A15E -> #CD665E -> #C93660 -> #CC6A62",
+     "notes": "then 30-frame pose loop"
+    },
+    {
+     "target": "description",
+     "props": [
+      "per-word reveal",
+      "blur 5->0px",
+      "color pink->#100A0A",
+      "caret '/'"
+     ],
+     "start_f": 186,
+     "dur_f": 40,
+     "easing": "linear typing",
+     "measured": "~233 chars at ~7.5 chars/frame (~225 chars/s); black-resolved trail ~6 f behind leading edge",
+     "notes": "black slash caret after last char"
+    },
+    {
+     "target": "BEFORE->AFTER (car)",
+     "props": [
+      "organic mask reveal",
+      "lime edge glow #ECFB66"
+     ],
+     "start_f": 211,
+     "dur_f": 12,
+     "easing": "fast reveal 6 f + 7 f glow decay",
+     "measured": "lime coverage 1.5,4.9,21,21,21,14,9,0% (212-222)",
+     "notes": "spreads from the pole (x~22%W) rightward"
+    },
+    {
+     "target": "tag",
+     "props": [
+      "char scramble centre-out",
+      "box color swap from centre",
+      "glow"
+     ],
+     "start_f": 211,
+     "dur_f": 7,
+     "easing": "stepped",
+     "measured": "f0 glitch line, f1-2 scrambled centre glyph, f3-4 lime band grows, f5 'BEFTRE', f6 partial lime box w/ glow, f7 clean",
+     "notes": "BEFORE->AFTER"
+    },
+    {
+     "target": "cut",
+     "props": [
+      "hard cut"
+     ],
+     "start_f": 271,
+     "dur_f": 0,
+     "easing": "-",
+     "measured": "hdiff 1.39",
+     "notes": "car AFTER -> building BEFORE"
+    },
+    {
+     "target": "white diagonal wipe",
+     "props": [
+      "x position",
+      "mask"
+     ],
+     "start_f": 297,
+     "dur_f": 26,
+     "easing": "in quintOut ~13 f, hold 3 f, out accelerate 11 f",
+     "measured": "x@55.7%H 155,289,400,478,532,573,598,617,630,638,644,646,647,651,657,668,684,707,739,784,850,945,1072 (298-320)",
+     "notes": "line #FFFBF8 ~12px@1080, 25deg"
+    },
+    {
+     "target": "tag",
+     "props": [
+      "char scramble centre-out",
+      "box color swap from centre",
+      "glow"
+     ],
+     "start_f": 314,
+     "dur_f": 7,
+     "easing": "stepped",
+     "measured": "f0 glitch line, f1-2 scrambled centre glyph, f3-4 lime band grows, f5 'BEFTRE', f6 partial lime box w/ glow, f7 clean",
+     "notes": "BEFORE->AFTER"
+    }
+   ]
+  },
+  {
+   "start_f": 342,
+   "end_f": 471,
+   "kind": "before-after",
+   "bg": "header bar + footage",
+   "summary": "T1 thermal into /color-grading: flat BEFORE grade of a woman in a cockpit -> lime diagonal wipe 405-434 -> graded AFTER with DaVinci node strip.",
+   "text": [
+    {
+     "str": "/color-grading",
+     "cap_pct": 4.6,
+     "weight": "900 extended grotesk (x-height 4.6%H; ascender 6.3%H)",
+     "color": "#0C0309",
+     "align": "left @7.6%W, baseline 12.1%H",
+     "case": "lower"
+    },
+    {
+     "str": "A color grading skill for DaVinci Resolve Studio. Analyzes shots and references to balance exposure, white balance, contrast, and saturation while preserving natural skin tones and shot-to-shot consistency. All generated node trees remain fully controllable.",
+     "cap_pct": 1.5,
+     "weight": "500 neo-grotesk (Inter Medium)",
+     "color": "#100A0A",
+     "align": "left, block right edge 97.8%W, pitch 3.2%H",
+     "case": "sentence"
+    },
+    {
+     "str": "BEFORE",
+     "cap_pct": 3.2,
+     "weight": "900 extended",
+     "color": "#FFFFFF on #EE1174 skewX(-25deg) box 79.0-94.9%W x 86.6-91.9%H",
+     "align": "center",
+     "case": "upper"
+    },
+    {
+     "str": "AFTER",
+     "cap_pct": 3.2,
+     "weight": "900 extended",
+     "color": "#000000 on #D4FF1F skewX(-25deg) box",
+     "align": "center",
+     "case": "upper"
+    }
+   ],
+   "entry": {
+    "type": "thermal heat-map blur transition",
+    "frames": 26,
+    "notes": "start on music onset 342"
+   },
+   "exit": {
+    "type": "thermal",
+    "frames": 26
+   },
+   "transition_out": {
+    "type": "thermal T2",
+    "frames": 25,
+    "notes": "472-496"
+   },
+   "animations": [
+    {
+     "target": "whole frame incl. header",
+     "props": [
+      "gaussian blur",
+      "gradient-map LUT (thermal)",
+      "posterize",
+      "crossfade"
+     ],
+     "start_f": 342,
+     "dur_f": 26,
+     "easing": "blur ramp ~linear 1.3px/f @1080 up, expo-out tail down",
+     "measured": "blur sigma@1080 1.5,3.1,4.7,6.1,7.3,8.2,8.7 over first 7 f; content swap 351-354; readable ~T+24; blur tail to T+45",
+     "notes": "LUT 0:#3A2729 .3:#3F2D31 .45:#4C4B52 .52:#772520 .6:#A60900 .67:#D03A01 .75:#E35800 .83:#EC7C02 .9:#F39F0E .95:#F5BD49 .98:#F7DFB8 1:#FAE8D3; leads into color-grading"
+    },
+    {
+     "target": "header title (slash-sweep reveal)",
+     "props": [
+      "x of slash",
+      "clip reveal",
+      "color ramp",
+      "blur"
+     ],
+     "start_f": 357,
+     "dur_f": 13,
+     "easing": "cubic-bezier(0.84,0,0.19,1)",
+     "measured": "slash x px@1276: 708,704,696,679,650,602,475,261,174,135,115,104,98,97 (55.5%W -> 7.6%W)",
+     "notes": "glyphs revealed to the right of the moving slash (title written right-to-left); colour yellow-orange -> pink -> crimson -> black by +18"
+    },
+    {
+     "target": "description",
+     "props": [
+      "per-word reveal",
+      "blur 5->0px",
+      "color pink->#100A0A",
+      "caret '/'"
+     ],
+     "start_f": 358,
+     "dur_f": 40,
+     "easing": "linear typing",
+     "measured": "~260 chars at ~7.5 chars/frame (~225 chars/s); black-resolved trail ~6 f behind leading edge",
+     "notes": "black slash caret after last char"
+    },
+    {
+     "target": "BEFORE tag entry",
+     "props": [
+      "centre-out char reveal",
+      "box grow",
+      "glow->sharp"
+     ],
+     "start_f": 359,
+     "dur_f": 5,
+     "easing": "stepped",
+     "measured": "359 1 char, 360 'FO', 361 'EFOR', 362 'BEFORE', 363 sharp",
+     "notes": ""
+    },
+    {
+     "target": "lime diagonal wipe line + AFTER mask",
+     "props": [
+      "x position",
+      "clip-path half-plane"
+     ],
+     "start_f": 405,
+     "dur_f": 30,
+     "easing": "in cubic-bezier(0.43,0.37,0.19,0.98) 15f, hold 2f at 50.9%W, out cubic-bezier(0.81,0.02,0.57,0.63) 14.5f",
+     "measured": "x@55.7%H px@1276: -95,-49,22,125,258,379,465,524,565,595,616,631,640,646,649,650,652,658,668,683,704,733,775,834,920,1041,1174,1278,1348,1392; peak 133px/f",
+     "notes": "line #D4FF1F ~12px@1080 thick, 25.1deg from vertical (dx/dy=-0.469); AFTER left of line (canonical)"
+    },
+    {
+     "target": "tag",
+     "props": [
+      "char scramble centre-out",
+      "box color swap from centre",
+      "glow"
+     ],
+     "start_f": 431,
+     "dur_f": 7,
+     "easing": "stepped",
+     "measured": "f0 glitch line, f1-2 scrambled centre glyph, f3-4 lime band grows, f5 'BEFTRE', f6 partial lime box w/ glow, f7 clean",
+     "notes": "BEFORE->AFTER"
+    }
+   ]
+  },
+  {
+   "start_f": 472,
+   "end_f": 552,
+   "kind": "3d-render",
+   "bg": "header bar + Blender renders on light grey",
+   "summary": "T2 thermal (bright render flashes orange) into /exploded-view: synth device render separating into layers; hard cuts 506 (macro) and 522 (wide exploded stack).",
+   "text": [
+    {
+     "str": "/exploded-view",
+     "cap_pct": 4.6,
+     "weight": "900 extended grotesk (x-height 4.6%H; ascender 6.3%H)",
+     "color": "#0C0309",
+     "align": "left @7.6%W, baseline 12.1%H",
+     "case": "lower"
+    },
+    {
+     "str": "Animates layer-by-layer assembly or disassembly of objects and full scenes in Blender. Perfect for high-impact product reveals that showcase internal mechanics, components, and device architecture.",
+     "cap_pct": 1.5,
+     "weight": "500 neo-grotesk (Inter Medium)",
+     "color": "#100A0A",
+     "align": "left, block right edge 97.8%W, pitch 3.2%H",
+     "case": "sentence"
+    }
+   ],
+   "entry": {
+    "type": "thermal",
+    "frames": 25,
+    "notes": "sat peak 0.84 at 483-484"
+   },
+   "exit": {
+    "type": "thermal",
+    "frames": 25
+   },
+   "transition_out": {
+    "type": "thermal T3",
+    "frames": 25,
+    "notes": "553-577"
+   },
+   "animations": [
+    {
+     "target": "whole frame incl. header",
+     "props": [
+      "gaussian blur",
+      "gradient-map LUT (thermal)",
+      "posterize",
+      "crossfade"
+     ],
+     "start_f": 472,
+     "dur_f": 26,
+     "easing": "blur ramp ~linear 1.3px/f @1080 up, expo-out tail down",
+     "measured": "blur sigma@1080 1.5,3.1,4.7,6.1,7.3,8.2,8.7 over first 7 f; content swap 480-486; readable ~T+24; blur tail to T+45",
+     "notes": "LUT 0:#3A2729 .3:#3F2D31 .45:#4C4B52 .52:#772520 .6:#A60900 .67:#D03A01 .75:#E35800 .83:#EC7C02 .9:#F39F0E .95:#F5BD49 .98:#F7DFB8 1:#FAE8D3; leads into exploded-view"
+    },
+    {
+     "target": "header title (slash-sweep reveal)",
+     "props": [
+      "x of slash",
+      "clip reveal",
+      "color ramp",
+      "blur"
+     ],
+     "start_f": 486,
+     "dur_f": 13,
+     "easing": "cubic-bezier(0.84,0,0.19,1)",
+     "measured": "slash x px@1276: 708,704,696,679,650,602,475,261,174,135,115,104,98,97 (55.5%W -> 7.6%W)",
+     "notes": "glyphs revealed to the right of the moving slash (title written right-to-left); colour yellow-orange -> pink -> crimson -> black by +18"
+    },
+    {
+     "target": "description",
+     "props": [
+      "per-word reveal",
+      "blur 5->0px",
+      "color pink->#100A0A",
+      "caret '/'"
+     ],
+     "start_f": 487,
+     "dur_f": 31,
+     "easing": "linear typing",
+     "measured": "~197 chars at ~7.5 chars/frame (~225 chars/s); black-resolved trail ~6 f behind leading edge",
+     "notes": "black slash caret after last char"
+    },
+    {
+     "target": "cuts",
+     "props": [
+      "hard cut"
+     ],
+     "start_f": 506,
+     "dur_f": 0,
+     "easing": "-",
+     "measured": "hdiff 0.62 (506), 0.78 (522)",
+     "notes": "no transition"
+    }
+   ]
+  },
+  {
+   "start_f": 553,
+   "end_f": 702,
+   "kind": "footage",
+   "bg": "header bar + VFX breakdown footage",
+   "summary": "T3 thermal into /shot-composer: plate -> alpha matte -> composite on hills -> sky plate -> final, via four source-baked 45-degree lime hairline linear wipes moving right-to-left.",
+   "text": [
+    {
+     "str": "/shot-composer",
+     "cap_pct": 4.6,
+     "weight": "900 extended grotesk (x-height 4.6%H; ascender 6.3%H)",
+     "color": "#0C0309",
+     "align": "left @7.6%W, baseline 12.1%H",
+     "case": "lower"
+    },
+    {
+     "str": "A skill for crafting VFX shots in After Effects. Works with green screen footage or existing layers, generating missing pass layers motion-matched to the source video as needed.",
+     "cap_pct": 1.5,
+     "weight": "500 neo-grotesk (Inter Medium)",
+     "color": "#100A0A",
+     "align": "left, block right edge 97.8%W, pitch 3.2%H",
+     "case": "sentence"
+    }
+   ],
+   "entry": {
+    "type": "thermal",
+    "frames": 25,
+    "notes": ""
+   },
+   "exit": {
+    "type": "thermal",
+    "frames": 25
+   },
+   "transition_out": {
+    "type": "thermal T4",
+    "frames": 25,
+    "notes": "703-728"
+   },
+   "animations": [
+    {
+     "target": "whole frame incl. header",
+     "props": [
+      "gaussian blur",
+      "gradient-map LUT (thermal)",
+      "posterize",
+      "crossfade"
+     ],
+     "start_f": 553,
+     "dur_f": 26,
+     "easing": "blur ramp ~linear 1.3px/f @1080 up, expo-out tail down",
+     "measured": "blur sigma@1080 1.5,3.1,4.7,6.1,7.3,8.2,8.7 over first 7 f; content swap 565-569; readable ~T+24; blur tail to T+45",
+     "notes": "LUT 0:#3A2729 .3:#3F2D31 .45:#4C4B52 .52:#772520 .6:#A60900 .67:#D03A01 .75:#E35800 .83:#EC7C02 .9:#F39F0E .95:#F5BD49 .98:#F7DFB8 1:#FAE8D3; leads into shot-composer"
+    },
+    {
+     "target": "header title (slash-sweep reveal)",
+     "props": [
+      "x of slash",
+      "clip reveal",
+      "color ramp",
+      "blur"
+     ],
+     "start_f": 569,
+     "dur_f": 13,
+     "easing": "cubic-bezier(0.84,0,0.19,1)",
+     "measured": "slash x px@1276: 708,704,696,679,650,602,475,261,174,135,115,104,98,97 (55.5%W -> 7.6%W)",
+     "notes": "glyphs revealed to the right of the moving slash (title written right-to-left); colour yellow-orange -> pink -> crimson -> black by +18"
+    },
+    {
+     "target": "description",
+     "props": [
+      "per-word reveal",
+      "blur 5->0px",
+      "color pink->#100A0A",
+      "caret '/'"
+     ],
+     "start_f": 570,
+     "dur_f": 34,
+     "easing": "linear typing",
+     "measured": "~178 chars at ~7.5 chars/frame (~225 chars/s); black-resolved trail ~6 f behind leading edge",
+     "notes": "black slash caret after last char"
+    },
+    {
+     "target": "45deg hairline wipes (baked, 25fps source)",
+     "props": [
+      "x position linear"
+     ],
+     "start_f": 577,
+     "dur_f": 119,
+     "easing": "linear",
+     "measured": "W1 577-602 (88px/src f), W2 614-642 (80), W3 652-670 (120), W4 672-695 (92); x@y400 e.g. 1488 (577) -> -260 (602)",
+     "notes": "line #E7F360-#F5FF6E ~3px@1080, 45deg top-left to bottom-right"
+    }
+   ]
+  },
+  {
+   "start_f": 703,
+   "end_f": 875,
+   "kind": "before-after",
+   "bg": "header bar + footage",
+   "summary": "T4 thermal into /shot-cleanup: valley with construction BEFORE -> lime wipe -> clean AFTER; hard cut 794 to studio BEFORE -> lime wipe -> clean AFTER.",
+   "text": [
+    {
+     "str": "/shot-cleanup",
+     "cap_pct": 4.6,
+     "weight": "900 extended grotesk (x-height 4.6%H; ascender 6.3%H)",
+     "color": "#0C0309",
+     "align": "left @7.6%W, baseline 12.1%H",
+     "case": "lower"
+    },
+    {
+     "str": "A dedicated skill for cleaning up plates in After Effects. Removes markers, unwanted objects while seamlessly reconstructing clean plates, matching texture.",
+     "cap_pct": 1.5,
+     "weight": "500 neo-grotesk (Inter Medium)",
+     "color": "#100A0A",
+     "align": "left, block right edge 97.8%W, pitch 3.2%H",
+     "case": "sentence"
+    },
+    {
+     "str": "BEFORE",
+     "cap_pct": 3.2,
+     "weight": "900 extended",
+     "color": "#FFFFFF on #EE1174 skewX(-25deg) box 79.0-94.9%W x 86.6-91.9%H",
+     "align": "center",
+     "case": "upper"
+    },
+    {
+     "str": "AFTER",
+     "cap_pct": 3.2,
+     "weight": "900 extended",
+     "color": "#000000 on #D4FF1F skewX(-25deg) box",
+     "align": "center",
+     "case": "upper"
+    }
+   ],
+   "entry": {
+    "type": "thermal",
+    "frames": 25,
+    "notes": ""
+   },
+   "exit": {
+    "type": "thermal",
+    "frames": 25
+   },
+   "transition_out": {
+    "type": "thermal T5",
+    "frames": 25,
+    "notes": "876-900"
+   },
+   "animations": [
+    {
+     "target": "whole frame incl. header",
+     "props": [
+      "gaussian blur",
+      "gradient-map LUT (thermal)",
+      "posterize",
+      "crossfade"
+     ],
+     "start_f": 703,
+     "dur_f": 26,
+     "easing": "blur ramp ~linear 1.3px/f @1080 up, expo-out tail down",
+     "measured": "blur sigma@1080 1.5,3.1,4.7,6.1,7.3,8.2,8.7 over first 7 f; content swap 711-713; readable ~T+24; blur tail to T+45",
+     "notes": "LUT 0:#3A2729 .3:#3F2D31 .45:#4C4B52 .52:#772520 .6:#A60900 .67:#D03A01 .75:#E35800 .83:#EC7C02 .9:#F39F0E .95:#F5BD49 .98:#F7DFB8 1:#FAE8D3; leads into shot-cleanup"
+    },
+    {
+     "target": "header title (slash-sweep reveal)",
+     "props": [
+      "x of slash",
+      "clip reveal",
+      "color ramp",
+      "blur"
+     ],
+     "start_f": 717,
+     "dur_f": 13,
+     "easing": "cubic-bezier(0.84,0,0.19,1)",
+     "measured": "slash x px@1276: 708,704,696,679,650,602,475,261,174,135,115,104,98,97 (55.5%W -> 7.6%W)",
+     "notes": "glyphs revealed to the right of the moving slash (title written right-to-left); colour yellow-orange -> pink -> crimson -> black by +18"
+    },
+    {
+     "target": "description",
+     "props": [
+      "per-word reveal",
+      "blur 5->0px",
+      "color pink->#100A0A",
+      "caret '/'"
+     ],
+     "start_f": 718,
+     "dur_f": 27,
+     "easing": "linear typing",
+     "measured": "~152 chars at ~7.5 chars/frame (~225 chars/s); black-resolved trail ~6 f behind leading edge",
+     "notes": "black slash caret after last char"
+    },
+    {
+     "target": "lime diagonal wipe line + AFTER mask",
+     "props": [
+      "x position",
+      "clip-path half-plane"
+     ],
+     "start_f": 748,
+     "dur_f": 30,
+     "easing": "in cubic-bezier(0.43,0.37,0.19,0.98) 15f, hold 2f at 50.9%W, out cubic-bezier(0.81,0.02,0.57,0.63) 14.5f",
+     "measured": "x@55.7%H px@1276: -95,-49,22,125,258,379,465,524,565,595,616,631,640,646,649,650,652,658,668,683,704,733,775,834,920,1041,1174,1278,1348,1392; peak 133px/f",
+     "notes": "line #D4FF1F ~12px@1080 thick, 25.1deg from vertical (dx/dy=-0.469); AFTER left of line (valley)"
+    },
+    {
+     "target": "tag",
+     "props": [
+      "char scramble centre-out",
+      "box color swap from centre",
+      "glow"
+     ],
+     "start_f": 765,
+     "dur_f": 7,
+     "easing": "stepped",
+     "measured": "f0 glitch line, f1-2 scrambled centre glyph, f3-4 lime band grows, f5 'BEFTRE', f6 partial lime box w/ glow, f7 clean",
+     "notes": "BEFORE->AFTER"
+    },
+    {
+     "target": "cut",
+     "props": [
+      "hard cut"
+     ],
+     "start_f": 794,
+     "dur_f": 0,
+     "easing": "-",
+     "measured": "hdiff 0.73",
+     "notes": "tag snaps to BEFORE"
+    },
+    {
+     "target": "lime diagonal wipe line + AFTER mask",
+     "props": [
+      "x position",
+      "clip-path half-plane"
+     ],
+     "start_f": 837,
+     "dur_f": 30,
+     "easing": "in cubic-bezier(0.43,0.37,0.19,0.98) 15f, hold 2f at 50.9%W, out cubic-bezier(0.81,0.02,0.57,0.63) 14.5f",
+     "measured": "x@55.7%H px@1276: -95,-49,22,125,258,379,465,524,565,595,616,631,640,646,649,650,652,658,668,683,704,733,775,834,920,1041,1174,1278,1348,1392; peak 133px/f",
+     "notes": "line #D4FF1F ~12px@1080 thick, 25.1deg from vertical (dx/dy=-0.469); AFTER left of line (studio; 1 f slower start)"
+    },
+    {
+     "target": "tag",
+     "props": [
+      "char scramble centre-out",
+      "box color swap from centre",
+      "glow"
+     ],
+     "start_f": 852,
+     "dur_f": 7,
+     "easing": "stepped",
+     "measured": "f0 glitch line, f1-2 scrambled centre glyph, f3-4 lime band grows, f5 'BEFTRE', f6 partial lime box w/ glow, f7 clean",
+     "notes": "BEFORE->AFTER"
+    }
+   ]
+  },
+  {
+   "start_f": 876,
+   "end_f": 1003,
+   "kind": "before-after",
+   "bg": "header bar + still images",
+   "summary": "T5 thermal into /image-fixer: portrait still BEFORE -> fast lime wipe -> AFTER; line-less 25-degree diagonal slide to kitchen still BEFORE -> fast lime wipe -> AFTER.",
+   "text": [
+    {
+     "str": "/image-fixer",
+     "cap_pct": 4.6,
+     "weight": "900 extended grotesk (x-height 4.6%H; ascender 6.3%H)",
+     "color": "#0C0309",
+     "align": "left @7.6%W, baseline 12.1%H",
+     "case": "lower"
+    },
+    {
+     "str": "Cleans up unnatural textures or unwanted objects from sets, smooths surfaces, fixes visual anomalies, and enhances detail in noisy areas.",
+     "cap_pct": 1.5,
+     "weight": "500 neo-grotesk (Inter Medium)",
+     "color": "#100A0A",
+     "align": "left, block right edge 97.8%W, pitch 3.2%H",
+     "case": "sentence"
+    },
+    {
+     "str": "BEFORE",
+     "cap_pct": 3.2,
+     "weight": "900 extended",
+     "color": "#FFFFFF on #EE1174 skewX(-25deg) box 79.0-94.9%W x 86.6-91.9%H",
+     "align": "center",
+     "case": "upper"
+    },
+    {
+     "str": "AFTER",
+     "cap_pct": 3.2,
+     "weight": "900 extended",
+     "color": "#000000 on #D4FF1F skewX(-25deg) box",
+     "align": "center",
+     "case": "upper"
+    }
+   ],
+   "entry": {
+    "type": "thermal",
+    "frames": 25,
+    "notes": ""
+   },
+   "exit": {
+    "type": "thermal",
+    "frames": 25
+   },
+   "transition_out": {
+    "type": "thermal T6",
+    "frames": 25,
+    "notes": "1004-1028"
+   },
+   "animations": [
+    {
+     "target": "whole frame incl. header",
+     "props": [
+      "gaussian blur",
+      "gradient-map LUT (thermal)",
+      "posterize",
+      "crossfade"
+     ],
+     "start_f": 876,
+     "dur_f": 26,
+     "easing": "blur ramp ~linear 1.3px/f @1080 up, expo-out tail down",
+     "measured": "blur sigma@1080 1.5,3.1,4.7,6.1,7.3,8.2,8.7 over first 7 f; content swap 881-886; readable ~T+24; blur tail to T+45",
+     "notes": "LUT 0:#3A2729 .3:#3F2D31 .45:#4C4B52 .52:#772520 .6:#A60900 .67:#D03A01 .75:#E35800 .83:#EC7C02 .9:#F39F0E .95:#F5BD49 .98:#F7DFB8 1:#FAE8D3; leads into image-fixer"
+    },
+    {
+     "target": "header title (slash-sweep reveal)",
+     "props": [
+      "x of slash",
+      "clip reveal",
+      "color ramp",
+      "blur"
+     ],
+     "start_f": 890,
+     "dur_f": 13,
+     "easing": "cubic-bezier(0.84,0,0.19,1)",
+     "measured": "slash x px@1276: 708,704,696,679,650,602,475,261,174,135,115,104,98,97 (55.5%W -> 7.6%W)",
+     "notes": "glyphs revealed to the right of the moving slash (title written right-to-left); colour yellow-orange -> pink -> crimson -> black by +18"
+    },
+    {
+     "target": "description",
+     "props": [
+      "per-word reveal",
+      "blur 5->0px",
+      "color pink->#100A0A",
+      "caret '/'"
+     ],
+     "start_f": 891,
+     "dur_f": 25,
+     "easing": "linear typing",
+     "measured": "~137 chars at ~7.5 chars/frame (~225 chars/s); black-resolved trail ~6 f behind leading edge",
+     "notes": "black slash caret after last char"
+    },
+    {
+     "target": "lime diagonal wipe line + AFTER mask",
+     "props": [
+      "x position",
+      "clip-path half-plane"
+     ],
+     "start_f": 903,
+     "dur_f": 23,
+     "easing": "in cubic-bezier(0.44,0.56,0.24,0.94) 11f, hold 2f, out mirrored 10f",
+     "measured": "x@55.7%H px@1276: -82,-62,22,157,322,446,524,574,606,627,640,647,649,651,658,671,692,725,775,852,977,1142,1277,1362",
+     "notes": "line #D4FF1F 12px@1080, 25.1deg from vertical (top right); AFTER on the left (portrait)"
+    },
+    {
+     "target": "tag",
+     "props": [
+      "char scramble centre-out",
+      "box color swap from centre",
+      "glow"
+     ],
+     "start_f": 919,
+     "dur_f": 7,
+     "easing": "stepped",
+     "measured": "f0 glitch line, f1-2 scrambled centre glyph, f3-4 lime band grows, f5 'BEFTRE', f6 partial lime box w/ glow, f7 clean",
+     "notes": "BEFORE->AFTER"
+    },
+    {
+     "target": "diagonal slide (no line)",
+     "props": [
+      "mask edge x"
+     ],
+     "start_f": 948,
+     "dur_f": 8,
+     "easing": "ease-in-out, peak 288px/f @1276",
+     "measured": "edge x@y400 180,424,712,948,1124,1244 (950-955)",
+     "notes": "25-28deg edge, incoming still static (no push)"
+    },
+    {
+     "target": "tag",
+     "props": [
+      "char scramble centre-out",
+      "box color swap from centre",
+      "glow"
+     ],
+     "start_f": 953,
+     "dur_f": 7,
+     "easing": "stepped",
+     "measured": "f0 glitch line, f1-2 scrambled centre glyph, f3-4 lime band grows, f5 'BEFTRE', f6 partial lime box w/ glow, f7 clean",
+     "notes": "AFTER->BEFORE"
+    },
+    {
+     "target": "lime diagonal wipe line + AFTER mask",
+     "props": [
+      "x position",
+      "clip-path half-plane"
+     ],
+     "start_f": 975,
+     "dur_f": 23,
+     "easing": "in cubic-bezier(0.44,0.56,0.24,0.94) 11f, hold 2f, out mirrored 10f",
+     "measured": "x@55.7%H px@1276: -82,-62,22,157,322,446,524,574,606,627,640,647,649,651,658,671,692,725,775,852,977,1142,1277,1362",
+     "notes": "line #D4FF1F 12px@1080, 25.1deg from vertical (top right); AFTER on the left (kitchen)"
+    },
+    {
+     "target": "tag",
+     "props": [
+      "char scramble centre-out",
+      "box color swap from centre",
+      "glow"
+     ],
+     "start_f": 989,
+     "dur_f": 7,
+     "easing": "stepped",
+     "measured": "f0 glitch line, f1-2 scrambled centre glyph, f3-4 lime band grows, f5 'BEFTRE', f6 partial lime box w/ glow, f7 clean",
+     "notes": "BEFORE->AFTER"
+    }
+   ]
+  },
+  {
+   "start_f": 1004,
+   "end_f": 1183,
+   "kind": "footage",
+   "bg": "header bar + AI footage",
+   "summary": "T6 thermal into /use-touchdesigner: continuous shot of a person holding a sheet with live magenta/green video FX; ends with linear fade to off-white.",
+   "text": [
+    {
+     "str": "/use-touchdesigner",
+     "cap_pct": 4.6,
+     "weight": "900 extended grotesk (x-height 4.6%H; ascender 6.3%H)",
+     "color": "#0C0309",
+     "align": "left @7.6%W, baseline 12.1%H",
+     "case": "lower"
+    },
+    {
+     "str": "Simplifies TouchDesigner workflows by creating, tweaking, and controlling real-time video FX via an AI agent. Select effects from the library or describe them using text or image references.",
+     "cap_pct": 1.5,
+     "weight": "500 neo-grotesk (Inter Medium)",
+     "color": "#100A0A",
+     "align": "left, block right edge 97.8%W, pitch 3.2%H",
+     "case": "sentence"
+    }
+   ],
+   "entry": {
+    "type": "thermal",
+    "frames": 25,
+    "notes": ""
+   },
+   "exit": {
+    "type": "fade to #FBF9FC",
+    "frames": 8
+   },
+   "transition_out": {
+    "type": "linear dip to off-white",
+    "frames": 8,
+    "notes": "1176-1184, mean +15.3/frame"
+   },
+   "animations": [
+    {
+     "target": "whole frame incl. header",
+     "props": [
+      "gaussian blur",
+      "gradient-map LUT (thermal)",
+      "posterize",
+      "crossfade"
+     ],
+     "start_f": 1004,
+     "dur_f": 26,
+     "easing": "blur ramp ~linear 1.3px/f @1080 up, expo-out tail down",
+     "measured": "blur sigma@1080 1.5,3.1,4.7,6.1,7.3,8.2,8.7 over first 7 f; content swap 1013-1018; readable ~T+24; blur tail to T+45",
+     "notes": "LUT 0:#3A2729 .3:#3F2D31 .45:#4C4B52 .52:#772520 .6:#A60900 .67:#D03A01 .75:#E35800 .83:#EC7C02 .9:#F39F0E .95:#F5BD49 .98:#F7DFB8 1:#FAE8D3; leads into use-touchdesigner"
+    },
+    {
+     "target": "header title (slash-sweep reveal)",
+     "props": [
+      "x of slash",
+      "clip reveal",
+      "color ramp",
+      "blur"
+     ],
+     "start_f": 1019,
+     "dur_f": 13,
+     "easing": "cubic-bezier(0.84,0,0.19,1)",
+     "measured": "slash x px@1276: 708,704,696,679,650,602,475,261,174,135,115,104,98,97 (55.5%W -> 7.6%W)",
+     "notes": "glyphs revealed to the right of the moving slash (title written right-to-left); colour yellow-orange -> pink -> crimson -> black by +18"
+    },
+    {
+     "target": "description",
+     "props": [
+      "per-word reveal",
+      "blur 5->0px",
+      "color pink->#100A0A",
+      "caret '/'"
+     ],
+     "start_f": 1020,
+     "dur_f": 33,
+     "easing": "linear typing",
+     "measured": "~190 chars at ~7.5 chars/frame (~225 chars/s); black-resolved trail ~6 f behind leading edge",
+     "notes": "black slash caret after last char"
+    },
+    {
+     "target": "white overlay",
+     "props": [
+      "opacity 0->1"
+     ],
+     "start_f": 1176,
+     "dur_f": 8,
+     "easing": "linear",
+     "measured": "frame mean 130,146,161,176,191,207,222,238,253",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 1184,
+   "end_f": 1261,
+   "kind": "title-card",
+   "bg": "#FBF9FC flat",
+   "summary": "End lockup: S1 build replayed (no tagline), then lockup shrinks to 0.67x and rises while a 4-line paragraph types in below; 15-frame hold.",
+   "text": [
+    {
+     "str": "PRODUCTION / SKILLS / BUNDLE + Higgsfield",
+     "cap_pct": 11.0,
+     "weight": "as S1",
+     "color": "as S1",
+     "align": "centre, stickers 27.4-70.3%W x 19.5-57.7%H after shrink",
+     "case": "upper"
+    },
+    {
+     "str": "Proprietary Higgsfield skills built for Claude Opus 5.5 that dramatically accelerate workflows in professional creative software and supercharge production processes for teams of any size.",
+     "cap_pct": 3.1,
+     "weight": "500 neo-grotesk",
+     "color": "#090308",
+     "align": "left @16.7%W, first line top 64.8%H, pitch 6.3%H",
+     "case": "sentence"
+    }
+   ],
+   "entry": {
+    "type": "lockup build (= S1 f1-29)",
+    "frames": 29,
+    "notes": "offset 1183"
+   },
+   "exit": {
+    "type": "giant pink slash wipe",
+    "frames": 4
+   },
+   "transition_out": {
+    "type": "giant slash wipe R->L with echo trail",
+    "frames": 4,
+    "notes": "1262-1265"
+   },
+   "animations": [
+    {
+     "target": "lockup",
+     "props": [
+      "scale 1->0.67",
+      "translateY -17px@1276"
+     ],
+     "start_f": 1213,
+     "dur_f": 11,
+     "easing": "cubic-bezier(0.09,0.72,0,0.93) (~expoOut 10 f)",
+     "measured": "pink width 586,471,440,426,418,412,407,403,401,399,398",
+     "notes": "1 f motion blur at 1214"
+    },
+    {
+     "target": "paragraph",
+     "props": [
+      "word reveal",
+      "blur 6->0",
+      "color lime->pink->black",
+      "caret '/'"
+     ],
+     "start_f": 1214,
+     "dur_f": 34,
+     "easing": "linear typing ~7.8 chars/f",
+     "measured": "leading edge 1214->~1238; all black 1247",
+     "notes": "first words born lime-yellow"
+    }
+   ]
+  },
+  {
+   "start_f": 1262,
+   "end_f": 1340,
+   "kind": "other",
+   "bg": "#FBF9FC flat",
+   "summary": "Giant pink slash sweeps right-to-left erasing the lockup, decelerates top-left, shrinks and darkens into the black cursor; 9 slash commands stack (centred-left column) and scroll up with ghost-echo motion blur.",
+   "text": [
+    {
+     "str": "/project-sorter /vectorize /cartoon-shaders /scene-builder /color-grading /use-touchdesigner /shot-cleanup /shot-composer /exploded-view",
+     "cap_pct": 2.4,
+     "weight": "900 extended grotesk (x-height 2.4%H)",
+     "color": "#000000 (new item #CD6C91 -> black over 5 f)",
+     "align": "left, slash @37.9%W, text @40.7%W, pitch 9.75%H",
+     "case": "lower"
+    }
+   ],
+   "entry": {
+    "type": "giant slash wipe",
+    "frames": 4,
+    "notes": "#EE1174, full frame height"
+   },
+   "exit": {
+    "type": "scroll-up with motion blur + echo",
+    "frames": 8
+   },
+   "transition_out": {
+    "type": "hard cut",
+    "frames": 0,
+    "notes": "to end card at 1341"
+   },
+   "animations": [
+    {
+     "target": "giant slash",
+     "props": [
+      "translateX R->L",
+      "echo trail mask"
+     ],
+     "start_f": 1262,
+     "dur_f": 4,
+     "easing": "fast, decelerating",
+     "measured": "centre ~70%W (1263), ~35% (1264), ~12% (1265)",
+     "notes": "lockup visible only left of slash"
+    },
+    {
+     "target": "giant slash",
+     "props": [
+      "scale ~13x->1x",
+      "color #D4006D->#40001E->black",
+      "drift to (9%W,50%H)"
+     ],
+     "start_f": 1265,
+     "dur_f": 12,
+     "easing": "expo-out",
+     "measured": "x-extent 405,302,239,201,176,159,147,138 px (1265-1272)",
+     "notes": "becomes 55 px cursor by 1277"
+    },
+    {
+     "target": "cursor",
+     "props": [
+      "translateX 8%->37.9%W"
+     ],
+     "start_f": 1277,
+     "dur_f": 11,
+     "easing": "ease-in then snap with smear",
+     "measured": "x 99,103,107,112,120,130,144,166,...,483",
+     "notes": ""
+    },
+    {
+     "target": "list lines",
+     "props": [
+      "scaleY unfold (dots->glyphs)",
+      "color ramp 5 f",
+      "caret"
+     ],
+     "start_f": 1283,
+     "dur_f": 52,
+     "easing": "per item",
+     "measured": "onsets 1283,1290,1297,1303,1308,1314,1319,1326,1331",
+     "notes": ""
+    },
+    {
+     "target": "list container",
+     "props": [
+      "translateY",
+      "vertical motion blur",
+      "ghost echo"
+     ],
+     "start_f": 1295,
+     "dur_f": 46,
+     "easing": "ease-in (quad)",
+     "measured": "first line top 338,331,295,220,144,72,27,1 at 1295,1300,1310,1320,1326,1330,1332,1333",
+     "notes": "exits top by 1340"
+    }
+   ]
+  },
+  {
+   "start_f": 1341,
+   "end_f": 1398,
+   "kind": "end-card",
+   "bg": "#FBF9FC flat",
+   "summary": "Two centred uppercase lines slide up 13.9%H into the centre over 10 frames and hold for 49 frames while music fades out.",
+   "text": [
+    {
+     "str": "PRODUCTION SKILLS BUNDLE FOR CLAUDE OPUS 5.5",
+     "cap_pct": 3.5,
+     "weight": "400 neo-grotesk (Inter)",
+     "color": "#030104",
+     "align": "center, x 16.2-83.1%W, cap top 44.3%H",
+     "case": "upper"
+    },
+    {
+     "str": "AVAILABLE NOW ON HIGGSFIELD.AI",
+     "cap_pct": 3.5,
+     "weight": "400 neo-grotesk",
+     "color": "#030104",
+     "align": "center, line pitch 8.2%H",
+     "case": "upper"
+    }
+   ],
+   "entry": {
+    "type": "hard cut + slide-up",
+    "frames": 10,
+    "notes": "full opacity from first frame, slight vertical blur 1341-1342"
+   },
+   "exit": {
+    "type": "end (static)",
+    "frames": 0
+   },
+   "transition_out": {
+    "type": "none",
+    "frames": 0,
+    "notes": "audio fade-out 1330-1398"
+   },
+   "animations": [
+    {
+     "target": "end card text",
+     "props": [
+      "translateY +13.9%H -> 0"
+     ],
+     "start_f": 1340,
+     "dur_f": 10,
+     "easing": "cubic-bezier(0.11,0.11,0.17,0.90) (~quartOut)",
+     "measured": "top y 418,389,368,354,342,334,328,323,320,318 (1341-1350) = 23,45,62,72,82,88,92,96,98,100%",
+     "notes": ""
+    }
+   ]
+  }
+ ]
+}

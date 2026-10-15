@@ -1,0 +1,26 @@
+{
+  "name": "cooking-reels",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts Main out/main.mp4",
+    "render:agentmash": "remotion render src/index.ts ExampleAgentmashReel out/agentmash-reel-raw.mp4",
+    "capture": "node tools/capture_site.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.530",
+    "@remotion/google-fonts": "4.0.530",
+    "@remotion/transitions": "4.0.530",
+    "remotion": "4.0.530",
+    "react": "19.1.1",
+    "react-dom": "19.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.12",
+    "puppeteer-core": "25.12.0",
+    "typescript": "5.9.2"
+  }
+}

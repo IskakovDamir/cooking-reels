@@ -1,0 +1,16 @@
+{
+  "name": "cooking-reels",
+  "description": "Motion-design video skills for Claude Code: Higgsfield-style launch films and 9:16 product Reels in Remotion.",
+  "owner": {
+    "name": "IskakovDamir",
+    "url": "https://github.com/IskakovDamir"
+  },
+  "plugins": [
+    {
+      "name": "cooking-reels",
+      "source": "./",
+      "description": "higgsfield-motion skill: Higgsfield-style launch films and 9:16 product Reels in Remotion, from a website or screenshots.",
+      "version": "1.0.0"
+    }
+  ]
+}

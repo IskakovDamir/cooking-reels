@@ -1,0 +1,2322 @@
+{
+ "video": "v3",
+ "fps": 30,
+ "frames": 1787,
+ "resolution_source": "1276x718 (from 1920x1080)",
+ "px_scale_to_1080": 1.504,
+ "segments": [
+  {
+   "start_f": 0,
+   "end_f": 63,
+   "kind": "brand-intro",
+   "bg": "#fbf9fc + dot grid #f3f0f4 (41px pitch @1080) + TR radial #d0e2f5 / BL radial #d2e0ec corner glows",
+   "summary": "OpenAI icon whips up, 'OpenAI dots' drops in, group slides left, Higgsfield icon pops + glyph-scramble word, 6 mascots pop with springs and breathing pulses, 'dots' gradient sweep, pill 'Always-On-Agents' rises while lockup lifts.",
+   "text": [
+    {
+     "str": "OpenAI dots",
+     "cap_pct": 6.4,
+     "weight": "medium (OpenAI Sans / Inter Display)",
+     "color": "#000000",
+     "align": "center",
+     "case": "sentence"
+    },
+    {
+     "str": "\u00d7",
+     "cap_pct": 3.0,
+     "weight": "regular",
+     "color": "#949296",
+     "align": "center",
+     "case": "lower"
+    },
+    {
+     "str": "Higgsfield",
+     "cap_pct": 6.4,
+     "weight": "semibold",
+     "color": "#000000",
+     "align": "center",
+     "case": "sentence"
+    },
+    {
+     "str": "Always-On-Agents",
+     "cap_pct": 3.5,
+     "weight": "medium",
+     "color": "#000000",
+     "align": "center",
+     "case": "sentence"
+    }
+   ],
+   "entry": {
+    "type": "cold open on bg; elements pop",
+    "frames": 3,
+    "notes": "f0-2 empty bg"
+   },
+   "exit": {
+    "type": "mascots sucked to vanishing point + expo-in push into lockup",
+    "frames": 13
+   },
+   "transition_out": {
+    "type": "zoom-through tunnel",
+    "frames": 46,
+    "notes": "see S2"
+   },
+   "animations": [
+    {
+     "target": "OpenAI icon 87px@718 (131@1080), r=24@1080",
+     "props": [
+      "y",
+      "motion-blur"
+     ],
+     "start_f": 2,
+     "dur_f": 9,
+     "easing": "fast rise + 35px overshoot then settle",
+     "measured": "cy 433(3)->364->333->324(6)->328->336->344->350->355(11)",
+     "notes": ""
+    },
+    {
+     "target": "'OpenAI dots' text",
+     "props": [
+      "y",
+      "blur",
+      "opacity"
+     ],
+     "start_f": 7,
+     "dur_f": 2,
+     "easing": "drop-in from below",
+     "measured": "~40px below + ~8px@718 blur at f7, landed f8-9",
+     "notes": ""
+    },
+    {
+     "target": "lockup group",
+     "props": [
+      "x"
+     ],
+     "start_f": 11,
+     "dur_f": 12,
+     "easing": "expo-out",
+     "measured": "icon x 350->189(17)->184->177->172->170->169->168(23); 88% at 6/12 f; 274px@1080",
+     "notes": ""
+    },
+    {
+     "target": "Higgsfield lime icon",
+     "props": [
+      "scale",
+      "x"
+     ],
+     "start_f": 12,
+     "dur_f": 7,
+     "easing": "spring 13% overshoot",
+     "measured": "w 8,42,78,95,92,88,85,84; x 928->755",
+     "notes": ""
+    },
+    {
+     "target": "'Higgsfield' glyphs",
+     "props": [
+      "opacity",
+      "scale",
+      "blur"
+     ],
+     "start_f": 12,
+     "dur_f": 18,
+     "easing": "per-glyph pops, shuffled order",
+     "measured": "~2 f per glyph",
+     "notes": ""
+    },
+    {
+     "target": "mascots x6",
+     "props": [
+      "scale"
+     ],
+     "start_f": 6,
+     "dur_f": 11,
+     "easing": "spring zeta~0.46, peak 1.20 @+3f, 0.96 @+7f",
+     "measured": "triangle w/final: .36,.82,1.11,1.20,1.14,1.08,1.00,.97,.96,..1.0",
+     "notes": "pop order: green 6, triangle 7, blue 9, square 10, orange 12, purple 16"
+    },
+    {
+     "target": "mascots breathing pulse",
+     "props": [
+      "scale"
+     ],
+     "start_f": 16,
+     "dur_f": 15,
+     "easing": "sine bump 9 f, +26%",
+     "measured": "peaks: green 16, tri 22, square 23.5, purple 25, orange 27, blue 30",
+     "notes": ""
+    },
+    {
+     "target": "'dots' word",
+     "props": [
+      "gradient color sweep"
+     ],
+     "start_f": 20,
+     "dur_f": 16,
+     "easing": "linear, band moves right->left",
+     "measured": "black->#3c56ac->#62b6a7->#7fd774->#afbd60->#d69d41->#eb7c5d->#af415d->black per letter; band ~570px@1080 at ~48px/f",
+     "notes": ""
+    },
+    {
+     "target": "lockup",
+     "props": [
+      "y"
+     ],
+     "start_f": 29,
+     "dur_f": 10,
+     "easing": "cubic in-out",
+     "measured": "-39px@718 (-59@1080); 3%,10%,21%,33%,51%,67%,79%,87%,95%,100%",
+     "notes": ""
+    },
+    {
+     "target": "pill",
+     "props": [
+      "y",
+      "opacity",
+      "width"
+     ],
+     "start_f": 33,
+     "dur_f": 7,
+     "easing": "ease-out",
+     "measured": "rises ~15px@718; right edge 796->828 f36-38",
+     "notes": ""
+    },
+    {
+     "target": "whole scene",
+     "props": [
+      "scale"
+     ],
+     "start_f": 25,
+     "dur_f": 40,
+     "easing": "linear",
+     "measured": "~1.6%/s push-in",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 64,
+   "end_f": 109,
+   "kind": "other",
+   "bg": "lockup bg -> white 3D corridor (#f4f6fa walls, grey perspective lines, wall screens)",
+   "summary": "Zoom-through: mascots sucked into centre (f51-69), camera pushes into lockup expo-in with zoom blur, flies through a white 3D tunnel past mascots, a blurred footage card emerges at the vanishing point and expands to full frame.",
+   "text": [],
+   "entry": {
+    "type": "expo-in push into lockup",
+    "frames": 12,
+    "notes": "lime icon w 86->314 by f75 (x3.65), scale per frame accelerating 1.02..1.40"
+   },
+   "exit": {
+    "type": "card expands to full bleed",
+    "frames": 14
+   },
+   "transition_out": {
+    "type": "zoom-through card fill (scale-up + deblur)",
+    "frames": 14,
+    "notes": "card w 67(95)->474->654->781->881->960->1026->1079->1124->1161->1192->1216->1236->1252->1263(109); edge blur sigma ~8px@718 ->0"
+   },
+   "animations": [
+    {
+     "target": "mascots",
+     "props": [
+      "x",
+      "y",
+      "scale"
+     ],
+     "start_f": 51,
+     "dur_f": 18,
+     "easing": "ease-in (quint) + 3f settle",
+     "measured": "orange x progress 3%(55),11%(59),22%(62),39%(64),58%(65),81%(66),96%(68),100%(69); size 90->5px",
+     "notes": ""
+    },
+    {
+     "target": "lockup camera",
+     "props": [
+      "scale",
+      "radial blur"
+     ],
+     "start_f": 64,
+     "dur_f": 12,
+     "easing": "expo-in",
+     "measured": "1,1.02,1.07,1.14,1.21,1.33,1.47,1.70,2.14,3.0,3.65",
+     "notes": ""
+    },
+    {
+     "target": "tunnel camera",
+     "props": [
+      "translateZ"
+     ],
+     "start_f": 76,
+     "dur_f": 20,
+     "easing": "linear-ish",
+     "measured": "mascots reappear f79 at ~50px and grow x1.05-1.08/f, pass camera ~f95-97",
+     "notes": ""
+    },
+    {
+     "target": "footage card",
+     "props": [
+      "scale",
+      "blur",
+      "border-radius"
+     ],
+     "start_f": 93,
+     "dur_f": 17,
+     "easing": "expo-out",
+     "measured": "width % of full: 34%@+1,59%@+3,74%@+5,88%@+8,97%@+12; blur 12px@1080 -> 0",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 108,
+   "end_f": 263,
+   "kind": "footage",
+   "bg": "AI live-action: guy at laptop on bed, blue-hour window, warm lamps",
+   "summary": "Footage with in-camera dolly-in; floating white chat input springs up, types 'Make me a viral app. Make no mistakes.' with cyan typing head, blue send shimmer, then anticipates up and drops out. Guy closes laptop and lies back.",
+   "text": [
+    {
+     "str": "Make me a viral app. Make no mistakes.",
+     "cap_pct": 3.2,
+     "weight": "regular",
+     "color": "#1c1a1e",
+     "align": "left",
+     "case": "sentence"
+    }
+   ],
+   "entry": {
+    "type": "zoom-through card fill from S2",
+    "frames": 14
+   },
+   "exit": {
+    "type": "hard cut",
+    "frames": 0
+   },
+   "transition_out": {
+    "type": "hard cut on beat (onset 261) to light chat UI",
+    "frames": 1,
+    "notes": "hdiff 1.95 at f264"
+   },
+   "animations": [
+    {
+     "target": "chat input pill 1245x185@1080 (64.9%W x 17.1%H), centre 41.3%W/70.1%H, white, r=92",
+     "props": [
+      "y"
+     ],
+     "start_f": 123,
+     "dur_f": 13,
+     "easing": "spring ~5% overshoot (stiffness~260, damping~22)",
+     "measured": "top 718->673->600->518->471->448->442->430->428(131)->433->438->442",
+     "notes": ""
+    },
+    {
+     "target": "input text",
+     "props": [
+      "typing"
+     ],
+     "start_f": 132,
+     "dur_f": 47,
+     "easing": "linear chars",
+     "measured": "'Make me a viral app.' f132-139 (~75 cps), pause 30 f, ' Make no mistakes.' f170-178 (~60 cps)",
+     "notes": "newest 2-3 chars cyan #1ba7e7 fading to black in ~2 f; no caret"
+    },
+    {
+     "target": "send shimmer",
+     "props": [
+      "x",
+      "opacity"
+     ],
+     "start_f": 208,
+     "dur_f": 10,
+     "easing": "linear",
+     "measured": "blue #4a9ff2 glow sweeps right->left x~800->560@718 (~24px/f)",
+     "notes": ""
+    },
+    {
+     "target": "chat input pill exit",
+     "props": [
+      "y"
+     ],
+     "start_f": 223,
+     "dur_f": 11,
+     "easing": "ease-out up then ease-in down",
+     "measured": "cy 503->463(228) then 476,522,618,687,709, gone 234",
+     "notes": ""
+    },
+    {
+     "target": "footage",
+     "props": [
+      "in-camera dolly"
+     ],
+     "start_f": 108,
+     "dur_f": 110,
+     "easing": "continuous",
+     "measured": "tracker scale x1.012-1.025/f (in-video); pull-back f221-235",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 264,
+   "end_f": 357,
+   "kind": "chat-ui",
+   "bg": "#fbf9fc",
+   "summary": "Chat thread: user bubble + Research agent row. Slide-up/fade entry, hold, whip-pan right with blur, blur-cut to zoomed-out app (sidebar 'Your dots' + chat panel), camera moves up and zoom-blurs into the sidebar.",
+   "text": [
+    {
+     "str": "Make me a viral app. Make no mistakes",
+     "cap_pct": 2.4,
+     "weight": "regular",
+     "color": "#000000",
+     "align": "right",
+     "case": "sentence"
+    },
+    {
+     "str": "Research",
+     "cap_pct": 2.5,
+     "weight": "semibold",
+     "color": "#000000",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Researching",
+     "cap_pct": 2.4,
+     "weight": "regular",
+     "color": "#85c9bc",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Researching: On it. Mapping top drama apps and where there's room to win...",
+     "cap_pct": 2.4,
+     "weight": "regular",
+     "color": "#262327",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Research / Find the signal.",
+     "cap_pct": 2.0,
+     "weight": "semibold / regular",
+     "color": "#000000 / #6b686e",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Message Research Bot",
+     "cap_pct": 1.6,
+     "weight": "regular",
+     "color": "#8a878d",
+     "align": "left",
+     "case": "sentence"
+    }
+   ],
+   "entry": {
+    "type": "hard cut + slide-up 63px@1080 + opacity 0.25->1 + light blur",
+    "frames": 12,
+    "notes": "quart-out; mascot y 445->406 over 21 f, 90% at 10 f"
+   },
+   "exit": {
+    "type": "zoom-blur into sidebar",
+    "frames": 6
+   },
+   "transition_out": {
+    "type": "zoom cut (scale jump) with motion blur",
+    "frames": 3,
+    "notes": "f356-358"
+   },
+   "animations": [
+    {
+     "target": "chat content",
+     "props": [
+      "y",
+      "opacity",
+      "blur"
+     ],
+     "start_f": 264,
+     "dur_f": 21,
+     "easing": "quart-out",
+     "measured": "bubble cy 277->240 in 10 f; sharp 5->440",
+     "notes": ""
+    },
+    {
+     "target": "camera",
+     "props": [
+      "x (whip-pan)",
+      "motion blur"
+     ],
+     "start_f": 299,
+     "dur_f": 13,
+     "easing": "ease-in",
+     "measured": "bubble cx 878->946 accelerating, sharp 500->25",
+     "notes": ""
+    },
+    {
+     "target": "camera",
+     "props": [
+      "scale jump x0.64",
+      "x"
+     ],
+     "start_f": 312,
+     "dur_f": 29,
+     "easing": "expo-out (two pushes)",
+     "measured": "bubble cx 660->800(330), 808->960(340)",
+     "notes": ""
+    },
+    {
+     "target": "camera",
+     "props": [
+      "y",
+      "zoom"
+     ],
+     "start_f": 352,
+     "dur_f": 6,
+     "easing": "ease-in",
+     "measured": "bubble cy 186->232, then zoom-blur",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 358,
+   "end_f": 464,
+   "kind": "card-stack",
+   "bg": "#fbf9fc",
+   "summary": "'Your dots' list zoomed: rows added one per 15 f. Each mascot flies in from lower-left with motion blur (3 f), name/desc blur-fade in (6 f), face swaps; list scrolls one row (~300px@1080) per step with expo in-out.",
+   "text": [
+    {
+     "str": "Your dots",
+     "cap_pct": 2.8,
+     "weight": "regular",
+     "color": "#5f5d61",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Research / Find the signal",
+     "cap_pct": 3.3,
+     "weight": "semibold / regular",
+     "color": "#2b292d / #9a979c",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Comments / Find the signal",
+     "cap_pct": 3.3,
+     "weight": "semibold / regular",
+     "color": "#2b292d / #9a979c",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Insights / Understand what matters",
+     "cap_pct": 3.3,
+     "weight": "semibold / regular",
+     "color": "#2b292d / #9a979c",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Video / Plan the story",
+     "cap_pct": 3.3,
+     "weight": "semibold / regular",
+     "color": "#2b292d / #9a979c",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Skill / Make work repeatable",
+     "cap_pct": 3.3,
+     "weight": "semibold / regular",
+     "color": "#2b292d / #9a979c",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Script / Find the right words",
+     "cap_pct": 3.3,
+     "weight": "semibold / regular",
+     "color": "#2b292d / #9a979c",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "View all 15 dots",
+     "cap_pct": 3.0,
+     "weight": "regular",
+     "color": "#7a777d",
+     "align": "left",
+     "case": "sentence"
+    }
+   ],
+   "entry": {
+    "type": "zoom cut continuation, expo-out settle",
+    "frames": 14,
+    "notes": "dy 32,24,18,13.8,10.4,8.2,5.8,4.5,3.2,1.9,1.6,1.2 (ratio ~0.76); mascot x1.58"
+   },
+   "exit": {
+    "type": "accelerating scroll + blur",
+    "frames": 6
+   },
+   "transition_out": {
+    "type": "blur cut",
+    "frames": 2
+   },
+   "animations": [
+    {
+     "target": "list scroll",
+     "props": [
+      "y",
+      "motion blur"
+     ],
+     "start_f": 389,
+     "dur_f": 75,
+     "easing": "expo in-out steps ~13 f + 5px/f baseline",
+     "measured": "peaks f395 (40px/f@718), 410.5 (41), 425.5 (42), 440 (128, 2.7 rows), 463; ~200px@718 per row",
+     "notes": "cadence 15 f"
+    },
+    {
+     "target": "row mascot",
+     "props": [
+      "x",
+      "y",
+      "rotation",
+      "motion blur"
+     ],
+     "start_f": 394,
+     "dur_f": 3,
+     "easing": "fast ease-out",
+     "measured": "flies from ~(150,390)@718 to slot",
+     "notes": ""
+    },
+    {
+     "target": "row text",
+     "props": [
+      "opacity",
+      "blur"
+     ],
+     "start_f": 398,
+     "dur_f": 6,
+     "easing": "ease-out",
+     "measured": "blur ~6px@718 -> 0",
+     "notes": ""
+    },
+    {
+     "target": "mascot faces",
+     "props": [
+      "glyph swap"
+     ],
+     "start_f": 384,
+     "dur_f": 80,
+     "easing": "step",
+     "measured": "><, oo, --, \u2022\u2022 every 6-10 f",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 465,
+   "end_f": 509,
+   "kind": "status-line",
+   "bg": "#fbf9fc",
+   "summary": "Chat thread zoomed: Research row ('Got it. Scanning X...'), status 'Researching' typing in teal; scroll burst; Comments row with fast word-by-word reveal.",
+   "text": [
+    {
+     "str": "Make me a viral app. Make no mis\u2026",
+     "cap_pct": 2.2,
+     "weight": "regular",
+     "color": "#000000",
+     "align": "right",
+     "case": "sentence"
+    },
+    {
+     "str": "Research \u2713 Researching",
+     "cap_pct": 2.4,
+     "weight": "semibold",
+     "color": "#000000 / #85c9bc",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Got it. Scanning X for every viral app launch from the last 3 months...",
+     "cap_pct": 2.2,
+     "weight": "regular",
+     "color": "#3a383c",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Comments \u2713 Researching",
+     "cap_pct": 2.4,
+     "weight": "semibold",
+     "color": "#000000 / #85c9bc",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Reading reviews: Reading viewer reviews: what they love, hate, and still want.",
+     "cap_pct": 2.2,
+     "weight": "regular",
+     "color": "#3a383c",
+     "align": "left",
+     "case": "sentence"
+    }
+   ],
+   "entry": {
+    "type": "blur cut",
+    "frames": 2
+   },
+   "exit": {
+    "type": "blur",
+    "frames": 2
+   },
+   "transition_out": {
+    "type": "hard cut on beat (onset 508)",
+    "frames": 1
+   },
+   "animations": [
+    {
+     "target": "'Researching' label",
+     "props": [
+      "typing"
+     ],
+     "start_f": 467,
+     "dur_f": 18,
+     "easing": "linear",
+     "measured": "~0.5 char/f",
+     "notes": ""
+    },
+    {
+     "target": "thread",
+     "props": [
+      "y",
+      "motion blur"
+     ],
+     "start_f": 484,
+     "dur_f": 4,
+     "easing": "expo in-out",
+     "measured": "~70px@718",
+     "notes": ""
+    },
+    {
+     "target": "Comments body",
+     "props": [
+      "word reveal opacity+blur"
+     ],
+     "start_f": 489,
+     "dur_f": 16,
+     "easing": "per word",
+     "measured": "~4.8 chars/f (145 cps)",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 510,
+   "end_f": 554,
+   "kind": "card-stack",
+   "bg": "#fbf9fc",
+   "summary": "Dark post card 'Elena Voss' (Sotto Drama) with chip 'Analyzing every short drama post' and blue mascot; chip drops diagonally in; card tilts rotateY ~25deg then pulls back.",
+   "text": [
+    {
+     "str": "Elena Voss",
+     "cap_pct": 3.6,
+     "weight": "regular",
+     "color": "#ffffff",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "@elenamakes",
+     "cap_pct": 2.6,
+     "weight": "regular",
+     "color": "#6d6a70",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "I built Sotto Drama for those little gaps in the day when I want a good story. Short vertical episodes, saved series,",
+     "cap_pct": 2.8,
+     "weight": "regular",
+     "color": "#ffffff",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Analyzing every short drama post",
+     "cap_pct": 3.4,
+     "weight": "regular",
+     "color": "#1f1c20",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "334 \u00b7 13 \u00b7 1k \u00b7 15K",
+     "cap_pct": 2.2,
+     "weight": "regular",
+     "color": "#a09ea3",
+     "align": "left",
+     "case": "sentence"
+    }
+   ],
+   "entry": {
+    "type": "hard cut, blurred then sharp in 3 f, scale 0.964->1 expo-out",
+    "frames": 11
+   },
+   "exit": {
+    "type": "pull back (scale 0.81, left) ease-in",
+    "frames": 13
+   },
+   "transition_out": {
+    "type": "cut into card deck",
+    "frames": 1
+   },
+   "animations": [
+    {
+     "target": "card 1034x898@1080 #141217 r=41",
+     "props": [
+      "scale",
+      "blur"
+     ],
+     "start_f": 510,
+     "dur_f": 11,
+     "easing": "expo-out",
+     "measured": "w 663->688",
+     "notes": ""
+    },
+    {
+     "target": "chip 929x167@1080 #ebe8ec + blue mascot",
+     "props": [
+      "x",
+      "y",
+      "motion blur"
+     ],
+     "start_f": 511,
+     "dur_f": 11,
+     "easing": "expo-out",
+     "measured": "chip x 680->536, y 87->315@718; 45%,70%,86%,93%,96%,98%",
+     "notes": ""
+    },
+    {
+     "target": "card",
+     "props": [
+      "rotateY"
+     ],
+     "start_f": 521,
+     "dur_f": 22,
+     "easing": "ease-in-out (sine/cubic)",
+     "measured": "edge ratio 1.0->0.869; theta~25deg, perspective ~3100px@1080; 8%@2f, 44%@14f, 82%@18f",
+     "notes": ""
+    },
+    {
+     "target": "card",
+     "props": [
+      "scale",
+      "x",
+      "y"
+     ],
+     "start_f": 541,
+     "dur_f": 13,
+     "easing": "ease-in",
+     "measured": "bbox x299-921/y42-675 -> x213-718/y103-615",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 555,
+   "end_f": 640,
+   "kind": "card-stack",
+   "bg": "#fbf9fc",
+   "summary": "3D deck: a new post card replaces the front every 2 frames (21 cards), old cards remain as receding slivers to the left; deck pushes away then rushes to camera, lands on 'Amara Ellis / Bloom Characters' card; stack collapses; card holds with chip.",
+   "text": [
+    {
+     "str": "Amara Ellis",
+     "cap_pct": 2.4,
+     "weight": "semibold",
+     "color": "#ffffff",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "I built Bloom Characters because a twist only works when the person inside it makes sense...",
+     "cap_pct": 1.8,
+     "weight": "regular",
+     "color": "#ffffff",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Analyzing every short drama post",
+     "cap_pct": 2.4,
+     "weight": "regular",
+     "color": "#1f1c20",
+     "align": "left",
+     "case": "sentence"
+    }
+   ],
+   "entry": {
+    "type": "cut",
+    "frames": 1
+   },
+   "exit": {
+    "type": "punch-in cut x~2.3",
+    "frames": 1
+   },
+   "transition_out": {
+    "type": "punch-in hard cut on beat (onset 642)",
+    "frames": 1
+   },
+   "animations": [
+    {
+     "target": "deck cards",
+     "props": [
+      "content swap"
+     ],
+     "start_f": 555,
+     "dur_f": 40,
+     "easing": "step every 2 f",
+     "measured": "21 cards; sliver offset 12-15px@718",
+     "notes": ""
+    },
+    {
+     "target": "deck",
+     "props": [
+      "scale",
+      "x",
+      "motion blur"
+     ],
+     "start_f": 555,
+     "dur_f": 40,
+     "easing": "in-out",
+     "measured": "height 567(555)->638(561)->465(577-579, 0.73)->overfill(595)",
+     "notes": ""
+    },
+    {
+     "target": "Amara card",
+     "props": [
+      "scale"
+     ],
+     "start_f": 595,
+     "dur_f": 24,
+     "easing": "expo-out",
+     "measured": "right edge 1275->1251->1202->1165->1135->1111->1091->1076->1066->1060->1059",
+     "notes": ""
+    },
+    {
+     "target": "back cards",
+     "props": [
+      "x",
+      "opacity (collapse)"
+     ],
+     "start_f": 621,
+     "dur_f": 2,
+     "easing": "linear",
+     "measured": "bbox left 0->120->297",
+     "notes": ""
+    },
+    {
+     "target": "Amara card",
+     "props": [
+      "scale"
+     ],
+     "start_f": 623,
+     "dur_f": 17,
+     "easing": "linear",
+     "measured": "h 636->677 (+0.35%/f)",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 641,
+   "end_f": 670,
+   "kind": "card-stack",
+   "bg": "#fbf9fc",
+   "summary": "Close-up of Amara card bottom (serif art, stats 45/87/746) with orange mascot chip 'Reading 324 comments on top dramas'.",
+   "text": [
+    {
+     "str": "Reading 324 comments on top dramas",
+     "cap_pct": 3.4,
+     "weight": "regular",
+     "color": "#1f1c20",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "45 \u00b7 87 \u00b7 746",
+     "cap_pct": 3.2,
+     "weight": "regular",
+     "color": "#ffffff",
+     "align": "left",
+     "case": "sentence"
+    }
+   ],
+   "entry": {
+    "type": "punch-in cut, residual motion down-left expo-out",
+    "frames": 9,
+    "notes": "chip x 572->480, y 407->499"
+   },
+   "exit": {
+    "type": "hard cut",
+    "frames": 0
+   },
+   "transition_out": {
+    "type": "hard cut on beat (onset 673)",
+    "frames": 1
+   },
+   "animations": [
+    {
+     "target": "whole frame",
+     "props": [
+      "y"
+     ],
+     "start_f": 651,
+     "dur_f": 20,
+     "easing": "linear",
+     "measured": "~1px/f drift up",
+     "notes": ""
+    },
+    {
+     "target": "orange mascot",
+     "props": [
+      "glyph swap"
+     ],
+     "start_f": 662,
+     "dur_f": 1,
+     "easing": "step",
+     "measured": "-- -> oo",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 671,
+   "end_f": 742,
+   "kind": "status-line",
+   "bg": "#fbf9fc (faded ghost of post card at top, #e4e1e5)",
+   "summary": "Research \u2022 Analyzing / 'Finding your edge in short drama.' with sub and 3 spinner bullets, per-word blur reveal; scroll-up; punch-in x1.475 to 'Here's what I found.'",
+   "text": [
+    {
+     "str": "Research",
+     "cap_pct": 2.8,
+     "weight": "regular",
+     "color": "#0b090c",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "\u2022 Analyzing",
+     "cap_pct": 2.8,
+     "weight": "regular",
+     "color": "#4d9d8d",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Finding your edge in short drama.",
+     "cap_pct": 5.0,
+     "weight": "regular",
+     "color": "#060408",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Demand, competitors, and what viewers miss.",
+     "cap_pct": 3.2,
+     "weight": "regular",
+     "color": "#5d5a61",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Mapping top drama apps.",
+     "cap_pct": 3.2,
+     "weight": "regular",
+     "color": "#646165",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Checking downloads and revenue.",
+     "cap_pct": 3.2,
+     "weight": "regular",
+     "color": "#646165",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Reading reviews for what's missing.",
+     "cap_pct": 3.2,
+     "weight": "regular",
+     "color": "#646165",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Here's what I found.",
+     "cap_pct": 5.0,
+     "weight": "regular",
+     "color": "#060408",
+     "align": "left",
+     "case": "sentence"
+    }
+   ],
+   "entry": {
+    "type": "hard cut + staggered word reveal",
+    "frames": 27
+   },
+   "exit": {
+    "type": "accelerating scroll up",
+    "frames": 6
+   },
+   "transition_out": {
+    "type": "motion match-cut (scroll continues) on beat (onset 745)",
+    "frames": 1
+   },
+   "animations": [
+    {
+     "target": "title words",
+     "props": [
+      "opacity",
+      "blur"
+     ],
+     "start_f": 675,
+     "dur_f": 11,
+     "easing": "per word 5-6 f, 1 f stagger",
+     "measured": "word onsets 675,677,678,678.5,679,680; blur 6-9px@1080",
+     "notes": ""
+    },
+    {
+     "target": "sub + bullets",
+     "props": [
+      "opacity",
+      "blur"
+     ],
+     "start_f": 676,
+     "dur_f": 22,
+     "easing": "line stagger 6-8 f",
+     "measured": "sub 676-686, b1 677-683, b2 682-690, b3 690-698",
+     "notes": ""
+    },
+    {
+     "target": "block",
+     "props": [
+      "y"
+     ],
+     "start_f": 700,
+     "dur_f": 18,
+     "easing": "ease-in",
+     "measured": "dy -0.2..-12.6 px/f",
+     "notes": ""
+    },
+    {
+     "target": "camera",
+     "props": [
+      "scale jump x1.475"
+     ],
+     "start_f": 719,
+     "dur_f": 1,
+     "easing": "cut",
+     "measured": "then dy -19.3,-13.6,-9.3,-6.2,-5,-3.3..-1.7 (expo-out)",
+     "notes": ""
+    },
+    {
+     "target": "'Here's what I found.'",
+     "props": [
+      "word reveal"
+     ],
+     "start_f": 720,
+     "dur_f": 11,
+     "easing": "per word",
+     "measured": "grey #514f52 -> black",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 743,
+   "end_f": 844,
+   "kind": "card-stack",
+   "bg": "#171816 dark panel (69.4% W) on #fbf9fc",
+   "summary": "Dark comment thread (Derek Mills, Kayla Moon, Rosa Delgado, Tyler Grant, Munkvoo, Nina Petrova) scrolling up in eased pulses, then exponential acceleration with heavy vertical motion blur.",
+   "text": [
+    {
+     "str": "Rosa Delgado @rosadelgado",
+     "cap_pct": 3.8,
+     "weight": "regular",
+     "color": "#ffffff / #8a888c",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Replying to @amarakeepsnotes",
+     "cap_pct": 1.9,
+     "weight": "regular",
+     "color": "#a8a6aa / lime",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "the pick up where I left off thing is so underrated. every other app loses my spot",
+     "cap_pct": 2.9,
+     "weight": "regular",
+     "color": "#ffffff",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "1 more reply",
+     "cap_pct": 2.9,
+     "weight": "regular",
+     "color": "#d8f000 (lime)",
+     "align": "left",
+     "case": "sentence"
+    }
+   ],
+   "entry": {
+    "type": "motion match-cut, expo-out decel",
+    "frames": 15,
+    "notes": "119.5,89.9,59.5,41.7,30.3,22,16,11.8,9.1,7.1,5.9,5.0 px/f@718"
+   },
+   "exit": {
+    "type": "expo-in scroll acceleration x1.075/f",
+    "frames": 50
+   },
+   "transition_out": {
+    "type": "motion match-cut into grid",
+    "frames": 1,
+    "notes": "~256 px/f at cut"
+   },
+   "animations": [
+    {
+     "target": "thread",
+     "props": [
+      "y",
+      "motion blur"
+     ],
+     "start_f": 759,
+     "dur_f": 15,
+     "easing": "expo in-out",
+     "measured": "peak 45.9px/f @765, ~262px",
+     "notes": ""
+    },
+    {
+     "target": "thread",
+     "props": [
+      "y",
+      "motion blur"
+     ],
+     "start_f": 774,
+     "dur_f": 19,
+     "easing": "expo in-out",
+     "measured": "peak 54px/f @783, ~380px",
+     "notes": ""
+    },
+    {
+     "target": "thread",
+     "props": [
+      "y",
+      "motion blur"
+     ],
+     "start_f": 795,
+     "dur_f": 50,
+     "easing": "expo-in",
+     "measured": "4.2 -> 143 px/f",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 845,
+   "end_f": 921,
+   "kind": "grid",
+   "bg": "#fbf9fc",
+   "summary": "Grid of dark post cards settles from the scroll, zooms out in two eased steps to x0.532, then accelerates downward.",
+   "text": [],
+   "entry": {
+    "type": "motion match-cut, decel",
+    "frames": 8,
+    "notes": "-44,-17,-13,-11 px/f"
+   },
+   "exit": {
+    "type": "ease-in pan down",
+    "frames": 11
+   },
+   "transition_out": {
+    "type": "motion cut to single card with vertical smear (onset 924)",
+    "frames": 1
+   },
+   "animations": [
+    {
+     "target": "grid camera",
+     "props": [
+      "scale"
+     ],
+     "start_f": 855,
+     "dur_f": 20,
+     "easing": "cubic in-out",
+     "measured": "1.0->0.72, peak -4.3%/f @865",
+     "notes": ""
+    },
+    {
+     "target": "grid camera",
+     "props": [
+      "scale"
+     ],
+     "start_f": 883,
+     "dur_f": 22,
+     "easing": "cubic in-out",
+     "measured": "0.70->0.535, peak -3.3%/f @893",
+     "notes": ""
+    },
+    {
+     "target": "grid",
+     "props": [
+      "y"
+     ],
+     "start_f": 910,
+     "dur_f": 11,
+     "easing": "ease-in",
+     "measured": "2.4 -> 18.3 px/f",
+     "notes": ""
+    },
+    {
+     "target": "grid card",
+     "props": [
+      "size"
+     ],
+     "start_f": 880,
+     "dur_f": 1,
+     "easing": "static",
+     "measured": "card 395x355@1080, gap 28px@1080",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 922,
+   "end_f": 970,
+   "kind": "card-stack",
+   "bg": "#fbf9fc",
+   "summary": "Single post card (Aster Club) drops in from top with vertical motion smear, holds 40 f.",
+   "text": [],
+   "entry": {
+    "type": "vertical motion-blur drop-in",
+    "frames": 8,
+    "notes": "settled ~928-930; card 925x842@1080 centred"
+   },
+   "exit": {
+    "type": "hard cut",
+    "frames": 0
+   },
+   "transition_out": {
+    "type": "hard cut on beat (onset 975)",
+    "frames": 1
+   },
+   "animations": [
+    {
+     "target": "card",
+     "props": [
+      "y",
+      "vertical blur"
+     ],
+     "start_f": 922,
+     "dur_f": 8,
+     "easing": "expo-out",
+     "measured": "smear f922-925",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 971,
+   "end_f": 1000,
+   "kind": "status-line",
+   "bg": "#fbf9fc",
+   "summary": "Insights \u2713 Insights complete / bold 'Huge demand. Here's your edge.' + numbered list 01-03.",
+   "text": [
+    {
+     "str": "Insights",
+     "cap_pct": 2.4,
+     "weight": "semibold",
+     "color": "#000000",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "\u2713 Insights complete",
+     "cap_pct": 2.4,
+     "weight": "regular",
+     "color": "#197e69",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Huge demand. Here's your edge.",
+     "cap_pct": 4.3,
+     "weight": "bold",
+     "color": "#050306",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Viewers keep asking for the same three things.",
+     "cap_pct": 2.6,
+     "weight": "regular",
+     "color": "#5f5f61",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "01 Fair pricing: / No coin traps \u00b7 Fewer ads",
+     "cap_pct": 2.6,
+     "weight": "regular",
+     "color": "#3b383c / #b5b3b6",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "02 Fresh stories: / New episodes daily \u00b7 Made with AI",
+     "cap_pct": 2.6,
+     "weight": "regular",
+     "color": "#3b383c / #b5b3b6",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "03 Launch on short-form: / Trailers \u00b7 Creator UGC \u00b7 X",
+     "cap_pct": 2.6,
+     "weight": "regular",
+     "color": "#3b383c / #b5b3b6",
+     "align": "left",
+     "case": "sentence"
+    }
+   ],
+   "entry": {
+    "type": "hard cut + word reveal",
+    "frames": 5
+   },
+   "exit": {
+    "type": "move up + blur out",
+    "frames": 4
+   },
+   "transition_out": {
+    "type": "vertical slide-up push (onset 1002)",
+    "frames": 11
+   },
+   "animations": [
+    {
+     "target": "title",
+     "props": [
+      "word reveal"
+     ],
+     "start_f": 971,
+     "dur_f": 5,
+     "easing": "~1 word/f",
+     "measured": "",
+     "notes": ""
+    },
+    {
+     "target": "black pill mascot 111x74@1080",
+     "props": [
+      "scale",
+      "blur"
+     ],
+     "start_f": 973,
+     "dur_f": 3,
+     "easing": "pop spring",
+     "measured": "",
+     "notes": ""
+    },
+    {
+     "target": "list items",
+     "props": [
+      "opacity"
+     ],
+     "start_f": 978,
+     "dur_f": 16,
+     "easing": "4 f stagger",
+     "measured": "",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 1001,
+   "end_f": 1013,
+   "kind": "ai-video",
+   "bg": "dark web-app screen ('The Last Promise.') on #fbf9fc",
+   "summary": "Dark streaming-app screen 'PREMIERE / The Last Promise.' slides up from bottom with vertical motion blur and lands as a near-full-frame card.",
+   "text": [
+    {
+     "str": "The Last Promise.",
+     "cap_pct": 6.5,
+     "weight": "semibold geometric",
+     "color": "#ffffff",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "00 : 18 : 42",
+     "cap_pct": 3.5,
+     "weight": "medium",
+     "color": "#ffffff",
+     "align": "left",
+     "case": "sentence"
+    }
+   ],
+   "entry": {
+    "type": "slide-up push, expo-out",
+    "frames": 11,
+    "notes": "top y 688,558,391,265,186,134,96,68,47,32,20,12"
+   },
+   "exit": {
+    "type": "blur + shrink",
+    "frames": 5
+   },
+   "transition_out": {
+    "type": "blur-shrink into 3D fan",
+    "frames": 6,
+    "notes": "w 1154->718 f1014-1019"
+   },
+   "animations": []
+  },
+  {
+   "start_f": 1014,
+   "end_f": 1131,
+   "kind": "3d-render",
+   "bg": "#fbf9fc + mint radial glow #ddf0ef/#c4ddde behind fan",
+   "summary": "Screen shrinks, fans out into a 3D stack of ~12 app screens with floating mascot labels; 'Analyzing 150 apps...'; slow push-in, then fly-in to the front screen.",
+   "text": [
+    {
+     "str": "Analyzing 150 apps...",
+     "cap_pct": 3.1,
+     "weight": "regular, tight tracking",
+     "color": "#000000",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "78 apps analyzed",
+     "cap_pct": 1.8,
+     "weight": "medium",
+     "color": "#000305",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "App brief ready",
+     "cap_pct": 1.8,
+     "weight": "medium",
+     "color": "#000000",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Brand book reviewed",
+     "cap_pct": 1.8,
+     "weight": "medium",
+     "color": "#000000",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "6 screen layouts",
+     "cap_pct": 1.8,
+     "weight": "medium",
+     "color": "#000000",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "UX copy drafted",
+     "cap_pct": 1.8,
+     "weight": "medium",
+     "color": "#000000",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Core features mapped",
+     "cap_pct": 1.8,
+     "weight": "medium",
+     "color": "#000000",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Launch plan ready",
+     "cap_pct": 1.8,
+     "weight": "medium",
+     "color": "#000000",
+     "align": "left",
+     "case": "sentence"
+    }
+   ],
+   "entry": {
+    "type": "blur-shrink x0.62 in 5 f, then fan-out",
+    "frames": 22
+   },
+   "exit": {
+    "type": "accelerating fly-in to front screen with motion blur",
+    "frames": 18
+   },
+   "transition_out": {
+    "type": "zoom-through into front screen",
+    "frames": 8
+   },
+   "animations": [
+    {
+     "target": "screen",
+     "props": [
+      "scale",
+      "blur"
+     ],
+     "start_f": 1014,
+     "dur_f": 6,
+     "easing": "expo-out",
+     "measured": "w 1154,973,883,818,766,718",
+     "notes": ""
+    },
+    {
+     "target": "fan layers",
+     "props": [
+      "translateZ spread"
+     ],
+     "start_f": 1020,
+     "dur_f": 16,
+     "easing": "expo-out",
+     "measured": "bbox right 908->1004",
+     "notes": ""
+    },
+    {
+     "target": "labels",
+     "props": [
+      "scale",
+      "opacity",
+      "blur"
+     ],
+     "start_f": 1027,
+     "dur_f": 90,
+     "easing": "pop spring, 3-6 f apart, cycling",
+     "measured": "",
+     "notes": ""
+    },
+    {
+     "target": "camera",
+     "props": [
+      "scale"
+     ],
+     "start_f": 1036,
+     "dur_f": 54,
+     "easing": "ease-out",
+     "measured": "1.000->1.106",
+     "notes": ""
+    },
+    {
+     "target": "camera",
+     "props": [
+      "scale",
+      "rotateY",
+      "motion blur"
+     ],
+     "start_f": 1114,
+     "dur_f": 18,
+     "easing": "expo-in",
+     "measured": "bbox right 1013->1231",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 1132,
+   "end_f": 1210,
+   "kind": "status-line",
+   "bg": "#fbf9fc (+ app strip at top)",
+   "summary": "Front screen fills then slides up to a strip; 'Skill \u2713 Skill complete / Your app blueprint is ready.' typed, doc card 'Drama App Blueprint'.",
+   "text": [
+    {
+     "str": "Skill",
+     "cap_pct": 2.4,
+     "weight": "semibold",
+     "color": "#000000",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "\u2713 Skill complete",
+     "cap_pct": 2.4,
+     "weight": "regular",
+     "color": "#1a7b67",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Your app blueprint is ready.",
+     "cap_pct": 4.3,
+     "weight": "bold",
+     "color": "#000000",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Research, demand, and your edge in one plan.",
+     "cap_pct": 2.6,
+     "weight": "regular",
+     "color": "#6b686e",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Drama App Blueprint",
+     "cap_pct": 2.2,
+     "weight": "medium",
+     "color": "#000000",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Document",
+     "cap_pct": 1.7,
+     "weight": "regular",
+     "color": "#8a878d",
+     "align": "left",
+     "case": "sentence"
+    }
+   ],
+   "entry": {
+    "type": "screen slides up (in-out 10 f)",
+    "frames": 10
+   },
+   "exit": {
+    "type": "blur-out upward",
+    "frames": 6
+   },
+   "transition_out": {
+    "type": "blur dissolve",
+    "frames": 6
+   },
+   "animations": [
+    {
+     "target": "title",
+     "props": [
+      "typing"
+     ],
+     "start_f": 1140,
+     "dur_f": 26,
+     "easing": "linear ~1.1 char/f (32 cps)",
+     "measured": "soft fade head",
+     "notes": ""
+    },
+    {
+     "target": "blue clover mascot",
+     "props": [
+      "scale"
+     ],
+     "start_f": 1155,
+     "dur_f": 3,
+     "easing": "pop spring",
+     "measured": "",
+     "notes": ""
+    },
+    {
+     "target": "doc card 1464x184@1080 #f0f3f6 r=21",
+     "props": [
+      "opacity",
+      "y"
+     ],
+     "start_f": 1148,
+     "dur_f": 4,
+     "easing": "ease-out",
+     "measured": "",
+     "notes": ""
+    },
+    {
+     "target": "header",
+     "props": [
+      "opacity"
+     ],
+     "start_f": 1161,
+     "dur_f": 5,
+     "easing": "ease-out",
+     "measured": "",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 1211,
+   "end_f": 1255,
+   "kind": "status-line",
+   "bg": "#fbf9fc",
+   "summary": "Build \u2022 Building / 'Building your drama app.' / Connecting the Higgsfield API (gradient) / Plugging in Cinema Studio, Genjutsu, and more...",
+   "text": [
+    {
+     "str": "Build \u2022 Building",
+     "cap_pct": 2.4,
+     "weight": "semibold",
+     "color": "#000000 / #28816f",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Building your drama app.",
+     "cap_pct": 4.3,
+     "weight": "bold",
+     "color": "#000000",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Connecting the Higgsfield API",
+     "cap_pct": 2.6,
+     "weight": "regular",
+     "color": "#626266 + gradient #2f6e5e->#b5d921",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Plugging in Cinema Studio, Genjutsu, and more...",
+     "cap_pct": 2.6,
+     "weight": "regular",
+     "color": "#626266",
+     "align": "left",
+     "case": "sentence"
+    }
+   ],
+   "entry": {
+    "type": "slide-in from below + blur, typing",
+    "frames": 20
+   },
+   "exit": {
+    "type": "text fade/blur left-up, mascot remains",
+    "frames": 6
+   },
+   "transition_out": {
+    "type": "element morph (grey mascot grows)",
+    "frames": 5
+   },
+   "animations": [
+    {
+     "target": "lines",
+     "props": [
+      "typing with lime head"
+     ],
+     "start_f": 1214,
+     "dur_f": 18,
+     "easing": "linear",
+     "measured": "",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 1256,
+   "end_f": 1329,
+   "kind": "mascots",
+   "bg": "#fbf9fc",
+   "summary": "Grey square mascot grows, orange bear smashes in from left, pair holds; cut to 9 then 22 scattered mascots; all implode to centre with radial motion blur into a tiny ghost.",
+   "text": [],
+   "entry": {
+    "type": "scale-up with blur",
+    "frames": 5
+   },
+   "exit": {
+    "type": "radial implode, ease-in",
+    "frames": 8
+   },
+   "transition_out": {
+    "type": "implode -> tiny mascot becomes header icon",
+    "frames": 8
+   },
+   "animations": [
+    {
+     "target": "orange bear 305x286@1080",
+     "props": [
+      "x",
+      "motion blur"
+     ],
+     "start_f": 1261,
+     "dur_f": 4,
+     "easing": "expo-out",
+     "measured": "smash-in from left",
+     "notes": ""
+    },
+    {
+     "target": "grey square 300x300@1080 r=60",
+     "props": [
+      "x",
+      "scale"
+     ],
+     "start_f": 1256,
+     "dur_f": 9,
+     "easing": "expo-out",
+     "measured": "",
+     "notes": ""
+    },
+    {
+     "target": "crowd (9 mascots)",
+     "props": [
+      "scale"
+     ],
+     "start_f": 1281,
+     "dur_f": 4,
+     "easing": "pop spring",
+     "measured": "",
+     "notes": ""
+    },
+    {
+     "target": "crowd (22 mascots)",
+     "props": [
+      "scale"
+     ],
+     "start_f": 1301,
+     "dur_f": 4,
+     "easing": "pop spring",
+     "measured": "",
+     "notes": ""
+    },
+    {
+     "target": "all mascots",
+     "props": [
+      "x",
+      "y",
+      "scale",
+      "radial blur"
+     ],
+     "start_f": 1314,
+     "dur_f": 8,
+     "easing": "ease-in",
+     "measured": "to (640,490)@718",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 1330,
+   "end_f": 1420,
+   "kind": "status-line",
+   "bg": "#fbf9fc",
+   "summary": "Media \u2022 Working / 'Generating episodes with Higgsfield.' with gradient product names, typing with lime head; phone placeholder darkens and shows plotline app.",
+   "text": [
+    {
+     "str": "Media \u2022 Working",
+     "cap_pct": 2.4,
+     "weight": "semibold",
+     "color": "#000000 / #28816f",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Generating episodes with Higgsfield.",
+     "cap_pct": 4.3,
+     "weight": "bold",
+     "color": "#030104",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Cinema Studio for cinematic scenes.",
+     "cap_pct": 3.4,
+     "weight": "semibold+regular",
+     "color": "gradient #2f6e5e->#bdda1e / #626266",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Genjutsu for motion transfer.",
+     "cap_pct": 3.4,
+     "weight": "semibold+regular",
+     "color": "gradient / #626266",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Marketing Studio for posters and ads.",
+     "cap_pct": 3.4,
+     "weight": "semibold+regular",
+     "color": "gradient / #626266",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Here's your app, ready to launch",
+     "cap_pct": 3.4,
+     "weight": "regular",
+     "color": "#62605f",
+     "align": "left",
+     "case": "sentence"
+    }
+   ],
+   "entry": {
+    "type": "mascot travels to header + typing",
+    "frames": 20
+   },
+   "exit": {
+    "type": "text blur/fade up",
+    "frames": 6
+   },
+   "transition_out": {
+    "type": "phone moves to centre (expo-out)",
+    "frames": 10
+   },
+   "animations": [
+    {
+     "target": "text",
+     "props": [
+      "typing, lime head ~#c8e630 -> final in 6 f"
+     ],
+     "start_f": 1339,
+     "dur_f": 13,
+     "easing": "~4 chars/f",
+     "measured": "",
+     "notes": ""
+    },
+    {
+     "target": "phone placeholder #e5e2e6 -> #1f182a",
+     "props": [
+      "color",
+      "content fade"
+     ],
+     "start_f": 1360,
+     "dur_f": 30,
+     "easing": "linear",
+     "measured": "",
+     "notes": ""
+    },
+    {
+     "target": "phone screen",
+     "props": [
+      "screen swap"
+     ],
+     "start_f": 1402,
+     "dur_f": 3,
+     "easing": "cut",
+     "measured": "Stories -> Library",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 1421,
+   "end_f": 1528,
+   "kind": "chat-ui",
+   "bg": "#fbf9fc + dark phone #1f182a (641px wide @1080)",
+   "summary": "plotline. phone app: Stories -> Library -> Portuguese filter -> scroll to 'Picnic secret' scene; ghost mascot + chip 'Publishing your app to the marketplace'.",
+   "text": [
+    {
+     "str": "plotline.",
+     "cap_pct": 2.2,
+     "weight": "semibold",
+     "color": "#ffffff",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Stories.",
+     "cap_pct": 4.0,
+     "weight": "bold",
+     "color": "#ffffff",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Library.",
+     "cap_pct": 4.0,
+     "weight": "bold",
+     "color": "#ffffff",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Picnic secret",
+     "cap_pct": 3.4,
+     "weight": "semibold",
+     "color": "#ffffff",
+     "align": "left",
+     "case": "sentence"
+    },
+    {
+     "str": "Publishing your app to the marketplace",
+     "cap_pct": 2.9,
+     "weight": "regular",
+     "color": "#1f1c20",
+     "align": "left",
+     "case": "sentence"
+    }
+   ],
+   "entry": {
+    "type": "phone scale-up expo-out",
+    "frames": 10
+   },
+   "exit": {
+    "type": "vertical whip up with motion blur",
+    "frames": 4
+   },
+   "transition_out": {
+    "type": "vertical whip into footage card",
+    "frames": 4
+   },
+   "animations": [
+    {
+     "target": "phone",
+     "props": [
+      "scale",
+      "y"
+     ],
+     "start_f": 1420,
+     "dur_f": 12,
+     "easing": "expo-out",
+     "measured": "lands ~f1430 (audio hit 1434)",
+     "notes": ""
+    },
+    {
+     "target": "phone content",
+     "props": [
+      "y",
+      "motion blur"
+     ],
+     "start_f": 1487,
+     "dur_f": 8,
+     "easing": "expo in-out",
+     "measured": "",
+     "notes": ""
+    },
+    {
+     "target": "chip + ghost mascot",
+     "props": [
+      "x",
+      "blur",
+      "typing"
+     ],
+     "start_f": 1492,
+     "dur_f": 6,
+     "easing": "expo-out",
+     "measured": "from left",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 1529,
+   "end_f": 1628,
+   "kind": "footage",
+   "bg": "AI live-action close-up, guy at laptop, night window",
+   "summary": "Footage card rises from below, scales to fullscreen; close-up; orange mascot chip 'Getting your app recommended by people' pops up.",
+   "text": [
+    {
+     "str": "Getting your app recommended by people",
+     "cap_pct": 2.9,
+     "weight": "regular",
+     "color": "#1c1a1e",
+     "align": "left",
+     "case": "sentence"
+    }
+   ],
+   "entry": {
+    "type": "card rise (expo-out) + scale to full (ease-in-out)",
+    "frames": 25,
+    "notes": "card 1346x761@1080 -> full; progress 3,7,14,25,41,56,69,79,85,91,94,97,99,100%"
+   },
+   "exit": {
+    "type": "hard cut",
+    "frames": 0
+   },
+   "transition_out": {
+    "type": "hard cut on beat (onset 1627)",
+    "frames": 1
+   },
+   "animations": [
+    {
+     "target": "footage card",
+     "props": [
+      "y"
+     ],
+     "start_f": 1533,
+     "dur_f": 7,
+     "easing": "expo-out",
+     "measured": "top 212->116@718",
+     "notes": ""
+    },
+    {
+     "target": "footage card",
+     "props": [
+      "scale",
+      "radius"
+     ],
+     "start_f": 1540,
+     "dur_f": 14,
+     "easing": "cubic-bezier(0.45,0,0.2,1)",
+     "measured": "w 898->1275@718",
+     "notes": ""
+    },
+    {
+     "target": "chip 1012x147@1080 + orange mascot",
+     "props": [
+      "y",
+      "blur"
+     ],
+     "start_f": 1591,
+     "dur_f": 5,
+     "easing": "expo-out",
+     "measured": "y 510->450@718 (rise 60px@718)",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 1629,
+   "end_f": 1697,
+   "kind": "footage",
+   "bg": "#fbf9fc with strip of 9:16 UGC tiles",
+   "summary": "Horizontal carousel of UGC selfie clips (people holding phones with the app), fast entry decelerating to constant drift, then drops out of frame.",
+   "text": [],
+   "entry": {
+    "type": "hard cut + horizontal expo-out entry",
+    "frames": 30,
+    "notes": "452.8,226.5,128,92,73,61,52,46,41,37... -> 11.4 px/f@718 constant from 1660"
+   },
+   "exit": {
+    "type": "drop down ease-in",
+    "frames": 17,
+    "notes": "dy 0.4..116 px/f"
+   },
+   "transition_out": {
+    "type": "hard cut to end card (onset 1696)",
+    "frames": 1
+   },
+   "animations": [
+    {
+     "target": "tile strip (tiles 529x963@1080, gap 39, r=15)",
+     "props": [
+      "x"
+     ],
+     "start_f": 1629,
+     "dur_f": 68,
+     "easing": "expo-out + linear 17.1px/f@1080",
+     "measured": "",
+     "notes": ""
+    },
+    {
+     "target": "tile strip",
+     "props": [
+      "y"
+     ],
+     "start_f": 1680,
+     "dur_f": 17,
+     "easing": "expo-in",
+     "measured": "",
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "start_f": 1698,
+   "end_f": 1786,
+   "kind": "end-card",
+   "bg": "#fbf9fc + dot grid #f3f0f4 (41px pitch @1080) + TR radial #d0e2f5 / BL radial #d2e0ec corner glows",
+   "summary": "Lockup re-assembles: icon whip-up, 'OpenAI'/'dots' drop in, pill types 'Always-On-Agents' letter by letter with outline growing, Higgsfield icon pop + glyph scramble, mascots pop/pulse (S1 timings +1697), 'dots' gradient sweep, continuous push-in ~2.2%/s to the end.",
+   "text": [
+    {
+     "str": "OpenAI dots",
+     "cap_pct": 6.4,
+     "weight": "medium",
+     "color": "#000000",
+     "align": "center",
+     "case": "sentence"
+    },
+    {
+     "str": "\u00d7",
+     "cap_pct": 3.0,
+     "weight": "regular",
+     "color": "#949296",
+     "align": "center",
+     "case": "lower"
+    },
+    {
+     "str": "Higgsfield",
+     "cap_pct": 6.4,
+     "weight": "semibold",
+     "color": "#000000",
+     "align": "center",
+     "case": "sentence"
+    },
+    {
+     "str": "Always-On-Agents",
+     "cap_pct": 3.5,
+     "weight": "medium",
+     "color": "#000000",
+     "align": "center",
+     "case": "sentence"
+    }
+   ],
+   "entry": {
+    "type": "hard cut to bg, element pops",
+    "frames": 3
+   },
+   "exit": {
+    "type": "none (ends on hold)",
+    "frames": 0
+   },
+   "transition_out": {
+    "type": "end",
+    "frames": 0
+   },
+   "animations": [
+    {
+     "target": "pill text",
+     "props": [
+      "typing"
+     ],
+     "start_f": 1701,
+     "dur_f": 16,
+     "easing": "~1 char/f",
+     "measured": "outline visible from 1708, grows with text",
+     "notes": ""
+    },
+    {
+     "target": "'Higgsfield'",
+     "props": [
+      "glyph scramble"
+     ],
+     "start_f": 1709,
+     "dur_f": 17,
+     "easing": "per glyph",
+     "measured": "",
+     "notes": ""
+    },
+    {
+     "target": "mascots",
+     "props": [
+      "scale"
+     ],
+     "start_f": 1703,
+     "dur_f": 11,
+     "easing": "pop spring + breathing pulse",
+     "measured": "same curves as S1",
+     "notes": ""
+    },
+    {
+     "target": "'dots'",
+     "props": [
+      "gradient sweep"
+     ],
+     "start_f": 1719,
+     "dur_f": 16,
+     "easing": "linear",
+     "measured": "",
+     "notes": ""
+    },
+    {
+     "target": "whole scene",
+     "props": [
+      "scale"
+     ],
+     "start_f": 1720,
+     "dur_f": 66,
+     "easing": "linear",
+     "measured": "+4.5% over 62 f (icon w 86->90; radial distances x1.045)",
+     "notes": ""
+    }
+   ]
+  }
+ ]
+}
