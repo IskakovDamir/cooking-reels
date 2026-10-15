@@ -29,3 +29,8 @@ Then `cd project && npm install && npx remotion studio src/index.ts`.
 - `skills/higgsfield-motion/`: the skill (`SKILL.md`, references, scripts, Remotion library, examples)
 - `project/`: a ready-to-run Remotion project with all examples and the agentmash reel's assets
 - `renders/`: finished example output
+
+## License
+
+[MIT](LICENSE). It covers the code, scripts and docs. The agentmash name and the agentmash.dev
+screenshots in the example belong to agentmash and are there to show the workflow.
