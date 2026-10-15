@@ -8,5 +8,13 @@
   },
   "homepage": "https://github.com/IskakovDamir/cooking-reels",
   "repository": "https://github.com/IskakovDamir/cooking-reels",
-  "keywords": ["remotion", "motion-design", "reels", "video", "screen-studio", "promo"]
+  "license": "MIT",
+  "keywords": [
+    "remotion",
+    "motion-design",
+    "reels",
+    "video",
+    "screen-studio",
+    "promo"
+  ]
 }
